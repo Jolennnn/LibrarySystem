@@ -57,7 +57,7 @@ Partial Class MainForm
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(114, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(147, 13)
+        Me.Label1.Size = New System.Drawing.Size(173, 15)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Father Leoni Memorial School"
         '
@@ -66,7 +66,7 @@ Partial Class MainForm
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(117, 51)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 13)
+        Me.Label2.Size = New System.Drawing.Size(164, 15)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Library Management System"
         '

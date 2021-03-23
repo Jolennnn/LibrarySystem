@@ -79,6 +79,12 @@
     <Compile Include="BooksBorrowedForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BorrowingForm.Designer.vb">
+      <DependentUpon>BorrowingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InventoryForm.Designer.vb">
       <DependentUpon>InventoryForm.vb</DependentUpon>
     </Compile>
@@ -124,6 +130,9 @@
   <ItemGroup>
     <EmbeddedResource Include="BooksBorrowedForm.resx">
       <DependentUpon>BooksBorrowedForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowingForm.resx">
+      <DependentUpon>BorrowingForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryForm.resx">
       <DependentUpon>InventoryForm.vb</DependentUpon>
