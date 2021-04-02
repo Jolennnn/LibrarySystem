@@ -85,7 +85,7 @@ Partial Class BorrowingForm
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(496, 74)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 15)
+        Me.Label2.Size = New System.Drawing.Size(83, 13)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Book Borrowed:"
         '
@@ -94,7 +94,7 @@ Partial Class BorrowingForm
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(43, 74)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 15)
+        Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Borrower:"
         '
@@ -103,7 +103,7 @@ Partial Class BorrowingForm
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(43, 366)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 15)
+        Me.Label1.Size = New System.Drawing.Size(52, 13)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Borrower:"
         '
@@ -112,7 +112,7 @@ Partial Class BorrowingForm
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(43, 392)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(60, 15)
+        Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Borrower:"
         '
@@ -121,7 +121,7 @@ Partial Class BorrowingForm
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(43, 421)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 15)
+        Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Borrower:"
         '
@@ -130,7 +130,7 @@ Partial Class BorrowingForm
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(43, 449)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 15)
+        Me.Label6.Size = New System.Drawing.Size(52, 13)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Borrower:"
         '
@@ -139,7 +139,7 @@ Partial Class BorrowingForm
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(43, 477)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(60, 15)
+        Me.Label7.Size = New System.Drawing.Size(52, 13)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Borrower:"
         '
@@ -148,7 +148,7 @@ Partial Class BorrowingForm
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(43, 508)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(60, 15)
+        Me.Label8.Size = New System.Drawing.Size(52, 13)
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "Borrower:"
         '
@@ -175,7 +175,7 @@ Partial Class BorrowingForm
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(496, 366)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(60, 15)
+        Me.Label9.Size = New System.Drawing.Size(52, 13)
         Me.Label9.TabIndex = 4
         Me.Label9.Text = "Borrower:"
         '
@@ -184,7 +184,7 @@ Partial Class BorrowingForm
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(496, 392)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(60, 15)
+        Me.Label10.Size = New System.Drawing.Size(52, 13)
         Me.Label10.TabIndex = 4
         Me.Label10.Text = "Borrower:"
         '
@@ -193,7 +193,7 @@ Partial Class BorrowingForm
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(496, 421)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(60, 15)
+        Me.Label11.Size = New System.Drawing.Size(52, 13)
         Me.Label11.TabIndex = 4
         Me.Label11.Text = "Borrower:"
         '
@@ -202,7 +202,7 @@ Partial Class BorrowingForm
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(496, 449)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(60, 15)
+        Me.Label12.Size = New System.Drawing.Size(52, 13)
         Me.Label12.TabIndex = 4
         Me.Label12.Text = "Borrower:"
         '
@@ -211,7 +211,7 @@ Partial Class BorrowingForm
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(496, 477)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(60, 15)
+        Me.Label13.Size = New System.Drawing.Size(52, 13)
         Me.Label13.TabIndex = 4
         Me.Label13.Text = "Borrower:"
         '
@@ -220,7 +220,7 @@ Partial Class BorrowingForm
         Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(496, 508)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(60, 15)
+        Me.Label14.Size = New System.Drawing.Size(52, 13)
         Me.Label14.TabIndex = 4
         Me.Label14.Text = "Borrower:"
         '

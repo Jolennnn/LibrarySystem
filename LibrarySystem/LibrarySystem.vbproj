@@ -94,6 +94,12 @@
     <Compile Include="AddBookForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddLogsForm.Designer.vb">
+      <DependentUpon>AddLogsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddLogsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BooksBorrowedForm.Designer.vb">
       <DependentUpon>BooksBorrowedForm.vb</DependentUpon>
     </Compile>
@@ -151,6 +157,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddBookForm.resx">
       <DependentUpon>AddBookForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLogsForm.resx">
+      <DependentUpon>AddLogsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BooksBorrowedForm.resx">
       <DependentUpon>BooksBorrowedForm.vb</DependentUpon>

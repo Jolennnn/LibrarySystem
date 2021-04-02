@@ -22,30 +22,35 @@ Partial Class InventoryForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InventoryForm))
+        Me.BackBtn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.SearchBar = New System.Windows.Forms.TextBox()
+        Me.AddBookBtn = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'BackBtn
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 21)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(45, 30)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BackBtn.Location = New System.Drawing.Point(12, 21)
+        Me.BackBtn.Name = "BackBtn"
+        Me.BackBtn.Size = New System.Drawing.Size(45, 30)
+        Me.BackBtn.TabIndex = 0
+        Me.BackBtn.Text = "Back"
+        Me.BackBtn.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(64, 21)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(63, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 13)
+        Me.Label1.Size = New System.Drawing.Size(116, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Inventory"
         '
@@ -57,21 +62,21 @@ Partial Class InventoryForm
         Me.DataGridView1.Size = New System.Drawing.Size(680, 294)
         Me.DataGridView1.TabIndex = 2
         '
-        'TextBox1
+        'SearchBar
         '
-        Me.TextBox1.Location = New System.Drawing.Point(13, 80)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(679, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.SearchBar.Location = New System.Drawing.Point(13, 80)
+        Me.SearchBar.Name = "SearchBar"
+        Me.SearchBar.Size = New System.Drawing.Size(679, 20)
+        Me.SearchBar.TabIndex = 3
         '
-        'Button2
+        'AddBookBtn
         '
-        Me.Button2.Location = New System.Drawing.Point(510, 21)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 30)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Add Book"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.AddBookBtn.Location = New System.Drawing.Point(510, 21)
+        Me.AddBookBtn.Name = "AddBookBtn"
+        Me.AddBookBtn.Size = New System.Drawing.Size(75, 30)
+        Me.AddBookBtn.TabIndex = 4
+        Me.AddBookBtn.Text = "Add Book"
+        Me.AddBookBtn.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -82,29 +87,43 @@ Partial Class InventoryForm
         Me.Button3.Text = "Archive Book"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(714, 431)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
         'InventoryForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(714, 431)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.AddBookBtn)
+        Me.Controls.Add(Me.SearchBar)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BackBtn)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "InventoryForm"
         Me.Text = "Inventory"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BackBtn As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents SearchBar As TextBox
+    Friend WithEvents AddBookBtn As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

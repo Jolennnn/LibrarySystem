@@ -31,3 +31,7 @@ C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySyst
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.xml
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources

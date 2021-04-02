@@ -4,13 +4,15 @@
         Me.Hide()
     End Sub
 
-    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         InventoryForm.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub SomeFormName_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+
     End Sub
 End Class
 
