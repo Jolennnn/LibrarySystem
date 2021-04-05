@@ -100,6 +100,11 @@
     <Compile Include="AddLogsForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BookDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BooksBorrowedForm.Designer.vb">
       <DependentUpon>BooksBorrowedForm.vb</DependentUpon>
     </Compile>
@@ -187,6 +192,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="BookDataSet.xsc">
+      <DependentUpon>BookDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookDataSet.xss">
+      <DependentUpon>BookDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

@@ -35,3 +35,23 @@ C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\Database.md
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe.config
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.pdb
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbprojAssemblyReference.cache
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BooksBorrowedForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowingForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.InventoryForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LogsForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.MainForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Resources.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReservationsForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.GenerateResource.cache
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb

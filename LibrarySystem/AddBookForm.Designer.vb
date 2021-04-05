@@ -24,27 +24,30 @@ Partial Class AddBookForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddBookForm))
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.titleBox = New System.Windows.Forms.TextBox()
+        Me.idBox = New System.Windows.Forms.TextBox()
+        Me.authorBox = New System.Windows.Forms.TextBox()
+        Me.isbnBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.yrBox = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.shelfBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.categoryBox = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BackBtn = New System.Windows.Forms.Button()
+        Me.BookDataSet1 = New LibrarySystem.BookDataSet()
+        Me.BookTableAdapter1 = New LibrarySystem.BookDataSetTableAdapters.BookTableAdapter()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BookDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -56,33 +59,33 @@ Partial Class AddBookForm
         Me.Button1.Text = "Add book"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'titleBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(161, 55)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.titleBox.Location = New System.Drawing.Point(161, 55)
+        Me.titleBox.Name = "titleBox"
+        Me.titleBox.Size = New System.Drawing.Size(100, 20)
+        Me.titleBox.TabIndex = 1
         '
-        'TextBox2
+        'idBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(161, 81)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.idBox.Location = New System.Drawing.Point(161, 81)
+        Me.idBox.Name = "idBox"
+        Me.idBox.Size = New System.Drawing.Size(100, 20)
+        Me.idBox.TabIndex = 1
         '
-        'TextBox3
+        'authorBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(161, 107)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 1
+        Me.authorBox.Location = New System.Drawing.Point(161, 107)
+        Me.authorBox.Name = "authorBox"
+        Me.authorBox.Size = New System.Drawing.Size(100, 20)
+        Me.authorBox.TabIndex = 1
         '
-        'TextBox4
+        'isbnBox
         '
-        Me.TextBox4.Location = New System.Drawing.Point(161, 133)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 1
+        Me.isbnBox.Location = New System.Drawing.Point(161, 133)
+        Me.isbnBox.Name = "isbnBox"
+        Me.isbnBox.Size = New System.Drawing.Size(100, 20)
+        Me.isbnBox.TabIndex = 1
         '
         'Label1
         '
@@ -120,12 +123,12 @@ Partial Class AddBookForm
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Year Published"
         '
-        'TextBox5
+        'yrBox
         '
-        Me.TextBox5.Location = New System.Drawing.Point(161, 159)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 1
+        Me.yrBox.Location = New System.Drawing.Point(161, 159)
+        Me.yrBox.Name = "yrBox"
+        Me.yrBox.Size = New System.Drawing.Size(100, 20)
+        Me.yrBox.TabIndex = 1
         '
         'Label5
         '
@@ -136,12 +139,12 @@ Partial Class AddBookForm
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Shelf Number"
         '
-        'TextBox6
+        'shelfBox
         '
-        Me.TextBox6.Location = New System.Drawing.Point(161, 185)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 1
+        Me.shelfBox.Location = New System.Drawing.Point(161, 185)
+        Me.shelfBox.Name = "shelfBox"
+        Me.shelfBox.Size = New System.Drawing.Size(100, 20)
+        Me.shelfBox.TabIndex = 1
         '
         'Label6
         '
@@ -152,12 +155,12 @@ Partial Class AddBookForm
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Category"
         '
-        'TextBox7
+        'categoryBox
         '
-        Me.TextBox7.Location = New System.Drawing.Point(161, 211)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 1
+        Me.categoryBox.Location = New System.Drawing.Point(161, 211)
+        Me.categoryBox.Name = "categoryBox"
+        Me.categoryBox.Size = New System.Drawing.Size(100, 20)
+        Me.categoryBox.TabIndex = 1
         '
         'Label7
         '
@@ -209,6 +212,15 @@ Partial Class AddBookForm
         Me.BackBtn.Text = "Back"
         Me.BackBtn.UseVisualStyleBackColor = True
         '
+        'BookDataSet1
+        '
+        Me.BookDataSet1.DataSetName = "BookDataSet"
+        Me.BookDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BookTableAdapter1
+        '
+        Me.BookTableAdapter1.ClearBeforeFill = True
+        '
         'AddBookForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -224,42 +236,45 @@ Partial Class AddBookForm
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.categoryBox)
+        Me.Controls.Add(Me.shelfBox)
+        Me.Controls.Add(Me.yrBox)
+        Me.Controls.Add(Me.isbnBox)
+        Me.Controls.Add(Me.authorBox)
+        Me.Controls.Add(Me.idBox)
+        Me.Controls.Add(Me.titleBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "AddBookForm"
         Me.Text = "AddBookForm"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BookDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents titleBox As TextBox
+    Friend WithEvents idBox As TextBox
+    Friend WithEvents authorBox As TextBox
+    Friend WithEvents isbnBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents yrBox As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents shelfBox As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents categoryBox As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents BackBtn As Button
+    Friend WithEvents BookDataSet1 As BookDataSet
+    Friend WithEvents BookTableAdapter1 As BookDataSetTableAdapters.BookTableAdapter
 End Class
