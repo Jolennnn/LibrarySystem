@@ -55,3 +55,4 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.xml
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources

@@ -123,6 +123,12 @@
     <Compile Include="InventoryForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LogsForm.Designer.vb">
       <DependentUpon>LogsForm.vb</DependentUpon>
     </Compile>
@@ -175,6 +181,9 @@
     <EmbeddedResource Include="InventoryForm.resx">
       <DependentUpon>InventoryForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogsForm.resx">
       <DependentUpon>LogsForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +231,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\164689175_156340693020424_669526875626594457_n.png" />
+    <None Include="Resources\IMG_3489.jpg" />
+    <None Include="Resources\FLMHS%281%29.png" />
+    <None Include="Resources\163979896_347729323309626_8858956244323673907_n.png" />
+    <None Include="Resources\165785738_196849778569144_1132039763617959965_n.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

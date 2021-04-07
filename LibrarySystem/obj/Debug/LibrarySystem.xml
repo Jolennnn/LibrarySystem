@@ -22,6 +22,31 @@ LibrarySystem
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:LibrarySystem.My.Resources.Resources._163979896_347729323309626_8858956244323673907_n">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:LibrarySystem.My.Resources.Resources._164689175_156340693020424_669526875626594457_n">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:LibrarySystem.My.Resources.Resources._165785738_196849778569144_1132039763617959965_n">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:LibrarySystem.My.Resources.Resources.FLMHS_1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:LibrarySystem.My.Resources.Resources.IMG_3489">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="T:LibrarySystem.BookDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.

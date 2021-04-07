@@ -31,12 +31,16 @@ Partial Class MainForm
         Me.Button6 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.LMSLabel = New System.Windows.Forms.Label()
+        Me.FLMSLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SummaryReportButton
         '
-        Me.SummaryReportButton.Location = New System.Drawing.Point(-5, 112)
+        Me.SummaryReportButton.Location = New System.Drawing.Point(0, 174)
         Me.SummaryReportButton.Name = "SummaryReportButton"
         Me.SummaryReportButton.Size = New System.Drawing.Size(160, 58)
         Me.SummaryReportButton.TabIndex = 0
@@ -45,7 +49,7 @@ Partial Class MainForm
         '
         'BooksBorrowedButton
         '
-        Me.BooksBorrowedButton.Location = New System.Drawing.Point(-5, 176)
+        Me.BooksBorrowedButton.Location = New System.Drawing.Point(0, 238)
         Me.BooksBorrowedButton.Name = "BooksBorrowedButton"
         Me.BooksBorrowedButton.Size = New System.Drawing.Size(160, 58)
         Me.BooksBorrowedButton.TabIndex = 0
@@ -54,7 +58,7 @@ Partial Class MainForm
         '
         'ReservationsButton
         '
-        Me.ReservationsButton.Location = New System.Drawing.Point(-5, 240)
+        Me.ReservationsButton.Location = New System.Drawing.Point(0, 302)
         Me.ReservationsButton.Name = "ReservationsButton"
         Me.ReservationsButton.Size = New System.Drawing.Size(160, 58)
         Me.ReservationsButton.TabIndex = 0
@@ -63,7 +67,7 @@ Partial Class MainForm
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(-5, 304)
+        Me.Button4.Location = New System.Drawing.Point(0, 366)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(160, 58)
         Me.Button4.TabIndex = 0
@@ -72,7 +76,7 @@ Partial Class MainForm
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(-5, 368)
+        Me.Button5.Location = New System.Drawing.Point(0, 430)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(160, 58)
         Me.Button5.TabIndex = 0
@@ -81,7 +85,7 @@ Partial Class MainForm
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(625, 467)
+        Me.Button6.Location = New System.Drawing.Point(627, 565)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 4
@@ -90,7 +94,7 @@ Partial Class MainForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(191, 112)
+        Me.TextBox1.Location = New System.Drawing.Point(177, 122)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(509, 20)
         Me.TextBox1.TabIndex = 5
@@ -99,20 +103,55 @@ Partial Class MainForm
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(746, 542)
+        Me.PictureBox1.Size = New System.Drawing.Size(725, 614)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.LibrarySystem.My.Resources.Resources.FLMHS_1_
+        Me.PictureBox2.Location = New System.Drawing.Point(34, 21)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(121, 121)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
+        '
+        'LMSLabel
+        '
+        Me.LMSLabel.AutoSize = True
+        Me.LMSLabel.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LMSLabel.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.LMSLabel.Location = New System.Drawing.Point(173, 69)
+        Me.LMSLabel.Name = "LMSLabel"
+        Me.LMSLabel.Size = New System.Drawing.Size(242, 29)
+        Me.LMSLabel.TabIndex = 8
+        Me.LMSLabel.Text = "Library Management System"
+        '
+        'FLMSLabel
+        '
+        Me.FLMSLabel.AutoSize = True
+        Me.FLMSLabel.Font = New System.Drawing.Font("Bahnschrift Condensed", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FLMSLabel.ForeColor = System.Drawing.Color.White
+        Me.FLMSLabel.Location = New System.Drawing.Point(173, 22)
+        Me.FLMSLabel.Name = "FLMSLabel"
+        Me.FLMSLabel.Size = New System.Drawing.Size(362, 42)
+        Me.FLMSLabel.TabIndex = 9
+        Me.FLMSLabel.Text = "Father Leoni Memorial School"
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(746, 542)
+        Me.ClientSize = New System.Drawing.Size(725, 614)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.LMSLabel)
+        Me.Controls.Add(Me.FLMSLabel)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -124,6 +163,7 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.Text = "Father Leoni Memorial School"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -137,4 +177,7 @@ Partial Class MainForm
     Friend WithEvents Button6 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents LMSLabel As Label
+    Friend WithEvents FLMSLabel As Label
 End Class
