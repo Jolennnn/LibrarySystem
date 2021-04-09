@@ -3,22 +3,16 @@
         AddBookForm.Show()
         Me.Hide()
     End Sub
-    Private Sub BindData()
-        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
-            con.Open()
 
-            con.Close()
-        End Using
-    End Sub
     Private Sub InventoryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label1.Parent = PictureBox1
         Label1.BackColor = Color.Transparent
+        BindData(DataGridView1)
     End Sub
 
     Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
         Me.Hide()
         MainForm.Show()
     End Sub
-
 
 End Class

@@ -24,11 +24,9 @@ Partial Class AddBookForm
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.titleBox = New System.Windows.Forms.TextBox()
-        Me.idBox = New System.Windows.Forms.TextBox()
         Me.authorBox = New System.Windows.Forms.TextBox()
         Me.isbnBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.yrBox = New System.Windows.Forms.TextBox()
@@ -65,23 +63,16 @@ Partial Class AddBookForm
         Me.titleBox.Size = New System.Drawing.Size(100, 20)
         Me.titleBox.TabIndex = 1
         '
-        'idBox
-        '
-        Me.idBox.Location = New System.Drawing.Point(161, 81)
-        Me.idBox.Name = "idBox"
-        Me.idBox.Size = New System.Drawing.Size(100, 20)
-        Me.idBox.TabIndex = 1
-        '
         'authorBox
         '
-        Me.authorBox.Location = New System.Drawing.Point(161, 107)
+        Me.authorBox.Location = New System.Drawing.Point(161, 80)
         Me.authorBox.Name = "authorBox"
         Me.authorBox.Size = New System.Drawing.Size(100, 20)
         Me.authorBox.TabIndex = 1
         '
         'isbnBox
         '
-        Me.isbnBox.Location = New System.Drawing.Point(161, 133)
+        Me.isbnBox.Location = New System.Drawing.Point(161, 106)
         Me.isbnBox.Name = "isbnBox"
         Me.isbnBox.Size = New System.Drawing.Size(100, 20)
         Me.isbnBox.TabIndex = 1
@@ -95,19 +86,10 @@ Partial Class AddBookForm
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Book Title"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(55, 84)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Book ID"
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(55, 136)
+        Me.Label3.Location = New System.Drawing.Point(55, 109)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(32, 13)
         Me.Label3.TabIndex = 2
@@ -116,7 +98,7 @@ Partial Class AddBookForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(55, 162)
+        Me.Label4.Location = New System.Drawing.Point(55, 135)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(78, 13)
         Me.Label4.TabIndex = 2
@@ -124,7 +106,7 @@ Partial Class AddBookForm
         '
         'yrBox
         '
-        Me.yrBox.Location = New System.Drawing.Point(161, 159)
+        Me.yrBox.Location = New System.Drawing.Point(161, 132)
         Me.yrBox.Name = "yrBox"
         Me.yrBox.Size = New System.Drawing.Size(100, 20)
         Me.yrBox.TabIndex = 1
@@ -132,7 +114,7 @@ Partial Class AddBookForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(55, 188)
+        Me.Label5.Location = New System.Drawing.Point(55, 161)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 13)
         Me.Label5.TabIndex = 2
@@ -140,7 +122,7 @@ Partial Class AddBookForm
         '
         'shelfBox
         '
-        Me.shelfBox.Location = New System.Drawing.Point(161, 185)
+        Me.shelfBox.Location = New System.Drawing.Point(161, 158)
         Me.shelfBox.Name = "shelfBox"
         Me.shelfBox.Size = New System.Drawing.Size(100, 20)
         Me.shelfBox.TabIndex = 1
@@ -148,7 +130,7 @@ Partial Class AddBookForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(55, 214)
+        Me.Label6.Location = New System.Drawing.Point(55, 187)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(49, 13)
         Me.Label6.TabIndex = 2
@@ -156,7 +138,7 @@ Partial Class AddBookForm
         '
         'categoryBox
         '
-        Me.categoryBox.Location = New System.Drawing.Point(161, 211)
+        Me.categoryBox.Location = New System.Drawing.Point(161, 184)
         Me.categoryBox.Name = "categoryBox"
         Me.categoryBox.Size = New System.Drawing.Size(100, 20)
         Me.categoryBox.TabIndex = 1
@@ -164,7 +146,7 @@ Partial Class AddBookForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(55, 110)
+        Me.Label7.Location = New System.Drawing.Point(55, 83)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 2
@@ -233,14 +215,12 @@ Partial Class AddBookForm
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.categoryBox)
         Me.Controls.Add(Me.shelfBox)
         Me.Controls.Add(Me.yrBox)
         Me.Controls.Add(Me.isbnBox)
         Me.Controls.Add(Me.authorBox)
-        Me.Controls.Add(Me.idBox)
         Me.Controls.Add(Me.titleBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
@@ -256,11 +236,9 @@ Partial Class AddBookForm
 
     Friend WithEvents Button1 As Button
     Friend WithEvents titleBox As TextBox
-    Friend WithEvents idBox As TextBox
     Friend WithEvents authorBox As TextBox
     Friend WithEvents isbnBox As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents yrBox As TextBox

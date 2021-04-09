@@ -105,6 +105,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BookDataSet.vb">
+      <DependentUpon>BookDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BooksBorrowedForm.Designer.vb">
       <DependentUpon>BooksBorrowedForm.vb</DependentUpon>
     </Compile>
@@ -142,6 +145,7 @@
       <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
