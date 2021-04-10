@@ -57,3 +57,15 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.dll
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.dll
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.xml
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.xml
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBorrowerForm.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerReader.resources

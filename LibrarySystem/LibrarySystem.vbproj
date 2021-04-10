@@ -73,6 +73,12 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -118,6 +124,12 @@
       <DependentUpon>BorrowingForm.vb</DependentUpon>
     </Compile>
     <Compile Include="BorrowingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBorrowerForm.Designer.vb">
+      <DependentUpon>AddBorrowerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddBorrowerForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InventoryForm.Designer.vb">
@@ -168,10 +180,19 @@
     <Compile Include="ReservationsForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BorrowerReader.Designer.vb">
+      <DependentUpon>BorrowerReader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowerReader.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddBookForm.resx">
       <DependentUpon>AddBookForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBorrowerForm.resx">
+      <DependentUpon>AddBorrowerForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddLogsForm.resx">
       <DependentUpon>AddLogsForm.vb</DependentUpon>
@@ -202,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReservationsForm.resx">
       <DependentUpon>ReservationsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowerReader.resx">
+      <DependentUpon>BorrowerReader.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +259,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <None Include="packages.config" />
     <None Include="Resources\164689175_156340693020424_669526875626594457_n.png" />
     <None Include="Resources\IMG_3489.jpg" />
     <None Include="Resources\FLMHS%281%29.png" />
