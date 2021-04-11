@@ -22,7 +22,6 @@ Partial Class AddBookForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.titleBox = New System.Windows.Forms.TextBox()
         Me.authorBox = New System.Windows.Forms.TextBox()
@@ -198,12 +197,12 @@ Partial Class AddBookForm
         '
         'categoryBox
         '
+        Me.categoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.categoryBox.FormattingEnabled = True
         Me.categoryBox.Location = New System.Drawing.Point(161, 184)
         Me.categoryBox.Name = "categoryBox"
         Me.categoryBox.Size = New System.Drawing.Size(100, 21)
         Me.categoryBox.TabIndex = 7
-        '
         '
         'AddBookForm
         '
