@@ -76,6 +76,20 @@ Public Class AddBookForm
     End Sub
 
     Private Sub AddBookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Parent = PictureBox1
+        Label7.Parent = PictureBox1
+        Label3.Parent = PictureBox1
+        Label4.Parent = PictureBox1
+        Label5.Parent = PictureBox1
+        Label6.Parent = PictureBox1
+        Label1.BackColor = Color.Transparent
+        Label7.BackColor = Color.Transparent
+        Label3.BackColor = Color.Transparent
+        Label4.BackColor = Color.Transparent
+        Label5.BackColor = Color.Transparent
+        Label6.BackColor = Color.Transparent
+
+
         Dim con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
         Dim cmd As SqlCommand = New SqlCommand("SELECT * from Category", con)
         Dim ds As New DataSet()

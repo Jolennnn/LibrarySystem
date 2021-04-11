@@ -40,9 +40,11 @@ Partial Class ReservationsForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(22, 26)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(22, 21)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(80, 28)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
@@ -57,9 +59,11 @@ Partial Class ReservationsForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(593, 26)
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(590, 21)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 23)
+        Me.Button2.Size = New System.Drawing.Size(114, 28)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Add Reservation"
         Me.Button2.UseVisualStyleBackColor = True

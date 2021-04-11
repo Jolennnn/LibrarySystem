@@ -40,6 +40,8 @@ Partial Class MainForm
         '
         'SummaryReportButton
         '
+        Me.SummaryReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SummaryReportButton.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SummaryReportButton.Location = New System.Drawing.Point(0, 174)
         Me.SummaryReportButton.Name = "SummaryReportButton"
         Me.SummaryReportButton.Size = New System.Drawing.Size(160, 58)
@@ -49,6 +51,8 @@ Partial Class MainForm
         '
         'BooksBorrowedButton
         '
+        Me.BooksBorrowedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BooksBorrowedButton.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BooksBorrowedButton.Location = New System.Drawing.Point(0, 238)
         Me.BooksBorrowedButton.Name = "BooksBorrowedButton"
         Me.BooksBorrowedButton.Size = New System.Drawing.Size(160, 58)
@@ -58,6 +62,8 @@ Partial Class MainForm
         '
         'ReservationsButton
         '
+        Me.ReservationsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ReservationsButton.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReservationsButton.Location = New System.Drawing.Point(0, 302)
         Me.ReservationsButton.Name = "ReservationsButton"
         Me.ReservationsButton.Size = New System.Drawing.Size(160, 58)
@@ -67,6 +73,8 @@ Partial Class MainForm
         '
         'Button4
         '
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(0, 366)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(160, 58)
@@ -76,6 +84,8 @@ Partial Class MainForm
         '
         'Button5
         '
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(0, 430)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(160, 58)
@@ -85,9 +95,11 @@ Partial Class MainForm
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(627, 565)
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(619, 549)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.Size = New System.Drawing.Size(83, 39)
         Me.Button6.TabIndex = 4
         Me.Button6.Text = "Log out"
         Me.Button6.UseVisualStyleBackColor = True

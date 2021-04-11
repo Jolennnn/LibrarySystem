@@ -40,7 +40,7 @@ Partial Class LoginForm
         Me.UsernameBox.Location = New System.Drawing.Point(408, 242)
         Me.UsernameBox.Name = "UsernameBox"
         Me.UsernameBox.Size = New System.Drawing.Size(100, 20)
-        Me.UsernameBox.TabIndex = 0
+        Me.UsernameBox.TabIndex = 1
         '
         'PictureBox1
         '
@@ -56,11 +56,13 @@ Partial Class LoginForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(342, 245)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(334, 242)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.Size = New System.Drawing.Size(71, 18)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Username"
+        Me.Label1.Text = "Username:"
         '
         'PasswordBox
         '
@@ -68,16 +70,18 @@ Partial Class LoginForm
         Me.PasswordBox.Name = "PasswordBox"
         Me.PasswordBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordBox.Size = New System.Drawing.Size(100, 20)
-        Me.PasswordBox.TabIndex = 0
+        Me.PasswordBox.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(342, 271)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(334, 268)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 13)
+        Me.Label2.Size = New System.Drawing.Size(70, 18)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Password"
+        Me.Label2.Text = "Password:"
         '
         'FLMSLabel
         '
@@ -113,9 +117,11 @@ Partial Class LoginForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(396, 323)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(372, 318)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(102, 36)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Log In"
         Me.Button1.UseVisualStyleBackColor = True

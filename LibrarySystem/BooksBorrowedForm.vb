@@ -14,6 +14,18 @@
 
     Private Sub BooksBorrowedForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadBorrow(DataGridView1)
+        FLMSLabel.Parent = PictureBox1
+        LMSLabel.Parent = PictureBox1
+        GroupBox1.Parent = PictureBox1
+        PictureBox2.Parent = PictureBox1
+        lblTitle.Parent = PictureBox1
+        Label3.Parent = PictureBox1
+        FLMSLabel.BackColor = Color.Transparent
+        LMSLabel.BackColor = Color.Transparent
+        PictureBox2.BackColor = Color.Transparent
+        GroupBox1.BackColor = Color.Transparent
+        lblTitle.BackColor = Color.Transparent
+        Label3.BackColor = Color.Transparent
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
