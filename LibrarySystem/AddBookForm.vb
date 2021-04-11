@@ -3,14 +3,15 @@ Imports ZXing
 Public Class AddBookForm
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'add book query here
-        Dim query As String = "INSERT INTO [dbo].[Book] ([Title], [ISBN], [YrPublish], [shelfNo], [idCategory]) VALUES(@Title, @ISBN, @YrPublish, @shelfNo, @idCategory)"
+        Dim query As String = "INSERT INTO [dbo].[Book] ([Title], [Author], [ISBN], [YrPublish], [shelfNo], [idCategory]) VALUES(@Title, @Author, @ISBN, @YrPublish, @shelfNo, @idCategory)"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@Title", titleBox.Text)
+                cmd.Parameters.AddWithValue("@Author", authorBox.Text)
                 cmd.Parameters.AddWithValue("@ISBN", isbnBox.Text)
                 cmd.Parameters.AddWithValue("@YrPublish", yrBox.Text)
                 cmd.Parameters.AddWithValue("@shelfNo", shelfBox.Text)
-                cmd.Parameters.AddWithValue("@idCategory", categoryBox.Text)
+                cmd.Parameters.AddWithValue("@idCategory", categoryBox.SelectedValue)
                 con.Open()
                 cmd.ExecuteNonQuery()
                 con.Close()
@@ -72,5 +73,22 @@ Public Class AddBookForm
         End If
 
         QRbox1.Image.Save(savefile, System.Drawing.Imaging.ImageFormat.Png)
+    Private Sub AddBookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+        Dim cmd As SqlCommand = New SqlCommand("SELECT * from Category", con)
+        Dim ds As New DataSet()
+        Dim adapter As New SqlDataAdapter()
+        Try
+            con.Open()
+            adapter.SelectCommand = cmd
+            adapter.Fill(ds)
+            con.Close()
+            categoryBox.DataSource = ds.Tables(0)
+            categoryBox.ValueMember = "idCategory"
+            categoryBox.DisplayMember = "categoryName"
+        Catch ex As Exception
+            MessageBox.Show("Failed.")
+        End Try
+
     End Sub
 End Class

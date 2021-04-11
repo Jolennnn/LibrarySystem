@@ -18,7 +18,7 @@ Partial Class AddBookForm
     Private components As System.ComponentModel.IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
+    'It can be modified using the Windows Form Designer.
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
@@ -33,7 +33,6 @@ Partial Class AddBookForm
         Me.Label5 = New System.Windows.Forms.Label()
         Me.shelfBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.categoryBox = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
@@ -44,6 +43,7 @@ Partial Class AddBookForm
         Me.BookTableAdapter1 = New LibrarySystem.BookDataSetTableAdapters.BookTableAdapter()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.QRbox1 = New System.Windows.Forms.PictureBox()
+        Me.categoryBox = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -240,12 +240,22 @@ Partial Class AddBookForm
         Me.QRbox1.Size = New System.Drawing.Size(271, 217)
         Me.QRbox1.TabIndex = 5
         Me.QRbox1.TabStop = False
+        'categoryBox
+        '
+        Me.categoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.categoryBox.FormattingEnabled = True
+        Me.categoryBox.Location = New System.Drawing.Point(161, 184)
+        Me.categoryBox.Name = "categoryBox"
+        Me.categoryBox.Size = New System.Drawing.Size(100, 21)
+        Me.categoryBox.TabIndex = 7
         '
         'AddBookForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1065, 398)
+        Me.ClientSize = New System.Drawing.Size(614, 323)
+        Me.Controls.Add(Me.categoryBox)
         Me.Controls.Add(Me.BackBtn)
         Me.Controls.Add(Me.QRbox1)
         Me.Controls.Add(Me.Button3)
@@ -257,7 +267,6 @@ Partial Class AddBookForm
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.categoryBox)
         Me.Controls.Add(Me.shelfBox)
         Me.Controls.Add(Me.yrBox)
         Me.Controls.Add(Me.isbnBox)
@@ -288,7 +297,6 @@ Partial Class AddBookForm
     Friend WithEvents Label5 As Label
     Friend WithEvents shelfBox As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents categoryBox As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
@@ -299,4 +307,5 @@ Partial Class AddBookForm
     Friend WithEvents BookTableAdapter1 As BookDataSetTableAdapters.BookTableAdapter
     Friend WithEvents Button3 As Button
     Friend WithEvents QRbox1 As PictureBox
+    Friend WithEvents categoryBox As ComboBox
 End Class
