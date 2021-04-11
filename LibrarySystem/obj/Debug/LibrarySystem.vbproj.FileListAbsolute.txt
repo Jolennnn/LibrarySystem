@@ -57,3 +57,28 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe.config
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.pdb
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.xml
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbprojAssemblyReference.cache
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BooksBorrowedForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowingForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.InventoryForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LogsForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.MainForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Resources.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReservationsForm.resources
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.GenerateResource.cache
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CoreCompileInputs.cache
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.xml
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\images\pic2.jpg
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\images\pic1.jpg
+C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\bin\Debug\images\pic3.jpg
