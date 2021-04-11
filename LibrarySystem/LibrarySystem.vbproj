@@ -139,6 +139,18 @@
     <Compile Include="AddBorrowerForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EditBorrowerForm.Designer.vb">
+      <DependentUpon>EditBorrowerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditBorrowerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinesConfirmationForm.Designer.vb">
+      <DependentUpon>FinesConfirmationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinesConfirmationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InventoryForm.Designer.vb">
       <DependentUpon>InventoryForm.vb</DependentUpon>
     </Compile>
@@ -224,6 +236,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowingForm.resx">
       <DependentUpon>BorrowingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBorrowerForm.resx">
+      <DependentUpon>EditBorrowerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinesConfirmationForm.resx">
+      <DependentUpon>FinesConfirmationForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryForm.resx">
       <DependentUpon>InventoryForm.vb</DependentUpon>

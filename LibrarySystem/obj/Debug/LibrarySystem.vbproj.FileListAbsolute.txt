@@ -112,3 +112,6 @@ C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\L
 C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
 C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.xml
 C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnForm.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnScanner.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FinesConfirmationForm.resources
