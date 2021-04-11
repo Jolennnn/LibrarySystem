@@ -61,6 +61,7 @@ Partial Class BookScanner
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "BookScanner"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BookScanner"
         Me.ResumeLayout(False)
         Me.PerformLayout()

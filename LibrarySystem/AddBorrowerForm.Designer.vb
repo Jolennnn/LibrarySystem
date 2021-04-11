@@ -117,6 +117,7 @@ Partial Class AddBorrowerForm
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "AddBorrowerForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Add Borrower"
         CType(Me.qrbox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -52,7 +52,7 @@ Partial Class BorrowerScanner
         Me.scan1.Size = New System.Drawing.Size(417, 22)
         Me.scan1.TabIndex = 1
         '
-        'BorrowerReader
+        'BorrowerScanner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -60,7 +60,8 @@ Partial Class BorrowerScanner
         Me.Controls.Add(Me.scan1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "BorrowerReader"
+        Me.Name = "BorrowerScanner"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Scan Borrower QR"
         Me.ResumeLayout(False)
         Me.PerformLayout()

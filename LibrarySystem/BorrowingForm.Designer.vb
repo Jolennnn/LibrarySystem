@@ -345,6 +345,7 @@ Partial Class BorrowingForm
         Me.Controls.Add(Me.BookQRimg)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "BorrowingForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Borrow Book"
         CType(Me.BookQRimg, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BorrowerQRimg, System.ComponentModel.ISupportInitialize).EndInit()

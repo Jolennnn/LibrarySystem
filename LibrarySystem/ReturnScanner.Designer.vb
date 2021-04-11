@@ -39,6 +39,7 @@ Partial Class ReturnScanner
         Me.ClientSize = New System.Drawing.Size(413, 145)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "ReturnScanner"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ReturnScanner"
         Me.ResumeLayout(False)
         Me.PerformLayout()
