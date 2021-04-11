@@ -15,4 +15,16 @@
     Private Sub BooksBorrowedForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadBorrow(DataGridView1)
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        LoadBorrowers(DataGridView1)
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        LoadBorrow(DataGridView1)
+    End Sub
+
+    Private Sub btnReturnBook_Click(sender As Object, e As EventArgs) Handles btnReturnBook.Click
+        ReturnForm.ShowDialog()
+    End Sub
 End Class

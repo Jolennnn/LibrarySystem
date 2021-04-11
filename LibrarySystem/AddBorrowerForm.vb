@@ -1,5 +1,5 @@
 ﻿Imports ZXing
-
+Imports System.Data.SqlClient
 Public Class AddBorrowerForm
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
@@ -27,6 +27,21 @@ Public Class AddBorrowerForm
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'query add borrower
+        Dim idnum As Integer
+        Int32.TryParse(id1.Text, idnum)
+        Dim query As String = "INSERT INTO [dbo].[Student] ([idStudent], [Name]) VALUES(@id, @name)"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@id", idnum)
+                cmd.Parameters.AddWithValue("@name", name1.Text)
+
+                con.Open()
+                cmd.ExecuteNonQuery()
+                con.Close()
+                MessageBox.Show("Successfully added!")
+                Module1.BindData(InventoryForm.DataGridView1)
+            End Using
+        End Using
 
         'saving QR to file
         Dim savepath As String = My.Computer.FileSystem.SpecialDirectories.MyPictures & "\BorrowerQR\"

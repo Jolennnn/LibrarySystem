@@ -35,7 +35,7 @@ Partial Class AddBorrowerForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(131, 381)
+        Me.Button1.Location = New System.Drawing.Point(121, 413)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 40)
         Me.Button1.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class AddBorrowerForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(268, 381)
+        Me.Button2.Location = New System.Drawing.Point(258, 413)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(106, 40)
         Me.Button2.TabIndex = 0
@@ -60,7 +60,7 @@ Partial Class AddBorrowerForm
         '
         'id1
         '
-        Me.id1.Location = New System.Drawing.Point(120, 65)
+        Me.id1.Location = New System.Drawing.Point(120, 78)
         Me.id1.Name = "id1"
         Me.id1.Size = New System.Drawing.Size(279, 22)
         Me.id1.TabIndex = 1
@@ -68,7 +68,7 @@ Partial Class AddBorrowerForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(63, 40)
+        Me.Label1.Location = New System.Drawing.Point(63, 37)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 17)
         Me.Label1.TabIndex = 2
@@ -77,7 +77,7 @@ Partial Class AddBorrowerForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(33, 70)
+        Me.Label2.Location = New System.Drawing.Point(33, 83)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(79, 17)
         Me.Label2.TabIndex = 2
@@ -87,7 +87,7 @@ Partial Class AddBorrowerForm
         '
         Me.qrbox1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.qrbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.qrbox1.Location = New System.Drawing.Point(154, 104)
+        Me.qrbox1.Location = New System.Drawing.Point(144, 136)
         Me.qrbox1.Name = "qrbox1"
         Me.qrbox1.Size = New System.Drawing.Size(200, 200)
         Me.qrbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -96,7 +96,7 @@ Partial Class AddBorrowerForm
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(189, 321)
+        Me.Button4.Location = New System.Drawing.Point(179, 353)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(117, 24)
         Me.Button4.TabIndex = 4
@@ -107,7 +107,7 @@ Partial Class AddBorrowerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(498, 446)
+        Me.ClientSize = New System.Drawing.Size(498, 474)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.qrbox1)
         Me.Controls.Add(Me.Label2)

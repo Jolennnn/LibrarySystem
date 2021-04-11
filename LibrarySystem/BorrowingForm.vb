@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class BorrowingForm
     Private Sub BorrowingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Module1.LoadBorrow(BooksBorrowedForm.DataGridView1)
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
@@ -14,18 +14,20 @@ Public Class BorrowingForm
 
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
         Dim bookIDnum As Integer
-        Int32.tryparse(bookID.Text, bookIDnum)
+        bookIDnum = Integer.Parse(bookID.Text)
 
-        Dim query As String = "INSERT INTO [dbo].[BookBorrow] ([Book_BookId], [Student_IdStudent]) VALUES(@bookid, @borrowerid)"
+        Dim query As String = "INSERT INTO [dbo].[BookBorrow] ([Book_BookId], [Student_IdStudent], [date_borrowed]) VALUES(@bookid, @borrowerid, @datetime)"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@bookid", bookIDnum)
                 cmd.Parameters.AddWithValue("@borrowerid", borrowerID.Text)
+                cmd.Parameters.AddWithValue("@datetime", DateTime.Now)
                 con.Open()
                 cmd.ExecuteNonQuery()
                 con.Close()
                 MessageBox.Show("Sucessfully logged.")
-                Module1.BindData(InventoryForm.DataGridView1)
+                Module1.LoadBorrow(BooksBorrowedForm.DataGridView1)
+                Me.Close()
             End Using
         End Using
     End Sub

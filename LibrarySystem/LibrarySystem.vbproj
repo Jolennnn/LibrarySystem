@@ -192,6 +192,18 @@
     <Compile Include="BorrowerScanner.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReturnForm.Designer.vb">
+      <DependentUpon>ReturnForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnScanner.Designer.vb">
+      <DependentUpon>ReturnScanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnScanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddBookForm.resx">
@@ -235,6 +247,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowerScanner.resx">
       <DependentUpon>BorrowerScanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnForm.resx">
+      <DependentUpon>ReturnForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnScanner.resx">
+      <DependentUpon>ReturnScanner.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

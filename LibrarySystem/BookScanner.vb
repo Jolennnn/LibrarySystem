@@ -18,6 +18,7 @@ Public Class BookScanner
 
         'write QR
         BorrowingForm.BookQRimg.Image = writer.Write(TextBox1.Text)
+        BorrowingForm.bookID.Text = TextBox1.Text
 
         Me.Close()
     End Sub
