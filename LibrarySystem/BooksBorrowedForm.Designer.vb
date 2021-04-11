@@ -47,7 +47,7 @@ Partial Class BooksBorrowedForm
         'btnBorrowBook
         '
         Me.btnBorrowBook.Location = New System.Drawing.Point(880, 226)
-        Me.btnBorrowBook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBorrowBook.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBorrowBook.Name = "btnBorrowBook"
         Me.btnBorrowBook.Size = New System.Drawing.Size(164, 73)
         Me.btnBorrowBook.TabIndex = 2
@@ -57,7 +57,7 @@ Partial Class BooksBorrowedForm
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(89, 194)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(683, 22)
         Me.TextBox1.TabIndex = 3
@@ -66,7 +66,7 @@ Partial Class BooksBorrowedForm
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(16, 226)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(843, 528)
@@ -75,7 +75,7 @@ Partial Class BooksBorrowedForm
         'btnDone
         '
         Me.btnDone.Location = New System.Drawing.Point(885, 716)
-        Me.btnDone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnDone.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(164, 38)
         Me.btnDone.TabIndex = 2
@@ -105,7 +105,7 @@ Partial Class BooksBorrowedForm
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(37, 16)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(92, 75)
         Me.PictureBox1.TabIndex = 5
@@ -114,7 +114,7 @@ Partial Class BooksBorrowedForm
         'btnReturnBook
         '
         Me.btnReturnBook.Location = New System.Drawing.Point(1065, 226)
-        Me.btnReturnBook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnReturnBook.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReturnBook.Name = "btnReturnBook"
         Me.btnReturnBook.Size = New System.Drawing.Size(164, 73)
         Me.btnReturnBook.TabIndex = 2
@@ -124,7 +124,7 @@ Partial Class BooksBorrowedForm
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(13, 34)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(164, 73)
         Me.Button1.TabIndex = 2
@@ -155,7 +155,7 @@ Partial Class BooksBorrowedForm
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(880, 320)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(164, 73)
         Me.Button2.TabIndex = 2
@@ -169,9 +169,9 @@ Partial Class BooksBorrowedForm
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Location = New System.Drawing.Point(867, 462)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(379, 235)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
@@ -180,7 +180,7 @@ Partial Class BooksBorrowedForm
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(199, 134)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(164, 73)
         Me.Button5.TabIndex = 2
@@ -190,7 +190,7 @@ Partial Class BooksBorrowedForm
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(13, 134)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(164, 73)
         Me.Button6.TabIndex = 2
@@ -200,7 +200,7 @@ Partial Class BooksBorrowedForm
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(199, 34)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(164, 73)
         Me.Button4.TabIndex = 2
@@ -210,7 +210,7 @@ Partial Class BooksBorrowedForm
         'Button7
         '
         Me.Button7.Location = New System.Drawing.Point(1065, 320)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(164, 73)
         Me.Button7.TabIndex = 2
@@ -235,7 +235,7 @@ Partial Class BooksBorrowedForm
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnReturnBook)
         Me.Controls.Add(Me.btnBorrowBook)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "BooksBorrowedForm"
         Me.Text = "Book Borrowing"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
