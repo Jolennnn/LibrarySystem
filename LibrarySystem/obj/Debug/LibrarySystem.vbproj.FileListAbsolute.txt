@@ -70,3 +70,13 @@ C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BookScanner.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerScanner.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.dll
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.dll
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.xml
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.xml
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBorrowerForm.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BookScanner.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerScanner.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnForm.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnScanner.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete
