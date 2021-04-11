@@ -28,5 +28,19 @@
         LMSLabel.BackColor = Color.Transparent
         PictureBox2.BackColor = Color.Transparent
     End Sub
+
+    Private Sub SummaryReportButton_Click(sender As Object, e As EventArgs) Handles SummaryReportButton.Click
+
+    End Sub
+
+    Private Sub ReservationsButton_Click(sender As Object, e As EventArgs) Handles ReservationsButton.Click
+        Me.Hide()
+        ReservationsForm.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.Hide()
+        LogsForm.Show()
+    End Sub
 End Class
 

@@ -22,10 +22,10 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.UsernameBox = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PasswordBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.FLMSLabel = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -35,12 +35,12 @@ Partial Class LoginForm
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'UsernameBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(408, 242)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.UsernameBox.Location = New System.Drawing.Point(408, 242)
+        Me.UsernameBox.Name = "UsernameBox"
+        Me.UsernameBox.Size = New System.Drawing.Size(100, 20)
+        Me.UsernameBox.TabIndex = 0
         '
         'PictureBox1
         '
@@ -62,13 +62,13 @@ Partial Class LoginForm
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Username"
         '
-        'TextBox2
+        'PasswordBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(408, 268)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 0
+        Me.PasswordBox.Location = New System.Drawing.Point(408, 268)
+        Me.PasswordBox.Name = "PasswordBox"
+        Me.PasswordBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.PasswordBox.Size = New System.Drawing.Size(100, 20)
+        Me.PasswordBox.TabIndex = 0
         '
         'Label2
         '
@@ -131,8 +131,8 @@ Partial Class LoginForm
         Me.Controls.Add(Me.FLMSLabel)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.PasswordBox)
+        Me.Controls.Add(Me.UsernameBox)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "LoginForm"
         Me.Text = "LoginForm"
@@ -143,10 +143,10 @@ Partial Class LoginForm
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents UsernameBox As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents PasswordBox As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents FLMSLabel As Label
     Friend WithEvents PictureBox2 As PictureBox
