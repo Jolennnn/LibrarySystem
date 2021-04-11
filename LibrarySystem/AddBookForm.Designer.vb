@@ -22,6 +22,7 @@ Partial Class AddBookForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.titleBox = New System.Windows.Forms.TextBox()
         Me.authorBox = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class AddBookForm
         Me.Label5 = New System.Windows.Forms.Label()
         Me.shelfBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.categoryBox = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
@@ -42,6 +42,7 @@ Partial Class AddBookForm
         Me.BackBtn = New System.Windows.Forms.Button()
         Me.BookDataSet1 = New LibrarySystem.BookDataSet()
         Me.BookTableAdapter1 = New LibrarySystem.BookDataSetTableAdapters.BookTableAdapter()
+        Me.categoryBox = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,13 +137,6 @@ Partial Class AddBookForm
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Category"
         '
-        'categoryBox
-        '
-        Me.categoryBox.Location = New System.Drawing.Point(161, 184)
-        Me.categoryBox.Name = "categoryBox"
-        Me.categoryBox.Size = New System.Drawing.Size(100, 20)
-        Me.categoryBox.TabIndex = 1
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -202,11 +196,21 @@ Partial Class AddBookForm
         '
         Me.BookTableAdapter1.ClearBeforeFill = True
         '
+        'categoryBox
+        '
+        Me.categoryBox.FormattingEnabled = True
+        Me.categoryBox.Location = New System.Drawing.Point(161, 184)
+        Me.categoryBox.Name = "categoryBox"
+        Me.categoryBox.Size = New System.Drawing.Size(100, 21)
+        Me.categoryBox.TabIndex = 7
+        '
+        '
         'AddBookForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(614, 323)
+        Me.Controls.Add(Me.categoryBox)
         Me.Controls.Add(Me.BackBtn)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button2)
@@ -216,7 +220,6 @@ Partial Class AddBookForm
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.categoryBox)
         Me.Controls.Add(Me.shelfBox)
         Me.Controls.Add(Me.yrBox)
         Me.Controls.Add(Me.isbnBox)
@@ -245,7 +248,6 @@ Partial Class AddBookForm
     Friend WithEvents Label5 As Label
     Friend WithEvents shelfBox As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents categoryBox As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
@@ -254,4 +256,5 @@ Partial Class AddBookForm
     Friend WithEvents BackBtn As Button
     Friend WithEvents BookDataSet1 As BookDataSet
     Friend WithEvents BookTableAdapter1 As BookDataSetTableAdapters.BookTableAdapter
+    Friend WithEvents categoryBox As ComboBox
 End Class
