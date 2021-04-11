@@ -52,119 +52,99 @@ Partial Class AddBookForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(201, 323)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(151, 262)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 52)
+        Me.Button1.Size = New System.Drawing.Size(124, 42)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Add book"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'titleBox
         '
-        Me.titleBox.Location = New System.Drawing.Point(215, 68)
-        Me.titleBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.titleBox.Location = New System.Drawing.Point(161, 55)
         Me.titleBox.Name = "titleBox"
-        Me.titleBox.Size = New System.Drawing.Size(132, 22)
+        Me.titleBox.Size = New System.Drawing.Size(100, 20)
         Me.titleBox.TabIndex = 1
         '
         'authorBox
         '
-        Me.authorBox.Location = New System.Drawing.Point(215, 98)
-        Me.authorBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.authorBox.Location = New System.Drawing.Point(161, 80)
         Me.authorBox.Name = "authorBox"
-        Me.authorBox.Size = New System.Drawing.Size(132, 22)
+        Me.authorBox.Size = New System.Drawing.Size(100, 20)
         Me.authorBox.TabIndex = 1
         '
         'isbnBox
         '
-        Me.isbnBox.Location = New System.Drawing.Point(215, 130)
-        Me.isbnBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.isbnBox.Location = New System.Drawing.Point(161, 106)
         Me.isbnBox.Name = "isbnBox"
-        Me.isbnBox.Size = New System.Drawing.Size(132, 22)
+        Me.isbnBox.Size = New System.Drawing.Size(100, 20)
         Me.isbnBox.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(73, 71)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(55, 58)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 17)
+        Me.Label1.Size = New System.Drawing.Size(55, 13)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Book Title"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(73, 134)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(55, 109)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 17)
+        Me.Label3.Size = New System.Drawing.Size(32, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "ISBN"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(73, 166)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(55, 135)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 17)
+        Me.Label4.Size = New System.Drawing.Size(78, 13)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Year Published"
         '
         'yrBox
         '
-        Me.yrBox.Location = New System.Drawing.Point(215, 162)
-        Me.yrBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.yrBox.Location = New System.Drawing.Point(161, 132)
         Me.yrBox.Name = "yrBox"
-        Me.yrBox.Size = New System.Drawing.Size(132, 22)
+        Me.yrBox.Size = New System.Drawing.Size(100, 20)
         Me.yrBox.TabIndex = 1
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(73, 198)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(55, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(94, 17)
+        Me.Label5.Size = New System.Drawing.Size(71, 13)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Shelf Number"
         '
         'shelfBox
         '
-        Me.shelfBox.Location = New System.Drawing.Point(215, 194)
-        Me.shelfBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.shelfBox.Location = New System.Drawing.Point(161, 158)
         Me.shelfBox.Name = "shelfBox"
-        Me.shelfBox.Size = New System.Drawing.Size(132, 22)
+        Me.shelfBox.Size = New System.Drawing.Size(100, 20)
         Me.shelfBox.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(73, 230)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(55, 187)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 17)
+        Me.Label6.Size = New System.Drawing.Size(49, 13)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Category"
-        '
-        'categoryBox
-        '
-        Me.categoryBox.Location = New System.Drawing.Point(215, 226)
-        Me.categoryBox.Margin = New System.Windows.Forms.Padding(4)
-        Me.categoryBox.Name = "categoryBox"
-        Me.categoryBox.Size = New System.Drawing.Size(132, 22)
-        Me.categoryBox.TabIndex = 1
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(73, 102)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(55, 83)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(50, 17)
+        Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "Author"
         '
@@ -173,9 +153,8 @@ Partial Class AddBookForm
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1065, 398)
+        Me.PictureBox1.Size = New System.Drawing.Size(799, 323)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -186,29 +165,26 @@ Partial Class AddBookForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(844, 271)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Location = New System.Drawing.Point(633, 220)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 28)
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Add photo"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(755, 46)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Location = New System.Drawing.Point(566, 37)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(271, 217)
+        Me.PictureBox2.Size = New System.Drawing.Size(203, 176)
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
         '
         'BackBtn
         '
-        Me.BackBtn.Location = New System.Drawing.Point(24, 15)
-        Me.BackBtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.BackBtn.Location = New System.Drawing.Point(18, 12)
         Me.BackBtn.Name = "BackBtn"
-        Me.BackBtn.Size = New System.Drawing.Size(100, 28)
+        Me.BackBtn.Size = New System.Drawing.Size(75, 23)
         Me.BackBtn.TabIndex = 6
         Me.BackBtn.Text = "Back"
         Me.BackBtn.UseVisualStyleBackColor = True
@@ -224,22 +200,21 @@ Partial Class AddBookForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(548, 271)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Location = New System.Drawing.Point(411, 220)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 28)
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "GenerateQR"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'QRbox1
         '
-        Me.QRbox1.Location = New System.Drawing.Point(467, 46)
-        Me.QRbox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.QRbox1.Location = New System.Drawing.Point(350, 37)
         Me.QRbox1.Name = "QRbox1"
-        Me.QRbox1.Size = New System.Drawing.Size(271, 217)
+        Me.QRbox1.Size = New System.Drawing.Size(203, 176)
         Me.QRbox1.TabIndex = 5
         Me.QRbox1.TabStop = False
+        '
         'categoryBox
         '
         Me.categoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -251,10 +226,9 @@ Partial Class AddBookForm
         '
         'AddBookForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1065, 398)
-        Me.ClientSize = New System.Drawing.Size(614, 323)
+        Me.ClientSize = New System.Drawing.Size(799, 323)
         Me.Controls.Add(Me.categoryBox)
         Me.Controls.Add(Me.BackBtn)
         Me.Controls.Add(Me.QRbox1)
@@ -274,7 +248,6 @@ Partial Class AddBookForm
         Me.Controls.Add(Me.titleBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "AddBookForm"
         Me.Text = "AddBookForm"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

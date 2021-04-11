@@ -70,3 +70,11 @@ C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BookScanner.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBorrowerForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BookScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.dll
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.dll
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete
