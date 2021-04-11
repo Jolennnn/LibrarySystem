@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub BtnScanBook_Click(sender As Object, e As EventArgs) Handles BtnScanBook.Click
-
+        BookScanner.ShowDialog()
     End Sub
 
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
@@ -16,6 +16,6 @@
     End Sub
 
     Private Sub btnScanBorrower_Click(sender As Object, e As EventArgs) Handles btnScanBorrower.Click
-        BorrowerReader.ShowDialog()
+        BorrowerScanner.ShowDialog()
     End Sub
 End Class

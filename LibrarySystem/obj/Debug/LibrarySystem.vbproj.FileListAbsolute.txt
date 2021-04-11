@@ -68,4 +68,5 @@ C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.xml
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.xml
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBorrowerForm.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete
-C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerReader.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BookScanner.resources
+C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerScanner.resources

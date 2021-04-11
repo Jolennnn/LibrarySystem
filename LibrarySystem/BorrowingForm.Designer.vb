@@ -40,16 +40,19 @@ Partial Class BorrowingForm
         Me.Label14 = New System.Windows.Forms.Label()
         Me.borrowerName = New System.Windows.Forms.Label()
         Me.borrowerID = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.BookQRimg, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BorrowerQRimg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BookQRimg
         '
+        Me.BookQRimg.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BookQRimg.Location = New System.Drawing.Point(665, 124)
         Me.BookQRimg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BookQRimg.Name = "BookQRimg"
         Me.BookQRimg.Size = New System.Drawing.Size(289, 240)
+        Me.BookQRimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.BookQRimg.TabIndex = 0
         Me.BookQRimg.TabStop = False
         '
@@ -147,62 +150,62 @@ Partial Class BorrowingForm
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(661, 450)
+        Me.Label9.Location = New System.Drawing.Point(680, 483)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(69, 17)
+        Me.Label9.Size = New System.Drawing.Size(39, 17)
         Me.Label9.TabIndex = 4
-        Me.Label9.Text = "Borrower:"
+        Me.Label9.Text = "Title:"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(661, 482)
+        Me.Label10.Location = New System.Drawing.Point(665, 509)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(69, 17)
+        Me.Label10.Size = New System.Drawing.Size(54, 17)
         Me.Label10.TabIndex = 4
-        Me.Label10.Text = "Borrower:"
+        Me.Label10.Text = "Author:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(661, 518)
+        Me.Label11.Location = New System.Drawing.Point(676, 536)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(69, 17)
+        Me.Label11.Size = New System.Drawing.Size(43, 17)
         Me.Label11.TabIndex = 4
-        Me.Label11.Text = "Borrower:"
+        Me.Label11.Text = "ISBN:"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(661, 553)
+        Me.Label12.Location = New System.Drawing.Point(662, 456)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(69, 17)
+        Me.Label12.Size = New System.Drawing.Size(57, 17)
         Me.Label12.TabIndex = 4
-        Me.Label12.Text = "Borrower:"
+        Me.Label12.Text = "BookID:"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(661, 587)
+        Me.Label13.Location = New System.Drawing.Point(611, 563)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(69, 17)
+        Me.Label13.Size = New System.Drawing.Size(108, 17)
         Me.Label13.TabIndex = 4
-        Me.Label13.Text = "Borrower:"
+        Me.Label13.Text = "Year Published:"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(661, 625)
+        Me.Label14.Location = New System.Drawing.Point(675, 585)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(69, 17)
+        Me.Label14.Size = New System.Drawing.Size(44, 17)
         Me.Label14.TabIndex = 4
-        Me.Label14.Text = "Borrower:"
+        Me.Label14.Text = "Shelf:"
         '
         'borrowerName
         '
@@ -222,6 +225,16 @@ Partial Class BorrowingForm
         Me.borrowerID.TabIndex = 5
         Me.borrowerID.Text = " "
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(650, 611)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(69, 17)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Category:"
+        '
         'BorrowingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -229,6 +242,7 @@ Partial Class BorrowingForm
         Me.ClientSize = New System.Drawing.Size(1027, 662)
         Me.Controls.Add(Me.borrowerID)
         Me.Controls.Add(Me.borrowerName)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
@@ -273,4 +287,5 @@ Partial Class BorrowingForm
     Friend WithEvents Label14 As Label
     Friend WithEvents borrowerName As Label
     Friend WithEvents borrowerID As Label
+    Friend WithEvents Label5 As Label
 End Class

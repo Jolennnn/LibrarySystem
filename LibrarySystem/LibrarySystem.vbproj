@@ -120,6 +120,12 @@
     <Compile Include="BooksBorrowedForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BookScanner.Designer.vb">
+      <DependentUpon>BookScanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookScanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BorrowingForm.Designer.vb">
       <DependentUpon>BorrowingForm.vb</DependentUpon>
     </Compile>
@@ -180,10 +186,10 @@
     <Compile Include="ReservationsForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BorrowerReader.Designer.vb">
-      <DependentUpon>BorrowerReader.vb</DependentUpon>
+    <Compile Include="BorrowerScanner.Designer.vb">
+      <DependentUpon>BorrowerScanner.vb</DependentUpon>
     </Compile>
-    <Compile Include="BorrowerReader.vb">
+    <Compile Include="BorrowerScanner.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BooksBorrowedForm.resx">
       <DependentUpon>BooksBorrowedForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookScanner.resx">
+      <DependentUpon>BookScanner.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowingForm.resx">
       <DependentUpon>BorrowingForm.vb</DependentUpon>
@@ -224,8 +233,8 @@
     <EmbeddedResource Include="ReservationsForm.resx">
       <DependentUpon>ReservationsForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BorrowerReader.resx">
-      <DependentUpon>BorrowerReader.vb</DependentUpon>
+    <EmbeddedResource Include="BorrowerScanner.resx">
+      <DependentUpon>BorrowerScanner.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
