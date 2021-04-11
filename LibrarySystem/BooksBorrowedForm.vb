@@ -7,4 +7,12 @@
         MainForm.Show()
         Me.Close()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        AddBorrowerForm.ShowDialog()
+    End Sub
+
+    Private Sub BooksBorrowedForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadBorrow(DataGridView1)
+    End Sub
 End Class
