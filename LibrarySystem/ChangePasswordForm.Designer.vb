@@ -24,7 +24,7 @@ Partial Class ChangePasswordForm
     Private Sub InitializeComponent()
         Me.oldpassBox = New System.Windows.Forms.TextBox()
         Me.newpassBox = New System.Windows.Forms.TextBox()
-        Me.newpassconfirmBox = New System.Windows.Forms.TextBox()
+        Me.confirmBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -33,29 +33,29 @@ Partial Class ChangePasswordForm
         '
         'oldpassBox
         '
-        Me.oldpassBox.Location = New System.Drawing.Point(212, 89)
+        Me.oldpassBox.Location = New System.Drawing.Point(265, 83)
         Me.oldpassBox.Name = "oldpassBox"
         Me.oldpassBox.Size = New System.Drawing.Size(100, 20)
         Me.oldpassBox.TabIndex = 0
         '
         'newpassBox
         '
-        Me.newpassBox.Location = New System.Drawing.Point(212, 115)
+        Me.newpassBox.Location = New System.Drawing.Point(265, 109)
         Me.newpassBox.Name = "newpassBox"
         Me.newpassBox.Size = New System.Drawing.Size(100, 20)
         Me.newpassBox.TabIndex = 1
         '
-        'newpassconfirmBox
+        'confirmBox
         '
-        Me.newpassconfirmBox.Location = New System.Drawing.Point(212, 141)
-        Me.newpassconfirmBox.Name = "newpassconfirmBox"
-        Me.newpassconfirmBox.Size = New System.Drawing.Size(100, 20)
-        Me.newpassconfirmBox.TabIndex = 2
+        Me.confirmBox.Location = New System.Drawing.Point(265, 135)
+        Me.confirmBox.Name = "confirmBox"
+        Me.confirmBox.Size = New System.Drawing.Size(100, 20)
+        Me.confirmBox.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(86, 92)
+        Me.Label1.Location = New System.Drawing.Point(146, 86)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(72, 13)
         Me.Label1.TabIndex = 3
@@ -64,7 +64,7 @@ Partial Class ChangePasswordForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(86, 118)
+        Me.Label2.Location = New System.Drawing.Point(146, 112)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 13)
         Me.Label2.TabIndex = 4
@@ -73,7 +73,7 @@ Partial Class ChangePasswordForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(86, 144)
+        Me.Label3.Location = New System.Drawing.Point(146, 138)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(116, 13)
         Me.Label3.TabIndex = 5
@@ -81,7 +81,7 @@ Partial Class ChangePasswordForm
         '
         'changeBtn
         '
-        Me.changeBtn.Location = New System.Drawing.Point(212, 167)
+        Me.changeBtn.Location = New System.Drawing.Point(265, 161)
         Me.changeBtn.Name = "changeBtn"
         Me.changeBtn.Size = New System.Drawing.Size(100, 23)
         Me.changeBtn.TabIndex = 6
@@ -97,7 +97,7 @@ Partial Class ChangePasswordForm
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.newpassconfirmBox)
+        Me.Controls.Add(Me.confirmBox)
         Me.Controls.Add(Me.newpassBox)
         Me.Controls.Add(Me.oldpassBox)
         Me.Name = "ChangePasswordForm"
@@ -109,7 +109,7 @@ Partial Class ChangePasswordForm
 
     Friend WithEvents oldpassBox As TextBox
     Friend WithEvents newpassBox As TextBox
-    Friend WithEvents newpassconfirmBox As TextBox
+    Friend WithEvents confirmBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
