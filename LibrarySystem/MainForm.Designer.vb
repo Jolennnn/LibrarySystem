@@ -48,7 +48,7 @@ Partial Class MainForm
         Me.BooksBorrowedButton.Location = New System.Drawing.Point(-5, 192)
         Me.BooksBorrowedButton.Name = "BooksBorrowedButton"
         Me.BooksBorrowedButton.Size = New System.Drawing.Size(174, 72)
-        Me.BooksBorrowedButton.TabIndex = 0
+        Me.BooksBorrowedButton.TabIndex = 1
         Me.BooksBorrowedButton.Text = "Books Borrowed"
         Me.BooksBorrowedButton.UseVisualStyleBackColor = True
         '
@@ -59,7 +59,7 @@ Partial Class MainForm
         Me.ReservationsButton.Location = New System.Drawing.Point(-5, 270)
         Me.ReservationsButton.Name = "ReservationsButton"
         Me.ReservationsButton.Size = New System.Drawing.Size(174, 70)
-        Me.ReservationsButton.TabIndex = 0
+        Me.ReservationsButton.TabIndex = 2
         Me.ReservationsButton.Text = "Reservations"
         Me.ReservationsButton.UseVisualStyleBackColor = True
         '
@@ -70,7 +70,7 @@ Partial Class MainForm
         Me.Button4.Location = New System.Drawing.Point(-5, 346)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(174, 72)
-        Me.Button4.TabIndex = 0
+        Me.Button4.TabIndex = 3
         Me.Button4.Text = "Inventory"
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -78,10 +78,10 @@ Partial Class MainForm
         '
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(0, 424)
+        Me.Button5.Location = New System.Drawing.Point(-5, 424)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(169, 72)
-        Me.Button5.TabIndex = 0
+        Me.Button5.Size = New System.Drawing.Size(174, 72)
+        Me.Button5.TabIndex = 4
         Me.Button5.Text = "Logs"
         Me.Button5.UseVisualStyleBackColor = True
         '

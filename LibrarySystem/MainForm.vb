@@ -27,6 +27,8 @@
         FLMSLabel.BackColor = Color.Transparent
         LMSLabel.BackColor = Color.Transparent
         PictureBox2.BackColor = Color.Transparent
+        Label1.Parent = PictureBox1
+        Label1.BackColor = Color.Transparent
     End Sub
 
     Private Sub SummaryReportButton_Click(sender As Object, e As EventArgs)
@@ -44,7 +46,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        BorrowingForm.ShowDialog()
+        AddBookForm.Show()
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
