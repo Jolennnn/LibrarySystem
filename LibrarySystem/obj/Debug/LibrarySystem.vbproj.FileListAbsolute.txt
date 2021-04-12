@@ -115,3 +115,15 @@ C:\Users\hanni\OneDrive\Documents\GitHub\LibrarySystem\LibrarySystem\obj\Debug\L
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnForm.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnScanner.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FinesConfirmationForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.dll
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.dll
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBorrowerForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BookScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.EditBorrowerForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FinesConfirmationForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete

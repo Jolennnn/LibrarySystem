@@ -1,4 +1,6 @@
-﻿Public Class LoginForm
+﻿Imports System.Data.SqlClient
+
+Public Class LoginForm
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FLMSLabel.Parent = PictureBox1
         LMSLabel.Parent = PictureBox1
@@ -13,11 +15,27 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If UsernameBox.Text = "library" And PasswordBox.Text = "admin" Then
-            Me.Hide()
-            MainForm.Show()
-        Else
-            MsgBox("Username and password does not match.")
-        End If
+        Dim query As String = "SELECT * FROM LoginTable WHERE id = 0"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                con.Open()
+                Using reader = cmd.ExecuteReader()
+                    cmd.Connection = con
+                    Dim user As String = ""
+                    Dim pass As String = ""
+                    While reader.Read()
+                        user = reader.GetString(1)
+                        pass = reader.GetString(2)
+                    End While
+                    If UsernameBox.Text = user And PasswordBox.Text = pass Then
+                        Me.Hide()
+                        MainForm.Show()
+                    Else
+                        MsgBox("Incorrect username and/or password.")
+                    End If
+                End Using
+                con.Close()
+            End Using
+        End Using
     End Sub
 End Class
