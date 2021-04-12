@@ -29,7 +29,7 @@
         PictureBox2.BackColor = Color.Transparent
     End Sub
 
-    Private Sub SummaryReportButton_Click(sender As Object, e As EventArgs) Handles SummaryReportButton.Click
+    Private Sub SummaryReportButton_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -41,6 +41,22 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Me.Hide()
         LogsForm.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        BorrowingForm.ShowDialog()
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        AddBorrowerForm.ShowDialog()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        BorrowingForm.ShowDialog()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        MsgBox("Functionality to be added")
     End Sub
 End Class
 

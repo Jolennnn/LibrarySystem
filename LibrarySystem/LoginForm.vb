@@ -13,11 +13,12 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If UsernameBox.Text = "library" And PasswordBox.Text = "admin" Then
-            Me.Hide()
-            MainForm.Show()
-        Else
-            MsgBox("Username and password does not match.")
-        End If
+        'If UsernameBox.Text = "library" And PasswordBox.Text = "admin" Then
+        Me.Hide()
+        MainForm.Show()
+        MsgBox("Username and password to be edited")
+        'Else
+        'MsgBox("Username and password does not match.")
+        'End If
     End Sub
 End Class

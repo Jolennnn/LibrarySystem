@@ -1,5 +1,5 @@
 ﻿Public Class InventoryForm
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles AddBookBtn.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles AddBookBtn.Click, Button1.Click
         AddBookForm.Show()
         Me.Hide()
     End Sub
