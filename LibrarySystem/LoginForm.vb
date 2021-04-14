@@ -14,14 +14,12 @@ Public Class LoginForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'need to wrap input to prevent sql injection, thanks
-
         'query login table
         Dim query2 As String = "SELECT * FROM [dbo].[LoginTable] WHERE Username=@id AND Password=@pass"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query2, con)
-                cmd.Parameters.AddWithValue("@id", UsernameBox.Text) 'PLEASE CHANGE AFTER
-                cmd.Parameters.AddWithValue("@pass", PasswordBox.Text) 'PLEASE CHANGE AFTER
+                cmd.Parameters.AddWithValue("@id", UsernameBox.Text)
+                cmd.Parameters.AddWithValue("@pass", PasswordBox.Text)
                 con.Open()
                 Dim ds As SqlDataReader = cmd.ExecuteReader()
                 If ds.Read() Then
