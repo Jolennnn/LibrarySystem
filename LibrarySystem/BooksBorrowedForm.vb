@@ -51,4 +51,9 @@
         datacell = DataGridView1.Item(0, i).Value
         EditBorrowerForm.ShowDialog()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Button6.Enabled = False
+        LoadOverdue(DataGridView1)
+    End Sub
 End Class

@@ -50,7 +50,7 @@ Public Class EditBorrowerForm
         If result = DialogResult.No Then
             MessageBox.Show("Changes unsaved.")
         ElseIf result = DialogResult.Yes Then
-            'query add borrower
+            'query update borrower
             Dim query2 As String = "UPDATE [dbo].[Student] SET [Name]=@name, [Fines]=@fines WHERE idStudent=@id"
             Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As SqlCommand = New SqlCommand(query2, con)
