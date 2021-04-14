@@ -46,7 +46,7 @@ Partial Class ReturnForm
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(71, 24)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(116, 117)
         Me.PictureBox1.TabIndex = 0
@@ -57,7 +57,7 @@ Partial Class ReturnForm
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(80, 154)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 33)
         Me.Button1.TabIndex = 1
@@ -67,20 +67,22 @@ Partial Class ReturnForm
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(57, 220)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.Size = New System.Drawing.Size(52, 14)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Borrower:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 256)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(27, 256)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 13)
+        Me.Label2.Size = New System.Drawing.Size(82, 14)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Book Borrowed:"
         '
@@ -89,7 +91,7 @@ Partial Class ReturnForm
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(29, 349)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 45)
         Me.Button2.TabIndex = 3
@@ -99,20 +101,22 @@ Partial Class ReturnForm
         'idlbl
         '
         Me.idlbl.AutoSize = True
+        Me.idlbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.idlbl.Location = New System.Drawing.Point(113, 204)
         Me.idlbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.idlbl.Name = "idlbl"
-        Me.idlbl.Size = New System.Drawing.Size(15, 13)
+        Me.idlbl.Size = New System.Drawing.Size(16, 14)
         Me.idlbl.TabIndex = 2
         Me.idlbl.Text = "id"
         '
         'booklbl
         '
         Me.booklbl.AutoSize = True
+        Me.booklbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.booklbl.Location = New System.Drawing.Point(113, 256)
         Me.booklbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.booklbl.Name = "booklbl"
-        Me.booklbl.Size = New System.Drawing.Size(31, 13)
+        Me.booklbl.Size = New System.Drawing.Size(31, 14)
         Me.booklbl.TabIndex = 2
         Me.booklbl.Text = "book"
         '
@@ -121,7 +125,7 @@ Partial Class ReturnForm
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(130, 349)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(96, 45)
         Me.Button3.TabIndex = 3
@@ -131,47 +135,51 @@ Partial Class ReturnForm
         'namelbl
         '
         Me.namelbl.AutoSize = True
+        Me.namelbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.namelbl.Location = New System.Drawing.Point(113, 220)
         Me.namelbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.namelbl.Name = "namelbl"
-        Me.namelbl.Size = New System.Drawing.Size(33, 13)
+        Me.namelbl.Size = New System.Drawing.Size(34, 14)
         Me.namelbl.TabIndex = 2
         Me.namelbl.Text = "name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(44, 204)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(66, 13)
+        Me.Label3.Size = New System.Drawing.Size(66, 14)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Borrower ID:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(74, 270)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.Size = New System.Drawing.Size(35, 14)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Fines:"
         '
         'fineslbl
         '
         Me.fineslbl.AutoSize = True
+        Me.fineslbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fineslbl.Location = New System.Drawing.Point(113, 270)
         Me.fineslbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.fineslbl.Name = "fineslbl"
-        Me.fineslbl.Size = New System.Drawing.Size(13, 13)
+        Me.fineslbl.Size = New System.Drawing.Size(13, 14)
         Me.fineslbl.TabIndex = 2
         Me.fineslbl.Text = "0"
         '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(116, 302)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(89, 20)
         Me.TextBox1.TabIndex = 4
@@ -179,30 +187,33 @@ Partial Class ReturnForm
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(57, 305)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 13)
+        Me.Label5.Size = New System.Drawing.Size(52, 14)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Remarks:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(28, 242)
+        Me.Label6.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(61, 242)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(49, 13)
+        Me.Label6.Size = New System.Drawing.Size(46, 14)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Book ID:"
         '
         'bookidlbl
         '
         Me.bookidlbl.AutoSize = True
+        Me.bookidlbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bookidlbl.Location = New System.Drawing.Point(113, 242)
         Me.bookidlbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.bookidlbl.Name = "bookidlbl"
-        Me.bookidlbl.Size = New System.Drawing.Size(48, 13)
+        Me.bookidlbl.Size = New System.Drawing.Size(46, 14)
         Me.bookidlbl.TabIndex = 2
         Me.bookidlbl.Text = "book_ID"
         '
@@ -239,7 +250,7 @@ Partial Class ReturnForm
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ReturnForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "w"

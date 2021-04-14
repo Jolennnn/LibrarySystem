@@ -22,7 +22,6 @@ C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySyst
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BooksBorrowedForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowingForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.InventoryForm.resources
-C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LogsForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.MainForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Resources.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReservationsForm.resources
@@ -118,3 +117,5 @@ C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.EditBorrowerForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FinesConfirmationForm.resources
 C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.EditBorrowerForm.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.StudentLogForm.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddMaterial.resources

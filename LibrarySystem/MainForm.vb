@@ -28,8 +28,8 @@
         FLMSLabel.BackColor = Color.Transparent
         LMSLabel.BackColor = Color.Transparent
         PictureBox2.BackColor = Color.Transparent
-        Label1.Parent = PictureBox1
-        Label1.BackColor = Color.Transparent
+        GroupBox1.Parent = PictureBox1
+        GroupBox1.BackColor = Color.Transparent
     End Sub
 
     Private Sub SummaryReportButton_Click(sender As Object, e As EventArgs)
@@ -58,11 +58,7 @@
         BorrowingForm.ShowDialog()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
-        MsgBox("Functionality to be added")
-    End Sub
-
-    Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 
     End Sub
 End Class

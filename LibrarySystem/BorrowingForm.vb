@@ -2,10 +2,6 @@
 Public Class BorrowingForm
     Private Sub BorrowingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Module1.LoadBorrow(BooksBorrowedForm.DataGridView1)
-        Label3.Parent = PictureBox1
-        Label3.BackColor = Color.Transparent
-        Label2.Parent = PictureBox1
-        Label2.BackColor = Color.Transparent
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
