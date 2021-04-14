@@ -29,7 +29,7 @@ Public Class AddBorrowerForm
         'query add borrower
         Dim idnum As Integer
         Int32.TryParse(id1.Text, idnum)
-        Dim query As String = "INSERT INTO [dbo].[Student] ([idStudent], [Name]) VALUES(@id, @name)"
+        Dim query As String = "INSERT INTO [dbo].[Student] ([idStudent], [Name], [Fines]) VALUES(@id, @name, 0)"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@id", idnum)
@@ -38,7 +38,7 @@ Public Class AddBorrowerForm
                 con.Open()
                 cmd.ExecuteNonQuery()
                 con.Close()
-                MessageBox.Show("Successfully added!")
+                MessageBox.Show("Successfully added. QR codes can be found in MyPictures folder.")
                 Module1.BindData(InventoryForm.DataGridView1)
             End Using
         End Using
@@ -53,7 +53,6 @@ Public Class AddBorrowerForm
 
         qrbox1.Image.Save(savefile, System.Drawing.Imaging.ImageFormat.Png)
 
-        MessageBox.Show("User Added Successfully")
         Me.Close()
 
     End Sub

@@ -163,10 +163,10 @@
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogsForm.Designer.vb">
-      <DependentUpon>LogsForm.vb</DependentUpon>
+    <Compile Include="StudentLogForm.Designer.vb">
+      <DependentUpon>StudentLogForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="LogsForm.vb">
+    <Compile Include="StudentLogForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.vb">
@@ -249,8 +249,8 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogsForm.resx">
-      <DependentUpon>LogsForm.vb</DependentUpon>
+    <EmbeddedResource Include="StudentLogForm.resx">
+      <DependentUpon>StudentLogForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>

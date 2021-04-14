@@ -117,3 +117,4 @@ C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FinesConfirmationForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.EditBorrowerForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FinesConfirmationForm.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.EditBorrowerForm.resources
