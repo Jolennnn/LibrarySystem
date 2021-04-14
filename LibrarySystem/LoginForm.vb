@@ -34,4 +34,9 @@ Public Class LoginForm
             End Using
         End Using
     End Sub
+
+    Public Sub clearText()
+        UsernameBox.Clear()
+        PasswordBox.Clear()
+    End Sub
 End Class
