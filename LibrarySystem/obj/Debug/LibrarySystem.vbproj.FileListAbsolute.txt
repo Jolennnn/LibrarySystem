@@ -46,7 +46,6 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BooksBorrowedForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowingForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.InventoryForm.resources
-D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LogsForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.MainForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Resources.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReservationsForm.resources
@@ -119,3 +118,17 @@ C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySyst
 C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.EditBorrowerForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.StudentLogForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddMaterial.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.dll
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.dll
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.xml
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBorrowerForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddMaterial.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BookScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.EditBorrowerForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.FinesConfirmationForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.StudentLogForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowerScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnScanner.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.CopyComplete

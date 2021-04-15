@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class InventoryForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class InventoryForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.BackBtn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,6 +31,7 @@ Partial Class InventoryForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.searchbyBox = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,9 +74,9 @@ Partial Class InventoryForm
         '
         'SearchBar
         '
-        Me.SearchBar.Location = New System.Drawing.Point(13, 80)
+        Me.SearchBar.Location = New System.Drawing.Point(139, 80)
         Me.SearchBar.Name = "SearchBar"
-        Me.SearchBar.Size = New System.Drawing.Size(679, 20)
+        Me.SearchBar.Size = New System.Drawing.Size(553, 20)
         Me.SearchBar.TabIndex = 3
         '
         'AddBookBtn
@@ -113,6 +114,7 @@ Partial Class InventoryForm
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Books", "Materials"})
@@ -132,11 +134,23 @@ Partial Class InventoryForm
         Me.Button1.Text = "Add Material"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'searchbyBox
+        '
+        Me.searchbyBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.searchbyBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.searchbyBox.FormattingEnabled = True
+        Me.searchbyBox.Items.AddRange(New Object() {"Title"})
+        Me.searchbyBox.Location = New System.Drawing.Point(12, 80)
+        Me.searchbyBox.Name = "searchbyBox"
+        Me.searchbyBox.Size = New System.Drawing.Size(121, 21)
+        Me.searchbyBox.TabIndex = 7
+        '
         'InventoryForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(714, 431)
+        Me.Controls.Add(Me.searchbyBox)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
@@ -165,4 +179,5 @@ Partial Class InventoryForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents searchbyBox As ComboBox
 End Class

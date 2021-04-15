@@ -39,7 +39,7 @@ Public Class AddBorrowerForm
                 cmd.ExecuteNonQuery()
                 con.Close()
                 MessageBox.Show("Successfully added. QR codes can be found in MyPictures folder.")
-                Module1.BindData(InventoryForm.DataGridView1)
+                Module1.LoadBookInv(InventoryForm.DataGridView1)
             End Using
         End Using
 
