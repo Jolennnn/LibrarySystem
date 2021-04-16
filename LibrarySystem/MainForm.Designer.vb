@@ -24,7 +24,7 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.BooksBorrowedButton = New System.Windows.Forms.Button()
-        Me.ReservationsButton = New System.Windows.Forms.Button()
+        Me.ReportsButton = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -53,16 +53,16 @@ Partial Class MainForm
         Me.BooksBorrowedButton.Text = "Books Borrowed"
         Me.BooksBorrowedButton.UseVisualStyleBackColor = True
         '
-        'ReservationsButton
+        'ReportsButton
         '
-        Me.ReservationsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ReservationsButton.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ReservationsButton.Location = New System.Drawing.Point(-5, 270)
-        Me.ReservationsButton.Name = "ReservationsButton"
-        Me.ReservationsButton.Size = New System.Drawing.Size(174, 70)
-        Me.ReservationsButton.TabIndex = 2
-        Me.ReservationsButton.Text = "Reservations"
-        Me.ReservationsButton.UseVisualStyleBackColor = True
+        Me.ReportsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ReportsButton.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReportsButton.Location = New System.Drawing.Point(-5, 270)
+        Me.ReportsButton.Name = "ReportsButton"
+        Me.ReportsButton.Size = New System.Drawing.Size(174, 70)
+        Me.ReportsButton.TabIndex = 2
+        Me.ReportsButton.Text = "Reports"
+        Me.ReportsButton.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -221,7 +221,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.ReservationsButton)
+        Me.Controls.Add(Me.ReportsButton)
         Me.Controls.Add(Me.BooksBorrowedButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "MainForm"
@@ -235,7 +235,7 @@ Partial Class MainForm
 
     End Sub
     Friend WithEvents BooksBorrowedButton As Button
-    Friend WithEvents ReservationsButton As Button
+    Friend WithEvents ReportsButton As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button

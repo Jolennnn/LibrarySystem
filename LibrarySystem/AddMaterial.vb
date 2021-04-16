@@ -5,4 +5,5 @@
         Label1.BackColor = Color.Transparent
         Label2.BackColor = Color.Transparent
     End Sub
+
 End Class

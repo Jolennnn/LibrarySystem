@@ -36,9 +36,9 @@
 
     End Sub
 
-    Private Sub ReservationsButton_Click(sender As Object, e As EventArgs) Handles ReservationsButton.Click
+    Private Sub ReservationsButton_Click(sender As Object, e As EventArgs) Handles ReportsButton.Click
         Me.Hide()
-        ReservationsForm.Show()
+        ReportsForm.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
