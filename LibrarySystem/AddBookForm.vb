@@ -16,7 +16,7 @@ Public Class AddBookForm
                 cmd.ExecuteNonQuery()
                 con.Close()
                 MessageBox.Show("Successfully added!")
-                Module1.BindData(InventoryForm.DataGridView1)
+                Module1.LoadBookInv(InventoryForm.DataGridView1)
             End Using
         End Using
     End Sub

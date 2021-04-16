@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Module Module1
-    Sub BindData(table As Object)
+    Sub LoadBookInv(table As Object)
         Dim query As String = "SELECT Book.BookId, Book.Title, Book.Author, Book.ISBN, Book.YrPublish, Book.shelfNo, Category.categoryName FROM Book INNER JOIN Category ON Book.idCategory = Category.idCategory"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query, con)
