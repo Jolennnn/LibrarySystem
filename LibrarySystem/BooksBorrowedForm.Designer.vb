@@ -39,6 +39,7 @@ Partial Class BooksBorrowedForm
         Me.LMSLabel = New System.Windows.Forms.Label()
         Me.FLMSLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.searchbyBox = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,20 +50,18 @@ Partial Class BooksBorrowedForm
         '
         Me.btnBorrowBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBorrowBook.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrowBook.Location = New System.Drawing.Point(899, 228)
-        Me.btnBorrowBook.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnBorrowBook.Location = New System.Drawing.Point(674, 185)
         Me.btnBorrowBook.Name = "btnBorrowBook"
-        Me.btnBorrowBook.Size = New System.Drawing.Size(164, 73)
+        Me.btnBorrowBook.Size = New System.Drawing.Size(123, 59)
         Me.btnBorrowBook.TabIndex = 2
         Me.btnBorrowBook.Text = "Borrow Book"
         Me.btnBorrowBook.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(93, 194)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Location = New System.Drawing.Point(139, 158)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(683, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(508, 20)
         Me.TextBox1.TabIndex = 3
         '
         'DataGridView1
@@ -70,22 +69,20 @@ Partial Class BooksBorrowedForm
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(20, 226)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView1.Location = New System.Drawing.Point(15, 184)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.Size = New System.Drawing.Size(843, 528)
+        Me.DataGridView1.Size = New System.Drawing.Size(632, 429)
         Me.DataGridView1.TabIndex = 4
         '
         'btnDone
         '
         Me.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDone.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDone.Location = New System.Drawing.Point(991, 716)
-        Me.btnDone.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDone.Location = New System.Drawing.Point(743, 582)
         Me.btnDone.Name = "btnDone"
-        Me.btnDone.Size = New System.Drawing.Size(164, 38)
+        Me.btnDone.Size = New System.Drawing.Size(123, 31)
         Me.btnDone.TabIndex = 2
         Me.btnDone.Text = "Done"
         Me.btnDone.UseVisualStyleBackColor = True
@@ -94,10 +91,9 @@ Partial Class BooksBorrowedForm
         '
         Me.btnReturnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReturnBook.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReturnBook.Location = New System.Drawing.Point(1084, 228)
-        Me.btnReturnBook.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnReturnBook.Location = New System.Drawing.Point(813, 185)
         Me.btnReturnBook.Name = "btnReturnBook"
-        Me.btnReturnBook.Size = New System.Drawing.Size(164, 73)
+        Me.btnReturnBook.Size = New System.Drawing.Size(123, 59)
         Me.btnReturnBook.TabIndex = 2
         Me.btnReturnBook.Text = "Return Book"
         Me.btnReturnBook.UseVisualStyleBackColor = True
@@ -107,10 +103,9 @@ Partial Class BooksBorrowedForm
         Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(13, 34)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(10, 28)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(164, 73)
+        Me.Button1.Size = New System.Drawing.Size(123, 59)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Borrowers"
         Me.Button1.UseVisualStyleBackColor = False
@@ -120,10 +115,9 @@ Partial Class BooksBorrowedForm
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(20, 198)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(474, 113)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(52, 21)
+        Me.Label3.Size = New System.Drawing.Size(40, 16)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Search:"
         '
@@ -132,10 +126,9 @@ Partial Class BooksBorrowedForm
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.White
-        Me.lblTitle.Location = New System.Drawing.Point(20, 139)
-        Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTitle.Location = New System.Drawing.Point(15, 113)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(348, 41)
+        Me.lblTitle.Size = New System.Drawing.Size(272, 33)
         Me.lblTitle.TabIndex = 9
         Me.lblTitle.Text = "Current Borrowed Books"
         '
@@ -143,10 +136,9 @@ Partial Class BooksBorrowedForm
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(899, 321)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Location = New System.Drawing.Point(674, 261)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(164, 73)
+        Me.Button2.Size = New System.Drawing.Size(123, 59)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Overdue Books"
         Me.Button2.UseVisualStyleBackColor = True
@@ -157,11 +149,9 @@ Partial Class BooksBorrowedForm
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(885, 462)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Location = New System.Drawing.Point(664, 375)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(379, 235)
+        Me.GroupBox1.Size = New System.Drawing.Size(284, 191)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Borrowers"
@@ -171,10 +161,9 @@ Partial Class BooksBorrowedForm
         Me.Button6.BackColor = System.Drawing.Color.White
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(106, 134)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button6.Location = New System.Drawing.Point(80, 109)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(164, 73)
+        Me.Button6.Size = New System.Drawing.Size(123, 59)
         Me.Button6.TabIndex = 2
         Me.Button6.Text = "Edit"
         Me.Button6.UseVisualStyleBackColor = False
@@ -184,10 +173,9 @@ Partial Class BooksBorrowedForm
         Me.Button4.BackColor = System.Drawing.Color.White
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(199, 34)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Location = New System.Drawing.Point(149, 28)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(164, 73)
+        Me.Button4.Size = New System.Drawing.Size(123, 59)
         Me.Button4.TabIndex = 2
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = False
@@ -196,10 +184,9 @@ Partial Class BooksBorrowedForm
         '
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(1084, 321)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button7.Location = New System.Drawing.Point(813, 261)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(164, 73)
+        Me.Button7.Size = New System.Drawing.Size(123, 59)
         Me.Button7.TabIndex = 2
         Me.Button7.Text = "Borrow Log"
         Me.Button7.UseVisualStyleBackColor = True
@@ -207,10 +194,9 @@ Partial Class BooksBorrowedForm
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.LibrarySystem.My.Resources.Resources.FLMHS_1_
-        Me.PictureBox2.Location = New System.Drawing.Point(28, 15)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Location = New System.Drawing.Point(21, 12)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(135, 119)
+        Me.PictureBox2.Size = New System.Drawing.Size(101, 97)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 13
         Me.PictureBox2.TabStop = False
@@ -220,10 +206,9 @@ Partial Class BooksBorrowedForm
         Me.LMSLabel.AutoSize = True
         Me.LMSLabel.Font = New System.Drawing.Font("Bahnschrift Condensed", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LMSLabel.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.LMSLabel.Location = New System.Drawing.Point(187, 73)
-        Me.LMSLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LMSLabel.Location = New System.Drawing.Point(140, 59)
         Me.LMSLabel.Name = "LMSLabel"
-        Me.LMSLabel.Size = New System.Drawing.Size(301, 36)
+        Me.LMSLabel.Size = New System.Drawing.Size(242, 29)
         Me.LMSLabel.TabIndex = 11
         Me.LMSLabel.Text = "Library Management System"
         '
@@ -232,10 +217,9 @@ Partial Class BooksBorrowedForm
         Me.FLMSLabel.AutoSize = True
         Me.FLMSLabel.Font = New System.Drawing.Font("Bahnschrift Condensed", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FLMSLabel.ForeColor = System.Drawing.Color.White
-        Me.FLMSLabel.Location = New System.Drawing.Point(187, 15)
-        Me.FLMSLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.FLMSLabel.Location = New System.Drawing.Point(140, 12)
         Me.FLMSLabel.Name = "FLMSLabel"
-        Me.FLMSLabel.Size = New System.Drawing.Size(457, 53)
+        Me.FLMSLabel.Size = New System.Drawing.Size(362, 42)
         Me.FLMSLabel.TabIndex = 12
         Me.FLMSLabel.Text = "Father Leoni Memorial School"
         '
@@ -244,18 +228,29 @@ Partial Class BooksBorrowedForm
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1289, 750)
+        Me.PictureBox1.Size = New System.Drawing.Size(967, 609)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
+        'searchbyBox
+        '
+        Me.searchbyBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.searchbyBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.searchbyBox.FormattingEnabled = True
+        Me.searchbyBox.Items.AddRange(New Object() {"Title", "Borrower"})
+        Me.searchbyBox.Location = New System.Drawing.Point(12, 158)
+        Me.searchbyBox.Name = "searchbyBox"
+        Me.searchbyBox.Size = New System.Drawing.Size(121, 21)
+        Me.searchbyBox.TabIndex = 15
+        '
         'BooksBorrowedForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1289, 750)
+        Me.ClientSize = New System.Drawing.Size(967, 609)
+        Me.Controls.Add(Me.searchbyBox)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.LMSLabel)
         Me.Controls.Add(Me.FLMSLabel)
@@ -270,7 +265,6 @@ Partial Class BooksBorrowedForm
         Me.Controls.Add(Me.btnReturnBook)
         Me.Controls.Add(Me.btnBorrowBook)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "BooksBorrowedForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Book Borrowing"
@@ -299,4 +293,5 @@ Partial Class BooksBorrowedForm
     Friend WithEvents LMSLabel As Label
     Friend WithEvents FLMSLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents searchbyBox As ComboBox
 End Class

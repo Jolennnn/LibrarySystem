@@ -56,4 +56,25 @@
         Button6.Enabled = False
         LoadOverdue(DataGridView1)
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        LoadBorrow(DataGridView1)
+        Dim searchBy As String
+        Dim dt As DataTable = DataGridView1.DataSource
+        If SearchBar.Text <> "" Then
+            If searchbyBox.Text = "Title" Then
+                searchBy = "Title"
+            End If
+            Dim filter As String = String.Format("{0} Like '{1}*'", searchBy, SearchBar.Text)
+            Dim filteredRows As DataRow() = dt.Select(filter)
+            If filteredRows.Length() <> 0 Then
+                DataGridView1.DataSource = filteredRows.CopyToDataTable()
+            Else
+                dt.Clear()
+                DataGridView1.DataSource = dt
+            End If
+        Else
+            LoadBookInv(DataGridView1)
+        End If
+    End Sub
 End Class
