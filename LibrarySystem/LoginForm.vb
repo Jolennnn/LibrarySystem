@@ -14,6 +14,7 @@ Public Class LoginForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
         'query login table
         Dim query2 As String = "SELECT * FROM [dbo].[LoginTable] WHERE Username=@id AND Password=@pass"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")

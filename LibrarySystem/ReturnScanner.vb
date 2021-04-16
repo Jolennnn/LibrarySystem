@@ -15,65 +15,31 @@ Public Class ReturnScanner
         'write QR
         ReturnForm.PictureBox1.Image = writer.Write(TextBox1.Text)
 
-        Dim flag = 0 'flag if user not found, or is not currently borrowing a book
-        Dim studID As Integer
-        Dim bookIDholder As Integer
+        'filling in data
         Dim borrowdate As DateTime
+        Dim studID = Integer.Parse(TextBox1.Text)
+        ReturnForm.idlbl.Text = TextBox1.Text
 
-        studID = Integer.Parse(TextBox1.Text)
 
         'query Borrower ID in BookBorrowed table
-        Dim query As String = "SELECT * from [dbo].[BookBorrow] WHERE Student_idStudent=@id AND date_returned IS NULL"
+        Dim query As String = "SELECT Book_BookId, Student_idStudent, date_borrowed , Book.Title, Student.Name FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent  WHERE Student_idStudent=@id AND date_returned IS NULL"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query, con)
-                cmd.Parameters.AddWithValue("@id", studID)
+                cmd.Parameters.AddWithValue("@id", (studID))
                 con.Open()
 
                 Dim ds As SqlDataReader = cmd.ExecuteReader()
                 If ds.Read() Then
-                    bookIDholder = ds.GetInt32(1) 'for book name query
-                    ReturnForm.bookidlbl.Text = bookIDholder
-                    ReturnForm.idlbl.Text = ds.GetInt32(2) 'update id
-                    borrowdate = ds.GetDateTime(3)
+                    ReturnForm.bookidlbl.Text = ds.GetInt32(0)
+                    ReturnForm.idlbl.Text = ds.GetInt32(1)
+                    borrowdate = ds.GetDateTime(2)
+                    ReturnForm.booklbl.Text = ds.GetString(3)
+                    ReturnForm.namelbl.Text = ds.GetString(4)
                 Else
-                    flag = 1 'not found
+                    MessageBox.Show("No such record exists.")
                 End If
 
                 con.Close()
-
-            End Using
-        End Using
-
-        'query for borrower name
-        Dim query2 As String = "SELECT Name from [dbo].[Student] WHERE idStudent=@id"
-        Using con2 As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
-            Using cmd2 As SqlCommand = New SqlCommand(query2, con2)
-                cmd2.Parameters.AddWithValue("@id", studID)
-                con2.Open()
-
-                Dim ds2 As SqlDataReader = cmd2.ExecuteReader()
-                If ds2.Read() Then
-                    ReturnForm.namelbl.Text = ds2(0).ToString() 'update name
-                End If
-
-                con2.Close()
-
-            End Using
-        End Using
-
-        'query book name
-        Dim query3 As String = "SELECT Title from [dbo].[Book] WHERE BookId=@id"
-        Using con3 As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
-            Using cmd3 As SqlCommand = New SqlCommand(query3, con3)
-                cmd3.Parameters.AddWithValue("@id", bookIDholder)
-                con3.Open()
-
-                Dim ds3 As SqlDataReader = cmd3.ExecuteReader()
-                If ds3.Read() Then
-                    ReturnForm.booklbl.Text = ds3(0).ToString() 'update book
-                End If
-
-                con3.Close()
 
             End Using
         End Using

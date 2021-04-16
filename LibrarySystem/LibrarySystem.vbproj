@@ -223,6 +223,18 @@
     <Compile Include="ReturnScanner.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="StudentLogInForm.Designer.vb">
+      <DependentUpon>StudentLogInForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLogInForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentLogOutForm.Designer.vb">
+      <DependentUpon>StudentLogOutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLogOutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddBookForm.resx">
@@ -281,6 +293,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReturnScanner.resx">
       <DependentUpon>ReturnScanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLogInForm.resx">
+      <DependentUpon>StudentLogInForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLogOutForm.resx">
+      <DependentUpon>StudentLogOutForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
