@@ -16,10 +16,11 @@ Public Class BorrowerScanner
             'read String
             Dim inputarr As String() = scan1.Text.Split("_")
             'query if borrower exists
-            Dim query As String = "SELECT * from [dbo].[Student] WHERE idStudent=@id"
+            Dim query As String = "SELECT * from [dbo].[Student] WHERE idStudent=@id and Name=@name"
             Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As SqlCommand = New SqlCommand(query, con)
                     cmd.Parameters.AddWithValue("@id", inputarr(1))
+                    cmd.Parameters.AddWithValue("@name", inputarr(0))
                     con.Open()
 
                     Dim ds As SqlDataReader = cmd.ExecuteReader()
@@ -37,7 +38,7 @@ Public Class BorrowerScanner
 
                         'write QR
                         BorrowingForm.BorrowerQRimg.Image = writer.Write(scan1.Text)
-                        Me.Close()
+                        Me.Dispose()
                     Else
                         MessageBox.Show("Incorrect Borrower QR.")
                     End If
@@ -57,4 +58,9 @@ Public Class BorrowerScanner
             scanBorrower()
         End If
     End Sub
+
+    Private Sub BorrowerScanner_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Me.Dispose()
+    End Sub
+
 End Class

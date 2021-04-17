@@ -21,17 +21,21 @@ Public Class ReturnForm
                     cmd.ExecuteNonQuery()
                     con.Close()
                     MessageBox.Show("Sucessfully logged.")
-                    Me.Close()
+                    Me.Dispose()
                 End Using
             End Using
 
         End If
 
         Module1.LoadBorrow(BooksBorrowedForm.DataGridView1)
-        Me.Close()
+        Me.Dispose()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
+        Me.Dispose()
+    End Sub
+
+    Private Sub ReturnForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Me.Dispose()
     End Sub
 End Class
