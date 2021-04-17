@@ -19,6 +19,11 @@ Public Class AddBookForm
                 Module1.LoadBookInv(InventoryForm.DataGridView1)
             End Using
         End Using
+        If InventoryForm.invCategoryBox.SelectedIndex = 0 Then
+            LoadBookInv(InventoryForm.DataGridView1)
+        ElseIf InventoryForm.invCategoryBox.SelectedIndex = 1 Then
+            LoadMaterialInv(InventoryForm.DataGridView1)
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) 

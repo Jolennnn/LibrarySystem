@@ -115,4 +115,20 @@ Module Module1
             End Using
         End Using
     End Sub
+
+    Sub LoadMaterialInv(table As Object)
+        Dim query As String = "SELECT * FROM LibraryMaterial"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                Using sda As New SqlDataAdapter()
+                    cmd.Connection = con
+                    sda.SelectCommand = cmd
+                    Using dt As New DataTable()
+                        sda.Fill(dt)
+                        table.DataSource = dt
+                    End Using
+                End Using
+            End Using
+        End Using
+    End Sub
 End Module

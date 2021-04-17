@@ -45,7 +45,6 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.InventoryForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.MainForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Resources.resources
-D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReservationsForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbproj.GenerateResource.cache
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.xml
@@ -140,3 +139,5 @@ C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySyst
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.StudentLogOutForm.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReportsForm.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowHistoryForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowHistoryForm.resources
+D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReportsForm.resources

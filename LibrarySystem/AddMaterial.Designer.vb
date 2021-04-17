@@ -24,10 +24,10 @@ Partial Class AddMaterial
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.mtitleBox = New System.Windows.Forms.TextBox()
+        Me.accnumBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.mAddBtn = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,19 +54,19 @@ Partial Class AddMaterial
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Accession Number:"
         '
-        'TextBox1
+        'mtitleBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(162, 44)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.mtitleBox.Location = New System.Drawing.Point(162, 44)
+        Me.mtitleBox.Name = "mtitleBox"
+        Me.mtitleBox.Size = New System.Drawing.Size(100, 20)
+        Me.mtitleBox.TabIndex = 2
         '
-        'TextBox2
+        'accnumBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(162, 76)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.accnumBox.Location = New System.Drawing.Point(162, 76)
+        Me.accnumBox.Name = "accnumBox"
+        Me.accnumBox.Size = New System.Drawing.Size(100, 20)
+        Me.accnumBox.TabIndex = 2
         '
         'Button1
         '
@@ -79,16 +79,16 @@ Partial Class AddMaterial
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'mAddBtn
         '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(120, 121)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(88, 33)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Add Material"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.mAddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.mAddBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mAddBtn.Location = New System.Drawing.Point(120, 121)
+        Me.mAddBtn.Name = "mAddBtn"
+        Me.mAddBtn.Size = New System.Drawing.Size(88, 33)
+        Me.mAddBtn.TabIndex = 3
+        Me.mAddBtn.Text = "Add Material"
+        Me.mAddBtn.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -106,10 +106,10 @@ Partial Class AddMaterial
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(336, 176)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.mAddBtn)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.accnumBox)
+        Me.Controls.Add(Me.mtitleBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -123,9 +123,9 @@ Partial Class AddMaterial
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents mtitleBox As TextBox
+    Friend WithEvents accnumBox As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents mAddBtn As Button
     Friend WithEvents PictureBox1 As PictureBox
 End Class

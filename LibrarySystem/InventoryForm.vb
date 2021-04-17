@@ -1,6 +1,6 @@
 ﻿Public Class InventoryForm
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles AddBookBtn.Click, Button1.Click
-        AddBookForm.Show()
+    Private Sub addMaterialBtn_Click(sender As Object, e As EventArgs) Handles addMaterialBtn.Click
+        AddMaterial.Show()
         Me.Hide()
     End Sub
 
@@ -9,6 +9,7 @@
         Label1.BackColor = Color.Transparent
         LoadBookInv(DataGridView1)
         searchbyBox.SelectedIndex = 0
+        invCategoryBox.SelectedIndex = 0
     End Sub
 
     Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
@@ -39,5 +40,18 @@
         Else
             LoadBookInv(DataGridView1)
         End If
+    End Sub
+
+    Private Sub invCategoryBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles invCategoryBox.SelectedIndexChanged
+        If invCategoryBox.SelectedIndex = 0 Then
+            LoadBookInv(DataGridView1)
+        ElseIf invCategoryBox.SelectedIndex = 1 Then
+            LoadMaterialInv(DataGridView1)
+        End If
+    End Sub
+
+    Private Sub AddBookBtn_Click(sender As Object, e As EventArgs) Handles AddBookBtn.Click
+        AddBookForm.Show()
+        Me.Hide()
     End Sub
 End Class

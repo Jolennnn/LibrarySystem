@@ -29,8 +29,8 @@ Partial Class InventoryForm
         Me.AddBookBtn = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.invCategoryBox = New System.Windows.Forms.ComboBox()
+        Me.addMaterialBtn = New System.Windows.Forms.Button()
         Me.searchbyBox = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,27 +112,27 @@ Partial Class InventoryForm
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
-        'ComboBox1
+        'invCategoryBox
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Books", "Materials"})
-        Me.ComboBox1.Location = New System.Drawing.Point(185, 27)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 6
+        Me.invCategoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.invCategoryBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.invCategoryBox.FormattingEnabled = True
+        Me.invCategoryBox.Items.AddRange(New Object() {"Books", "Materials"})
+        Me.invCategoryBox.Location = New System.Drawing.Point(185, 27)
+        Me.invCategoryBox.Name = "invCategoryBox"
+        Me.invCategoryBox.Size = New System.Drawing.Size(121, 21)
+        Me.invCategoryBox.TabIndex = 6
         '
-        'Button1
+        'addMaterialBtn
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(492, 21)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 30)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Add Material"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.addMaterialBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.addMaterialBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addMaterialBtn.Location = New System.Drawing.Point(492, 21)
+        Me.addMaterialBtn.Name = "addMaterialBtn"
+        Me.addMaterialBtn.Size = New System.Drawing.Size(93, 30)
+        Me.addMaterialBtn.TabIndex = 4
+        Me.addMaterialBtn.Text = "Add Material"
+        Me.addMaterialBtn.UseVisualStyleBackColor = True
         '
         'searchbyBox
         '
@@ -151,9 +151,9 @@ Partial Class InventoryForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(714, 431)
         Me.Controls.Add(Me.searchbyBox)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.invCategoryBox)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.addMaterialBtn)
         Me.Controls.Add(Me.AddBookBtn)
         Me.Controls.Add(Me.SearchBar)
         Me.Controls.Add(Me.DataGridView1)
@@ -177,7 +177,7 @@ Partial Class InventoryForm
     Friend WithEvents AddBookBtn As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents invCategoryBox As ComboBox
+    Friend WithEvents addMaterialBtn As Button
     Friend WithEvents searchbyBox As ComboBox
 End Class
