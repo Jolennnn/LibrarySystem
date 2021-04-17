@@ -33,6 +33,7 @@ Partial Class BooksBorrowedForm
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.bhistorybtn = New System.Windows.Forms.Button()
+        Me.btndeletestudent = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -155,6 +156,7 @@ Partial Class BooksBorrowedForm
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.bhistorybtn)
+        Me.GroupBox1.Controls.Add(Me.btndeletestudent)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -181,15 +183,28 @@ Partial Class BooksBorrowedForm
         Me.bhistorybtn.Text = "Borrower History"
         Me.bhistorybtn.UseVisualStyleBackColor = False
         '
+        'btndeletestudent
+        '
+        Me.btndeletestudent.BackColor = System.Drawing.Color.White
+        Me.btndeletestudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btndeletestudent.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btndeletestudent.Location = New System.Drawing.Point(199, 151)
+        Me.btndeletestudent.Margin = New System.Windows.Forms.Padding(4)
+        Me.btndeletestudent.Name = "btndeletestudent"
+        Me.btndeletestudent.Size = New System.Drawing.Size(164, 48)
+        Me.btndeletestudent.TabIndex = 2
+        Me.btndeletestudent.Text = "Delete"
+        Me.btndeletestudent.UseVisualStyleBackColor = False
+        '
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.White
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(199, 134)
+        Me.Button6.Location = New System.Drawing.Point(199, 95)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(164, 73)
+        Me.Button6.Size = New System.Drawing.Size(164, 48)
         Me.Button6.TabIndex = 2
         Me.Button6.Text = "Edit"
         Me.Button6.UseVisualStyleBackColor = False
@@ -199,10 +214,10 @@ Partial Class BooksBorrowedForm
         Me.Button4.BackColor = System.Drawing.Color.White
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(199, 34)
+        Me.Button4.Location = New System.Drawing.Point(199, 38)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(164, 73)
+        Me.Button4.Size = New System.Drawing.Size(164, 48)
         Me.Button4.TabIndex = 2
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = False
@@ -315,4 +330,5 @@ Partial Class BooksBorrowedForm
     Friend WithEvents FLMSLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents bhistorybtn As Button
+    Friend WithEvents btndeletestudent As Button
 End Class
