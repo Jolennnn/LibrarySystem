@@ -36,7 +36,7 @@ Partial Class BooksBorrowedForm
         Me.btndeletestudent = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.borrowlogbtn = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.LMSLabel = New System.Windows.Forms.Label()
         Me.FLMSLabel = New System.Windows.Forms.Label()
@@ -222,17 +222,17 @@ Partial Class BooksBorrowedForm
         Me.Button4.Text = "Add"
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'Button7
+        'borrowlogbtn
         '
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(1084, 321)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(164, 73)
-        Me.Button7.TabIndex = 2
-        Me.Button7.Text = "Borrow Log"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.borrowlogbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.borrowlogbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.borrowlogbtn.Location = New System.Drawing.Point(1084, 321)
+        Me.borrowlogbtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.borrowlogbtn.Name = "borrowlogbtn"
+        Me.borrowlogbtn.Size = New System.Drawing.Size(164, 73)
+        Me.borrowlogbtn.TabIndex = 2
+        Me.borrowlogbtn.Text = "Borrow Log"
+        Me.borrowlogbtn.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -295,7 +295,7 @@ Partial Class BooksBorrowedForm
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnDone)
-        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.borrowlogbtn)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnReturnBook)
         Me.Controls.Add(Me.btnBorrowBook)
@@ -324,7 +324,7 @@ Partial Class BooksBorrowedForm
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Button6 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents borrowlogbtn As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents LMSLabel As Label
     Friend WithEvents FLMSLabel As Label

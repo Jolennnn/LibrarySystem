@@ -31,18 +31,21 @@ Public Class BooksBorrowedForm
         Label3.BackColor = Color.Transparent
 
         Button6.Enabled = False
+        btndeletestudent.Enabled = False
         bhistorybtn.Enabled = False
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Button6.Enabled = True
         bhistorybtn.Enabled = True
+        btndeletestudent.Enabled = True
 
         LoadBorrowers(DataGridView1)
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles borrowlogbtn.Click
         Button6.Enabled = False
+        btndeletestudent.Enabled = False
         bhistorybtn.Enabled = False
         LoadBorrow(DataGridView1)
     End Sub

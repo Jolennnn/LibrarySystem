@@ -58,7 +58,7 @@ Partial Class BorrowingForm
         '
         Me.BookQRimg.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BookQRimg.Location = New System.Drawing.Point(120, 75)
-        Me.BookQRimg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BookQRimg.Margin = New System.Windows.Forms.Padding(4)
         Me.BookQRimg.Name = "BookQRimg"
         Me.BookQRimg.Size = New System.Drawing.Size(200, 200)
         Me.BookQRimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -69,7 +69,7 @@ Partial Class BorrowingForm
         '
         Me.BorrowerQRimg.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BorrowerQRimg.Location = New System.Drawing.Point(122, 75)
-        Me.BorrowerQRimg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BorrowerQRimg.Margin = New System.Windows.Forms.Padding(4)
         Me.BorrowerQRimg.Name = "BorrowerQRimg"
         Me.BorrowerQRimg.Size = New System.Drawing.Size(200, 200)
         Me.BorrowerQRimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -81,7 +81,7 @@ Partial Class BorrowingForm
         Me.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirm.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConfirm.Location = New System.Drawing.Point(408, 602)
-        Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4)
         Me.btnConfirm.Name = "btnConfirm"
         Me.btnConfirm.Size = New System.Drawing.Size(124, 46)
         Me.btnConfirm.TabIndex = 2
@@ -93,10 +93,10 @@ Partial Class BorrowingForm
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.Location = New System.Drawing.Point(540, 602)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(124, 46)
-        Me.btnCancel.TabIndex = 2
+        Me.btnCancel.TabIndex = 3
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -127,10 +127,10 @@ Partial Class BorrowingForm
         Me.btnScanBorrower.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScanBorrower.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnScanBorrower.Location = New System.Drawing.Point(175, 383)
-        Me.btnScanBorrower.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnScanBorrower.Margin = New System.Windows.Forms.Padding(4)
         Me.btnScanBorrower.Name = "btnScanBorrower"
         Me.btnScanBorrower.Size = New System.Drawing.Size(163, 46)
-        Me.btnScanBorrower.TabIndex = 2
+        Me.btnScanBorrower.TabIndex = 0
         Me.btnScanBorrower.Text = "Scan Borrower QR"
         Me.btnScanBorrower.UseVisualStyleBackColor = True
         '
@@ -139,10 +139,10 @@ Partial Class BorrowingForm
         Me.BtnScanBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnScanBook.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnScanBook.Location = New System.Drawing.Point(732, 383)
-        Me.BtnScanBook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnScanBook.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnScanBook.Name = "BtnScanBook"
         Me.BtnScanBook.Size = New System.Drawing.Size(155, 46)
-        Me.BtnScanBook.TabIndex = 2
+        Me.BtnScanBook.TabIndex = 1
         Me.BtnScanBook.Text = "Scan Book QR"
         Me.BtnScanBook.UseVisualStyleBackColor = True
         '
@@ -303,7 +303,7 @@ Partial Class BorrowingForm
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1027, 662)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -316,9 +316,9 @@ Partial Class BorrowingForm
         Me.GroupBox1.Controls.Add(Me.BorrowerQRimg)
         Me.GroupBox1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(35, 76)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(451, 553)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
@@ -341,9 +341,9 @@ Partial Class BorrowingForm
         Me.GroupBox2.Controls.Add(Me.yrpub)
         Me.GroupBox2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(584, 76)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.GroupBox2.Size = New System.Drawing.Size(427, 553)
         Me.GroupBox2.TabIndex = 8
@@ -366,7 +366,7 @@ Partial Class BorrowingForm
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "BorrowingForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Borrow Book"
