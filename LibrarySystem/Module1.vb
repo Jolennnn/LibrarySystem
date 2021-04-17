@@ -116,6 +116,24 @@ Module Module1
         End Using
     End Sub
 
+    Sub LoadSLTimespan(table As Object, dt1 As DateTime, dt2 As DateTime)
+        Dim query As String = "SELECT id, Student.Name, login, logout, remarks FROM StudentLog INNER JOIN Student ON StudentLog.id = Student.idStudent WHERE login>=@dt1 AND login<=@dt2"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@dt1", dt1)
+                cmd.Parameters.AddWithValue("@dt2", dt2)
+                Using sda As New SqlDataAdapter()
+                    cmd.Connection = con
+                    sda.SelectCommand = cmd
+                    Using dt As New DataTable()
+                        sda.Fill(dt)
+                        table.DataSource = dt
+                    End Using
+                End Using
+            End Using
+        End Using
+    End Sub
+
     Sub LoadMaterialInv(table As Object)
         Dim query As String = "SELECT * FROM LibraryMaterial"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
@@ -131,4 +149,5 @@ Module Module1
             End Using
         End Using
     End Sub
+
 End Module

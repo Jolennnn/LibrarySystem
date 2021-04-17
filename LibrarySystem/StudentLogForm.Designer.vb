@@ -30,6 +30,7 @@ Partial Class StudentLogForm
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,7 +84,7 @@ Partial Class StudentLogForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(735, 23)
+        Me.Button2.Location = New System.Drawing.Point(917, 100)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 5
@@ -92,7 +93,7 @@ Partial Class StudentLogForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(816, 23)
+        Me.Button3.Location = New System.Drawing.Point(917, 71)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 6
@@ -113,18 +114,28 @@ Partial Class StudentLogForm
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(922, 88)
+        Me.Button4.Location = New System.Drawing.Point(917, 200)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 50)
         Me.Button4.TabIndex = 7
         Me.Button4.Text = "complete log"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(917, 144)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 50)
+        Me.Button5.TabIndex = 7
+        Me.Button5.Text = "currently logged in"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'StudentLogForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1009, 545)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -152,4 +163,5 @@ Partial Class StudentLogForm
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

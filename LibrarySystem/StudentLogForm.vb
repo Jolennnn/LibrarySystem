@@ -1,6 +1,6 @@
 ﻿Public Class StudentLogForm
     Public datacell, datacell2
-    Private Sub LogsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub LogsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load, Button5.Click
         Label1.Parent = PictureBox1
         Label1.BackColor = Color.Transparent
         Label2.Parent = PictureBox1
