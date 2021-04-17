@@ -98,4 +98,21 @@ Module Module1
             End Using
         End Using
     End Sub
+
+    Sub LoadBorrowerHistory(table As Object, studID As Integer)
+        Dim query As String = "SELECT Book_BookId, Book.Title, date_borrowed, date_returned, remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId WHERE Student_idStudent=@id"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                cmd.Parameters.AddWithValue("@id", studID)
+                Using sda As New SqlDataAdapter()
+                    cmd.Connection = con
+                    sda.SelectCommand = cmd
+                    Using dt As New DataTable()
+                        sda.Fill(dt)
+                        table.DataSource = dt
+                    End Using
+                End Using
+            End Using
+        End Using
+    End Sub
 End Module

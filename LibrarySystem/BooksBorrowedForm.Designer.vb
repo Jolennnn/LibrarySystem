@@ -32,6 +32,7 @@ Partial Class BooksBorrowedForm
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.bhistorybtn = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -153,6 +154,7 @@ Partial Class BooksBorrowedForm
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.bhistorybtn)
         Me.GroupBox1.Controls.Add(Me.Button6)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -166,12 +168,25 @@ Partial Class BooksBorrowedForm
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Borrowers"
         '
+        'bhistorybtn
+        '
+        Me.bhistorybtn.BackColor = System.Drawing.Color.White
+        Me.bhistorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bhistorybtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bhistorybtn.Location = New System.Drawing.Point(14, 134)
+        Me.bhistorybtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.bhistorybtn.Name = "bhistorybtn"
+        Me.bhistorybtn.Size = New System.Drawing.Size(164, 73)
+        Me.bhistorybtn.TabIndex = 2
+        Me.bhistorybtn.Text = "Borrower History"
+        Me.bhistorybtn.UseVisualStyleBackColor = False
+        '
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.White
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(106, 134)
+        Me.Button6.Location = New System.Drawing.Point(199, 134)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(164, 73)
@@ -299,4 +314,5 @@ Partial Class BooksBorrowedForm
     Friend WithEvents LMSLabel As Label
     Friend WithEvents FLMSLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents bhistorybtn As Button
 End Class

@@ -29,16 +29,19 @@
         Label3.BackColor = Color.Transparent
 
         Button6.Enabled = False
+        bhistorybtn.Enabled = False
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Button6.Enabled = True
-
+        bhistorybtn.Enabled = True
+        
         LoadBorrowers(DataGridView1)
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Button6.Enabled = False
+        bhistorybtn.Enabled = False
         LoadBorrow(DataGridView1)
     End Sub
 
@@ -55,5 +58,11 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Button6.Enabled = False
         LoadOverdue(DataGridView1)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles bhistorybtn.Click
+        Dim i = DataGridView1.CurrentRow.Index
+        datacell = DataGridView1.Item(0, i).Value
+        BorrowHistoryForm.ShowDialog()
     End Sub
 End Class

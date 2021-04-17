@@ -133,6 +133,12 @@
     <Compile Include="BookScanner.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BorrowHistoryForm.Designer.vb">
+      <DependentUpon>BorrowHistoryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowHistoryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BorrowingForm.Designer.vb">
       <DependentUpon>BorrowingForm.vb</DependentUpon>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookScanner.resx">
       <DependentUpon>BookScanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowHistoryForm.resx">
+      <DependentUpon>BorrowHistoryForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowingForm.resx">
       <DependentUpon>BorrowingForm.vb</DependentUpon>
