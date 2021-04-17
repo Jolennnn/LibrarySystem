@@ -91,4 +91,57 @@ Public Class BooksBorrowedForm
             End Using
         End If
     End Sub
+
+    Private Sub BooksBorrowedForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Me.Dispose()
+        MainForm.Show()
+    End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        searchFunction()
+    End Sub
+
+    Private Sub searchFunction()
+        If btndeletestudent.Enabled = True Then
+            'Search Student table
+            Dim query As String = "SELECT * FROM Student WHERE idStudent=@id OR Name LIKE '%" + TextBox1.Text + "%'"
+            Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+                Using cmd As SqlCommand = New SqlCommand(query, con)
+                    Dim idnum
+                    Integer.TryParse(TextBox1.Text, idnum)
+                    cmd.Parameters.AddWithValue("@id", idnum)
+                    Using sda As New SqlDataAdapter()
+                        cmd.Connection = con
+                        sda.SelectCommand = cmd
+                        Using dt As New DataTable()
+                            sda.Fill(dt)
+                            DataGridView1.DataSource = dt
+                        End Using
+                    End Using
+                End Using
+            End Using
+        Else
+            'Search BookBorrow table
+            Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent WHERE Book.Title LIKE '%" + TextBox1.Text + "%' OR Student.Name LIKE '%" + TextBox1.Text + "%' OR Remarks LIKE '%" + TextBox1.Text + "%'"
+            Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+                Using cmd As SqlCommand = New SqlCommand(query, con)
+                    Using sda As New SqlDataAdapter()
+                        cmd.Connection = con
+                        sda.SelectCommand = cmd
+                        Using dt As New DataTable()
+                            sda.Fill(dt)
+                            DataGridView1.DataSource = dt
+                        End Using
+                    End Using
+                End Using
+            End Using
+        End If
+    End Sub
+
+    Private Sub unreturnedbtn_Click(sender As Object, e As EventArgs) Handles unreturnedbtn.Click
+        Button6.Enabled = False
+        btndeletestudent.Enabled = False
+        bhistorybtn.Enabled = False
+        LoadUnreturned(DataGridView1)
+    End Sub
 End Class

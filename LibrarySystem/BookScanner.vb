@@ -45,7 +45,7 @@ Public Class BookScanner
                 End Using
             End Using
 
-            Me.Close()
+            Me.Dispose()
         Catch ex As Exception
             MessageBox.Show("Incorrect Book QR.")
         End Try
@@ -59,5 +59,13 @@ Public Class BookScanner
         If e.KeyChar = ChrW(Keys.Enter) Then
             scanBook()
         End If
+    End Sub
+
+    Private Sub BookScanner_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub BookScanner_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Me.Dispose()
     End Sub
 End Class

@@ -18,7 +18,7 @@ Module Module1
     End Sub
 
     Sub LoadBorrow(table As Object)
-        Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent"
+        Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent ORDER BY date_borrowed DESC"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query, con)
                 Using sda As New SqlDataAdapter()
@@ -31,6 +31,24 @@ Module Module1
                 End Using
             End Using
         End Using
+        BooksBorrowedForm.lblTitle.Text = "Borrow History"
+    End Sub
+
+    Sub LoadUnreturned(table As Object)
+        Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent WHERE date_returned IS NULL ORDER BY date_borrowed DESC"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                Using sda As New SqlDataAdapter()
+                    cmd.Connection = con
+                    sda.SelectCommand = cmd
+                    Using dt As New DataTable()
+                        sda.Fill(dt)
+                        table.DataSource = dt
+                    End Using
+                End Using
+            End Using
+        End Using
+        BooksBorrowedForm.lblTitle.Text = "Unreturned Books"
     End Sub
 
     Sub LoadBorrowers(table As Object)
@@ -47,11 +65,12 @@ Module Module1
                 End Using
             End Using
         End Using
+        BooksBorrowedForm.lblTitle.Text = "Borrowers"
     End Sub
 
     Sub LoadOverdue(table As Object)
         Dim OverdueDT = DateTime.Now.AddDays(-7)
-        Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent WHERE date_borrowed < @date AND date_returned IS NULL"
+        Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent WHERE date_borrowed < @date AND date_returned IS NULL ORDER BY date_borrowed DESC"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
             Using cmd As SqlCommand = New SqlCommand(query, con)
                 cmd.Parameters.AddWithValue("@date", OverdueDT)
@@ -65,6 +84,7 @@ Module Module1
                 End Using
             End Using
         End Using
+        BooksBorrowedForm.lblTitle.Text = "Overdue Books"
     End Sub
 
     Sub LoadcurrentSL(table As Object)

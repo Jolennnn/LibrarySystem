@@ -41,6 +41,8 @@ Partial Class BooksBorrowedForm
         Me.LMSLabel = New System.Windows.Forms.Label()
         Me.FLMSLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.unreturnedbtn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,7 +53,7 @@ Partial Class BooksBorrowedForm
         '
         Me.btnBorrowBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBorrowBook.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrowBook.Location = New System.Drawing.Point(899, 228)
+        Me.btnBorrowBook.Location = New System.Drawing.Point(909, 212)
         Me.btnBorrowBook.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBorrowBook.Name = "btnBorrowBook"
         Me.btnBorrowBook.Size = New System.Drawing.Size(164, 73)
@@ -65,7 +67,7 @@ Partial Class BooksBorrowedForm
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(683, 22)
-        Me.TextBox1.TabIndex = 3
+        Me.TextBox1.TabIndex = 1
         '
         'DataGridView1
         '
@@ -84,7 +86,7 @@ Partial Class BooksBorrowedForm
         '
         Me.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDone.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDone.Location = New System.Drawing.Point(991, 716)
+        Me.btnDone.Location = New System.Drawing.Point(991, 704)
         Me.btnDone.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(164, 38)
@@ -96,7 +98,7 @@ Partial Class BooksBorrowedForm
         '
         Me.btnReturnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReturnBook.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReturnBook.Location = New System.Drawing.Point(1084, 228)
+        Me.btnReturnBook.Location = New System.Drawing.Point(1081, 212)
         Me.btnReturnBook.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReturnBook.Name = "btnReturnBook"
         Me.btnReturnBook.Size = New System.Drawing.Size(164, 73)
@@ -109,7 +111,7 @@ Partial Class BooksBorrowedForm
         Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(13, 34)
+        Me.Button1.Location = New System.Drawing.Point(14, 38)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(164, 73)
@@ -145,10 +147,10 @@ Partial Class BooksBorrowedForm
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(899, 321)
+        Me.Button2.Location = New System.Drawing.Point(909, 293)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(164, 73)
+        Me.Button2.Size = New System.Drawing.Size(336, 51)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Overdue Books"
         Me.Button2.UseVisualStyleBackColor = True
@@ -165,7 +167,7 @@ Partial Class BooksBorrowedForm
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(379, 235)
+        Me.GroupBox1.Size = New System.Drawing.Size(379, 220)
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Borrowers"
@@ -175,7 +177,7 @@ Partial Class BooksBorrowedForm
         Me.bhistorybtn.BackColor = System.Drawing.Color.White
         Me.bhistorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bhistorybtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bhistorybtn.Location = New System.Drawing.Point(14, 134)
+        Me.bhistorybtn.Location = New System.Drawing.Point(14, 126)
         Me.bhistorybtn.Margin = New System.Windows.Forms.Padding(4)
         Me.bhistorybtn.Name = "bhistorybtn"
         Me.bhistorybtn.Size = New System.Drawing.Size(164, 73)
@@ -226,12 +228,12 @@ Partial Class BooksBorrowedForm
         '
         Me.borrowlogbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.borrowlogbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.borrowlogbtn.Location = New System.Drawing.Point(1084, 321)
+        Me.borrowlogbtn.Location = New System.Drawing.Point(909, 404)
         Me.borrowlogbtn.Margin = New System.Windows.Forms.Padding(4)
         Me.borrowlogbtn.Name = "borrowlogbtn"
-        Me.borrowlogbtn.Size = New System.Drawing.Size(164, 73)
+        Me.borrowlogbtn.Size = New System.Drawing.Size(336, 44)
         Me.borrowlogbtn.TabIndex = 2
-        Me.borrowlogbtn.Text = "Borrow Log"
+        Me.borrowlogbtn.Text = "Borrow History"
         Me.borrowlogbtn.UseVisualStyleBackColor = True
         '
         'PictureBox2
@@ -276,16 +278,38 @@ Partial Class BooksBorrowedForm
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1289, 750)
+        Me.PictureBox1.Size = New System.Drawing.Size(1289, 833)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(783, 193)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 15
+        Me.Button3.Text = "Go"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'unreturnedbtn
+        '
+        Me.unreturnedbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.unreturnedbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.unreturnedbtn.Location = New System.Drawing.Point(909, 352)
+        Me.unreturnedbtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.unreturnedbtn.Name = "unreturnedbtn"
+        Me.unreturnedbtn.Size = New System.Drawing.Size(336, 44)
+        Me.unreturnedbtn.TabIndex = 2
+        Me.unreturnedbtn.Text = "Unreturned Books"
+        Me.unreturnedbtn.UseVisualStyleBackColor = True
         '
         'BooksBorrowedForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1289, 750)
+        Me.ClientSize = New System.Drawing.Size(1289, 833)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.LMSLabel)
         Me.Controls.Add(Me.FLMSLabel)
@@ -295,6 +319,7 @@ Partial Class BooksBorrowedForm
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnDone)
+        Me.Controls.Add(Me.unreturnedbtn)
         Me.Controls.Add(Me.borrowlogbtn)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnReturnBook)
@@ -331,4 +356,6 @@ Partial Class BooksBorrowedForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents bhistorybtn As Button
     Friend WithEvents btndeletestudent As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents unreturnedbtn As Button
 End Class
