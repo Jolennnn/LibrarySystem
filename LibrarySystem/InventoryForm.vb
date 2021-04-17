@@ -29,7 +29,7 @@
             ElseIf searchbyBox.Text = "Category" Then
                 searchBy = "categoryName"
             End If
-            Dim filter As String = String.Format("{0} Like '{1}*'", searchBy, SearchBar.Text)
+            Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, SearchBar.Text)
             Dim filteredRows As DataRow() = dt.Select(filter)
             If filteredRows.Length() <> 0 Then
                 DataGridView1.DataSource = filteredRows.CopyToDataTable()
