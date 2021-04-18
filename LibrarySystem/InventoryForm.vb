@@ -18,35 +18,65 @@
     End Sub
 
     Private Sub SearchBar_TextChanged(sender As Object, e As EventArgs) Handles SearchBar.TextChanged
-        LoadBookInv(DataGridView1)
-        Dim searchBy As String
-        Dim dt As DataTable = DataGridView1.DataSource
-        If SearchBar.Text <> "" Then
-            If searchbyBox.Text = "Title" Then
-                searchBy = "Title"
-            ElseIf searchbyBox.Text = "Author" Then
-                searchBy = "Author"
-            ElseIf searchbyBox.Text = "Category" Then
-                searchBy = "categoryName"
-            End If
-            Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, SearchBar.Text)
-            Dim filteredRows As DataRow() = dt.Select(filter)
-            If filteredRows.Length() <> 0 Then
-                DataGridView1.DataSource = filteredRows.CopyToDataTable()
-            Else
-                dt.Clear()
-                DataGridView1.DataSource = dt
-            End If
-        Else
+        If invCategoryBox.SelectedIndex = 0 Then
             LoadBookInv(DataGridView1)
+            Dim searchBy As String
+            Dim dt As DataTable = DataGridView1.DataSource
+            If SearchBar.Text <> "" Then
+                If searchbyBox.Text = "Title" Then
+                    searchBy = "Title"
+                ElseIf searchbyBox.Text = "Author" Then
+                    searchBy = "Author"
+                ElseIf searchbyBox.Text = "Category" Then
+                    searchBy = "categoryName"
+                End If
+                Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, SearchBar.Text)
+                Dim filteredRows As DataRow() = dt.Select(filter)
+                If filteredRows.Length() <> 0 Then
+                    DataGridView1.DataSource = filteredRows.CopyToDataTable()
+                Else
+                    dt.Clear()
+                    DataGridView1.DataSource = dt
+                End If
+            Else
+                LoadBookInv(DataGridView1)
+            End If
+        ElseIf invCategoryBox.SelectedIndex = 1 Then
+            LoadMaterialInv(DataGridView1)
+            Dim searchBy As String
+            Dim dt As DataTable = DataGridView1.DataSource
+            If SearchBar.Text <> "" Then
+                If searchbyBox.Text = "Title" Then
+                    searchBy = "Title"
+                End If
+                Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, SearchBar.Text)
+                Dim filteredRows As DataRow() = dt.Select(filter)
+                If filteredRows.Length() <> 0 Then
+                    DataGridView1.DataSource = filteredRows.CopyToDataTable()
+                Else
+                    dt.Clear()
+                    DataGridView1.DataSource = dt
+                End If
+            Else
+                LoadMaterialInv(DataGridView1)
+            End If
         End If
+
     End Sub
 
     Private Sub invCategoryBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles invCategoryBox.SelectedIndexChanged
         If invCategoryBox.SelectedIndex = 0 Then
             LoadBookInv(DataGridView1)
+            searchbyBox.Items.Clear()
+            searchbyBox.Items.Add("Title")
+            searchbyBox.Items.Add("Author")
+            searchbyBox.Items.Add("Category")
+            searchbyBox.SelectedIndex = 0
         ElseIf invCategoryBox.SelectedIndex = 1 Then
             LoadMaterialInv(DataGridView1)
+            searchbyBox.Items.Clear()
+            searchbyBox.Items.Add("Title")
+            searchbyBox.SelectedIndex = 0
         End If
     End Sub
 
