@@ -22,13 +22,11 @@ Public Class BooksBorrowedForm
         GroupBox1.Parent = PictureBox1
         PictureBox2.Parent = PictureBox1
         lblTitle.Parent = PictureBox1
-        Label3.Parent = PictureBox1
         FLMSLabel.BackColor = Color.Transparent
         LMSLabel.BackColor = Color.Transparent
         PictureBox2.BackColor = Color.Transparent
         GroupBox1.BackColor = Color.Transparent
         lblTitle.BackColor = Color.Transparent
-        Label3.BackColor = Color.Transparent
 
         Button6.Enabled = False
         btndeletestudent.Enabled = False

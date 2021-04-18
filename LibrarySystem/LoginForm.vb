@@ -14,21 +14,26 @@ Public Class LoginForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
         'query login table
-        Dim query2 As String = "SELECT * FROM [dbo].[LoginTable] WHERE Username=@id AND Password=@pass"
+        Dim query As String = "SELECT * FROM LoginTable WHERE id = 0"
         Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
-            Using cmd As SqlCommand = New SqlCommand(query2, con)
-                cmd.Parameters.AddWithValue("@id", UsernameBox.Text)
-                cmd.Parameters.AddWithValue("@pass", PasswordBox.Text)
+            Using cmd As SqlCommand = New SqlCommand(query, con)
                 con.Open()
-                Dim ds As SqlDataReader = cmd.ExecuteReader()
-                If ds.Read() Then
-                    Me.Hide()
-                    MainForm.Show()
-                Else
-                    MessageBox.Show("Heh.. Nice Try, kid.")
-                End If
+                Using reader = cmd.ExecuteReader()
+                    cmd.Connection = con
+                    Dim user As String = ""
+                    Dim pass As String = ""
+                    While reader.Read()
+                        user = reader.GetString(1)
+                        pass = reader.GetString(2)
+                    End While
+                    If UsernameBox.Text = user And PasswordBox.Text = pass Then
+                        Me.Hide()
+                        MainForm.Show()
+                    Else
+                        MsgBox("Heh.. Nice Try, kid.")
+                    End If
+                End Using
                 con.Close()
             End Using
         End Using
@@ -37,5 +42,10 @@ Public Class LoginForm
     Public Sub clearText()
         UsernameBox.Clear()
         PasswordBox.Clear()
+    End Sub
+
+    Private Sub changepassBtn_Click(sender As Object, e As EventArgs) Handles changepassBtn.Click
+        Me.Hide()
+        ChangePasswordForm.Show()
     End Sub
 End Class
