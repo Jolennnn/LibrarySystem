@@ -10,7 +10,6 @@ Public Class InventoryForm
         Label1.Parent = PictureBox1
         Label1.BackColor = Color.Transparent
         LoadBookInv(DataGridView1)
-        searchbyBox.SelectedIndex = 0
         invCategoryBox.SelectedIndex = 0
     End Sub
 
@@ -21,9 +20,8 @@ Public Class InventoryForm
 
     Private Sub SearchBar_TextChanged(sender As Object, e As EventArgs) Handles SearchBar.TextChanged
         If invCategoryBox.SelectedIndex = 0 Then
-            LoadBookInv(DataGridView1)
             If SearchBar.Text <> "" Then
-                Dim query As String = "SELECT Book.BookId, Book.Title, Book.Author, Book.ISBN, Book.YrPublish, Book.shelfNo, Category.categoryName FROM Book INNER JOIN Category ON Book.idCategory = Category.idCategory WHERE Book.Title LIKE '%" + SearchBar.Text + "%' OR Book.Author LIKE '%" + SearchBar.Text + "%' OR Book.ISBN LIKE '%" + SearchBar.Text + "%' OR Category.categoryName LIKE '%" + SearchBar.Text + "%'"
+                Dim query As String = "SELECT Book.BookId, Book.Title, Book.Author, Book.ISBN, Book.YrPublish, Book.shelfNo, Category.categoryName FROM Book INNER JOIN Category ON Book.idCategory = Category.idCategory WHERE Book.Title LIKE '%" + SearchBar.Text + "%' OR Book.Author LIKE '%" + SearchBar.Text + "%' OR Book.ISBN LIKE '%" + SearchBar.Text + "%' OR Category.categoryName LIKE '%" + SearchBar.Text + "%' OR Book.YrPublish LIKE '%" + SearchBar.Text + "%'"
                 Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                     Using cmd As SqlCommand = New SqlCommand(query, con)
                         Using sda As New SqlDataAdapter()
@@ -40,7 +38,6 @@ Public Class InventoryForm
                 LoadBookInv(DataGridView1)
             End If
         ElseIf invCategoryBox.SelectedIndex = 1 Then
-            LoadMaterialInv(DataGridView1)
             If SearchBar.Text <> "" Then
                 Dim query As String = "SELECT * FROM LibraryMaterial WHERE AccessionNum LIKE '%" + SearchBar.Text + "%' OR Title LIKE '%" + SearchBar.Text + "%'"
                 Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
@@ -65,16 +62,8 @@ Public Class InventoryForm
     Private Sub invCategoryBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles invCategoryBox.SelectedIndexChanged
         If invCategoryBox.SelectedIndex = 0 Then
             LoadBookInv(DataGridView1)
-            searchbyBox.Items.Clear()
-            searchbyBox.Items.Add("Title")
-            searchbyBox.Items.Add("Author")
-            searchbyBox.Items.Add("Category")
-            searchbyBox.SelectedIndex = 0
         ElseIf invCategoryBox.SelectedIndex = 1 Then
             LoadMaterialInv(DataGridView1)
-            searchbyBox.Items.Clear()
-            searchbyBox.Items.Add("Title")
-            searchbyBox.SelectedIndex = 0
         End If
     End Sub
 
