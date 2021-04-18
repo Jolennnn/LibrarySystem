@@ -38,7 +38,6 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\LibraryS
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.xml
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.vbprojAssemblyReference.cache
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
-D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BooksBorrowedForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowingForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.InventoryForm.resources

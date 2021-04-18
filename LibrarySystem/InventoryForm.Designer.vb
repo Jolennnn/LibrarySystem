@@ -31,7 +31,7 @@ Partial Class InventoryForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.invCategoryBox = New System.Windows.Forms.ComboBox()
         Me.addMaterialBtn = New System.Windows.Forms.Button()
-        Me.searchbyBox = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -74,9 +74,9 @@ Partial Class InventoryForm
         '
         'SearchBar
         '
-        Me.SearchBar.Location = New System.Drawing.Point(139, 80)
+        Me.SearchBar.Location = New System.Drawing.Point(63, 80)
         Me.SearchBar.Name = "SearchBar"
-        Me.SearchBar.Size = New System.Drawing.Size(553, 20)
+        Me.SearchBar.Size = New System.Drawing.Size(629, 20)
         Me.SearchBar.TabIndex = 3
         '
         'AddBookBtn
@@ -134,23 +134,21 @@ Partial Class InventoryForm
         Me.addMaterialBtn.Text = "Add Material"
         Me.addMaterialBtn.UseVisualStyleBackColor = True
         '
-        'searchbyBox
+        'Label2
         '
-        Me.searchbyBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.searchbyBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.searchbyBox.FormattingEnabled = True
-        Me.searchbyBox.Items.AddRange(New Object() {"Title", "Author", "Category"})
-        Me.searchbyBox.Location = New System.Drawing.Point(12, 80)
-        Me.searchbyBox.Name = "searchbyBox"
-        Me.searchbyBox.Size = New System.Drawing.Size(121, 21)
-        Me.searchbyBox.TabIndex = 7
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 83)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Search:"
         '
         'InventoryForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(714, 431)
-        Me.Controls.Add(Me.searchbyBox)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.invCategoryBox)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.addMaterialBtn)
@@ -179,5 +177,5 @@ Partial Class InventoryForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents invCategoryBox As ComboBox
     Friend WithEvents addMaterialBtn As Button
-    Friend WithEvents searchbyBox As ComboBox
+    Friend WithEvents Label2 As Label
 End Class

@@ -1,4 +1,6 @@
-﻿Public Class InventoryForm
+﻿Imports System.Data.SqlClient
+
+Public Class InventoryForm
     Private Sub addMaterialBtn_Click(sender As Object, e As EventArgs) Handles addMaterialBtn.Click
         AddMaterial.Show()
         Me.Hide()
@@ -20,43 +22,39 @@
     Private Sub SearchBar_TextChanged(sender As Object, e As EventArgs) Handles SearchBar.TextChanged
         If invCategoryBox.SelectedIndex = 0 Then
             LoadBookInv(DataGridView1)
-            Dim searchBy As String
-            Dim dt As DataTable = DataGridView1.DataSource
             If SearchBar.Text <> "" Then
-                If searchbyBox.Text = "Title" Then
-                    searchBy = "Title"
-                ElseIf searchbyBox.Text = "Author" Then
-                    searchBy = "Author"
-                ElseIf searchbyBox.Text = "Category" Then
-                    searchBy = "categoryName"
-                End If
-                Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, SearchBar.Text)
-                Dim filteredRows As DataRow() = dt.Select(filter)
-                If filteredRows.Length() <> 0 Then
-                    DataGridView1.DataSource = filteredRows.CopyToDataTable()
-                Else
-                    dt.Clear()
-                    DataGridView1.DataSource = dt
-                End If
+                Dim query As String = "SELECT Book.BookId, Book.Title, Book.Author, Book.ISBN, Book.YrPublish, Book.shelfNo, Category.categoryName FROM Book INNER JOIN Category ON Book.idCategory = Category.idCategory WHERE Book.Title LIKE '%" + SearchBar.Text + "%' OR Book.Author LIKE '%" + SearchBar.Text + "%' OR Book.ISBN LIKE '%" + SearchBar.Text + "%' OR Category.categoryName LIKE '%" + SearchBar.Text + "%'"
+                Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+                    Using cmd As SqlCommand = New SqlCommand(query, con)
+                        Using sda As New SqlDataAdapter()
+                            cmd.Connection = con
+                            sda.SelectCommand = cmd
+                            Using dt As New DataTable()
+                                sda.Fill(dt)
+                                DataGridView1.DataSource = dt
+                            End Using
+                        End Using
+                    End Using
+                End Using
             Else
                 LoadBookInv(DataGridView1)
             End If
         ElseIf invCategoryBox.SelectedIndex = 1 Then
             LoadMaterialInv(DataGridView1)
-            Dim searchBy As String
-            Dim dt As DataTable = DataGridView1.DataSource
             If SearchBar.Text <> "" Then
-                If searchbyBox.Text = "Title" Then
-                    searchBy = "Title"
-                End If
-                Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, SearchBar.Text)
-                Dim filteredRows As DataRow() = dt.Select(filter)
-                If filteredRows.Length() <> 0 Then
-                    DataGridView1.DataSource = filteredRows.CopyToDataTable()
-                Else
-                    dt.Clear()
-                    DataGridView1.DataSource = dt
-                End If
+                Dim query As String = "SELECT * FROM LibraryMaterial WHERE AccessionNum LIKE '%" + SearchBar.Text + "%' OR Title LIKE '%" + SearchBar.Text + "%'"
+                Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+                    Using cmd As SqlCommand = New SqlCommand(query, con)
+                        Using sda As New SqlDataAdapter()
+                            cmd.Connection = con
+                            sda.SelectCommand = cmd
+                            Using dt As New DataTable()
+                                sda.Fill(dt)
+                                DataGridView1.DataSource = dt
+                            End Using
+                        End Using
+                    End Using
+                End Using
             Else
                 LoadMaterialInv(DataGridView1)
             End If
