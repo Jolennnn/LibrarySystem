@@ -98,7 +98,7 @@ Public Class BooksBorrowedForm
         MainForm.Show()
     End Sub
 
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) 
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs)
         searchFunction()
     End Sub
 
