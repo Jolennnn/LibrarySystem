@@ -33,6 +33,7 @@ Public Class BooksBorrowedForm
         Button6.Enabled = False
         btndeletestudent.Enabled = False
         bhistorybtn.Enabled = False
+        searchbyBox.SelectedIndex = 0
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -97,18 +98,18 @@ Public Class BooksBorrowedForm
         MainForm.Show()
     End Sub
 
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) 
         searchFunction()
     End Sub
 
     Private Sub searchFunction()
         If btndeletestudent.Enabled = True Then
             'Search Student table
-            Dim query As String = "SELECT * FROM Student WHERE idStudent=@id OR Name LIKE '%" + TextBox1.Text + "%'"
+            Dim query As String = "SELECT * FROM Student WHERE idStudent=@id OR Name LIKE '%" + searchBar.Text + "%'"
             Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As SqlCommand = New SqlCommand(query, con)
                     Dim idnum
-                    Integer.TryParse(TextBox1.Text, idnum)
+                    Integer.TryParse(searchBar.Text, idnum)
                     cmd.Parameters.AddWithValue("@id", idnum)
                     Using sda As New SqlDataAdapter()
                         cmd.Connection = con
@@ -122,7 +123,7 @@ Public Class BooksBorrowedForm
             End Using
         Else
             'Search BookBorrow table
-            Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent WHERE Book.Title LIKE '%" + TextBox1.Text + "%' OR Student.Name LIKE '%" + TextBox1.Text + "%' OR Remarks LIKE '%" + TextBox1.Text + "%'"
+            Dim query As String = "SELECT Book_BookId, Book.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM BookBorrow INNER JOIN Book ON BookBorrow.Book_BookId = Book.BookId INNER JOIN Student ON BookBorrow.Student_idStudent = Student.idStudent WHERE Book.Title LIKE '%" + searchBar.Text + "%' OR Student.Name LIKE '%" + searchBar.Text + "%' OR Remarks LIKE '%" + searchBar.Text + "%'"
             Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As SqlCommand = New SqlCommand(query, con)
                     Using sda As New SqlDataAdapter()
@@ -143,5 +144,28 @@ Public Class BooksBorrowedForm
         btndeletestudent.Enabled = False
         bhistorybtn.Enabled = False
         LoadUnreturned(DataGridView1)
+    End Sub
+
+    Private Sub searchBar_TextChanged(sender As Object, e As EventArgs) Handles searchBar.TextChanged
+        LoadBorrow(DataGridView1)
+        Dim searchBy As String
+        Dim dt As DataTable = DataGridView1.DataSource
+        If searchBar.Text <> "" Then
+            If searchbyBox.Text = "Title" Then
+                searchBy = "Title"
+            ElseIf searchbyBox.Text = "Borrower" Then
+                searchBy = "Name"
+            End If
+            Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, searchBar.Text)
+            Dim filteredRows As DataRow() = dt.Select(filter)
+            If filteredRows.Length() <> 0 Then
+                DataGridView1.DataSource = filteredRows.CopyToDataTable()
+            Else
+                dt.Clear()
+                DataGridView1.DataSource = dt
+            End If
+        Else
+            LoadBorrow(DataGridView1)
+        End If
     End Sub
 End Class
