@@ -34,4 +34,13 @@ Public Class ChangePasswordForm
             End Using
         End Using
     End Sub
+
+    Private Sub ChangePasswordForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Parent = PictureBox1
+        Label1.BackColor = Color.Transparent
+        Label2.Parent = PictureBox1
+        Label2.BackColor = Color.Transparent
+        Label3.Parent = PictureBox1
+        Label3.BackColor = Color.Transparent
+    End Sub
 End Class

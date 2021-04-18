@@ -101,12 +101,6 @@
     <Compile Include="AddBookForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddLogsForm.Designer.vb">
-      <DependentUpon>AddLogsForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AddLogsForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="AddMaterial.Designer.vb">
       <DependentUpon>AddMaterial.vb</DependentUpon>
     </Compile>
@@ -254,9 +248,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddBorrowerForm.resx">
       <DependentUpon>AddBorrowerForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddLogsForm.resx">
-      <DependentUpon>AddLogsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddMaterial.resx">
       <DependentUpon>AddMaterial.vb</DependentUpon>

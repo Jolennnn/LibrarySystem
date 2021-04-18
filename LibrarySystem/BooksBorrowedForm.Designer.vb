@@ -41,7 +41,7 @@ Partial Class BooksBorrowedForm
         Me.FLMSLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.unreturnedbtn = New System.Windows.Forms.Button()
-        Me.searchbyBox = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,9 +61,9 @@ Partial Class BooksBorrowedForm
         '
         'searchBar
         '
-        Me.searchBar.Location = New System.Drawing.Point(142, 158)
+        Me.searchBar.Location = New System.Drawing.Point(83, 158)
         Me.searchBar.Name = "searchBar"
-        Me.searchBar.Size = New System.Drawing.Size(505, 20)
+        Me.searchBar.Size = New System.Drawing.Size(564, 20)
         Me.searchBar.TabIndex = 1
         '
         'DataGridView1
@@ -262,23 +262,21 @@ Partial Class BooksBorrowedForm
         Me.unreturnedbtn.Text = "Unreturned Books"
         Me.unreturnedbtn.UseVisualStyleBackColor = True
         '
-        'searchbyBox
+        'Label1
         '
-        Me.searchbyBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.searchbyBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.searchbyBox.FormattingEnabled = True
-        Me.searchbyBox.Items.AddRange(New Object() {"Title", "Borrower"})
-        Me.searchbyBox.Location = New System.Drawing.Point(15, 158)
-        Me.searchbyBox.Name = "searchbyBox"
-        Me.searchbyBox.Size = New System.Drawing.Size(121, 21)
-        Me.searchbyBox.TabIndex = 16
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(18, 161)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Search:"
         '
         'BooksBorrowedForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(967, 677)
-        Me.Controls.Add(Me.searchbyBox)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.LMSLabel)
         Me.Controls.Add(Me.FLMSLabel)
@@ -323,5 +321,5 @@ Partial Class BooksBorrowedForm
     Friend WithEvents bhistorybtn As Button
     Friend WithEvents btndeletestudent As Button
     Friend WithEvents unreturnedbtn As Button
-    Friend WithEvents searchbyBox As ComboBox
+    Friend WithEvents Label1 As Label
 End Class

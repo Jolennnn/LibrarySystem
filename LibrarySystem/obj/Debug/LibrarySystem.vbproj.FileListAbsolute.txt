@@ -30,7 +30,6 @@ C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySyst
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
-C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe.config
@@ -142,3 +141,5 @@ C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowHistoryForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReportsForm.resources
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ChangePasswordForm.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowHistoryForm.resources
+C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ChangePasswordForm.resources

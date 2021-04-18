@@ -96,10 +96,6 @@ Public Class BooksBorrowedForm
         MainForm.Show()
     End Sub
 
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs)
-        searchFunction()
-    End Sub
-
     Private Sub searchFunction()
         If btndeletestudent.Enabled = True Then
             'Search Student table
@@ -145,25 +141,6 @@ Public Class BooksBorrowedForm
     End Sub
 
     Private Sub searchBar_TextChanged(sender As Object, e As EventArgs) Handles searchBar.TextChanged
-        LoadBorrow(DataGridView1)
-        Dim searchBy As String
-        Dim dt As DataTable = DataGridView1.DataSource
-        If searchBar.Text <> "" Then
-            If searchbyBox.Text = "Title" Then
-                searchBy = "Title"
-            ElseIf searchbyBox.Text = "Borrower" Then
-                searchBy = "Name"
-            End If
-            Dim filter As String = String.Format("{0} Like '*{1}*'", searchBy, searchBar.Text)
-            Dim filteredRows As DataRow() = dt.Select(filter)
-            If filteredRows.Length() <> 0 Then
-                DataGridView1.DataSource = filteredRows.CopyToDataTable()
-            Else
-                dt.Clear()
-                DataGridView1.DataSource = dt
-            End If
-        Else
-            LoadBorrow(DataGridView1)
-        End If
+        searchFunction()
     End Sub
 End Class
