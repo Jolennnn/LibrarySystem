@@ -9,8 +9,11 @@ Public Class InventoryForm
     Private Sub InventoryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label1.Parent = PictureBox1
         Label1.BackColor = Color.Transparent
+        Label2.Parent = PictureBox1
+        Label2.BackColor = Color.Transparent
         LoadBookInv(DataGridView1)
         invCategoryBox.SelectedIndex = 0
+        changeBookHeaders()
     End Sub
 
     Private Sub BackBtn_Click(sender As Object, e As EventArgs) Handles BackBtn.Click
@@ -62,6 +65,7 @@ Public Class InventoryForm
     Private Sub invCategoryBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles invCategoryBox.SelectedIndexChanged
         If invCategoryBox.SelectedIndex = 0 Then
             LoadBookInv(DataGridView1)
+            changeBookHeaders()
         ElseIf invCategoryBox.SelectedIndex = 1 Then
             LoadMaterialInv(DataGridView1)
         End If
@@ -70,5 +74,15 @@ Public Class InventoryForm
     Private Sub AddBookBtn_Click(sender As Object, e As EventArgs) Handles AddBookBtn.Click
         AddBookForm.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub changeBookHeaders()
+        DataGridView1.Columns(0).HeaderText = "Book ID"
+        DataGridView1.Columns(1).HeaderText = "Title"
+        DataGridView1.Columns(2).HeaderText = "Student ID"
+        DataGridView1.Columns(3).HeaderText = "Student Name"
+        DataGridView1.Columns(4).HeaderText = "Date Borrowed"
+        DataGridView1.Columns(5).HeaderText = "Date Returned"
+        DataGridView1.Columns(6).HeaderText = "Remarks"
     End Sub
 End Class
