@@ -38,4 +38,29 @@ Public Class ReturnForm
     Private Sub ReturnForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         Me.Dispose()
     End Sub
+
+    Private Sub ReturnForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Parent = PictureBox1
+        Label1.BackColor = Color.Transparent
+        Label3.Parent = PictureBox1
+        Label3.BackColor = Color.Transparent
+        Label6.Parent = PictureBox1
+        Label6.BackColor = Color.Transparent
+        Label2.Parent = PictureBox1
+        Label2.BackColor = Color.Transparent
+        Label4.Parent = PictureBox1
+        Label4.BackColor = Color.Transparent
+        idlbl.Parent = PictureBox1
+        idlbl.BackColor = Color.Transparent
+        namelbl.Parent = PictureBox1
+        namelbl.BackColor = Color.Transparent
+        bookidlbl.Parent = PictureBox1
+        bookidlbl.BackColor = Color.Transparent
+        booklbl.Parent = PictureBox1
+        booklbl.BackColor = Color.Transparent
+        fineslbl.Parent = PictureBox1
+        fineslbl.BackColor = Color.Transparent
+        Label5.Parent = PictureBox1
+        Label5.BackColor = Color.Transparent
+    End Sub
 End Class

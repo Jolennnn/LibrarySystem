@@ -17,6 +17,9 @@ Public Class BooksBorrowedForm
 
     Private Sub BooksBorrowedForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadBorrow(DataGridView1)
+        changeBorrowHeaders()
+        Label1.Parent = PictureBox1
+        Label1.BackColor = Color.Transparent
         FLMSLabel.Parent = PictureBox1
         LMSLabel.Parent = PictureBox1
         GroupBox1.Parent = PictureBox1
@@ -39,6 +42,7 @@ Public Class BooksBorrowedForm
         btndeletestudent.Enabled = True
 
         LoadBorrowers(DataGridView1)
+        changeStudentHeaders()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles borrowlogbtn.Click
@@ -46,6 +50,7 @@ Public Class BooksBorrowedForm
         btndeletestudent.Enabled = False
         bhistorybtn.Enabled = False
         LoadBorrow(DataGridView1)
+        changeBorrowHeaders()
     End Sub
 
     Private Sub btnReturnBook_Click(sender As Object, e As EventArgs) Handles btnReturnBook.Click
@@ -61,6 +66,7 @@ Public Class BooksBorrowedForm
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Button6.Enabled = False
         LoadOverdue(DataGridView1)
+        changeBorrowHeaders()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles bhistorybtn.Click
@@ -137,9 +143,26 @@ Public Class BooksBorrowedForm
         btndeletestudent.Enabled = False
         bhistorybtn.Enabled = False
         LoadUnreturned(DataGridView1)
+        changeBorrowHeaders()
     End Sub
 
     Private Sub searchBar_TextChanged(sender As Object, e As EventArgs) Handles searchBar.TextChanged
         searchFunction()
+    End Sub
+
+    Private Sub changeBorrowHeaders()
+        DataGridView1.Columns(0).HeaderText = "Book ID"
+        DataGridView1.Columns(1).HeaderText = "Title"
+        DataGridView1.Columns(2).HeaderText = "Student ID"
+        DataGridView1.Columns(3).HeaderText = "Student Name"
+        DataGridView1.Columns(4).HeaderText = "Date Borrowed"
+        DataGridView1.Columns(5).HeaderText = "Date Returned"
+        DataGridView1.Columns(6).HeaderText = "Remarks"
+    End Sub
+
+    Private Sub changeStudentHeaders()
+        DataGridView1.Columns(0).HeaderText = "Student ID"
+        DataGridView1.Columns(0).HeaderText = "Fines"
+        DataGridView1.Columns(0).HeaderText = "Student Name"
     End Sub
 End Class

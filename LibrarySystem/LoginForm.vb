@@ -11,6 +11,8 @@ Public Class LoginForm
         PictureBox2.BackColor = Color.Transparent
         Label1.BackColor = Color.Transparent
         Label2.BackColor = Color.Transparent
+        LinkLabel1.Parent = PictureBox1
+        LinkLabel1.BackColor = Color.Transparent
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -30,8 +32,9 @@ Public Class LoginForm
                     If UsernameBox.Text = user And PasswordBox.Text = pass Then
                         Me.Hide()
                         MainForm.Show()
+                        clearText()
                     Else
-                        MsgBox("Heh.. Nice Try, kid.")
+                        MsgBox("Username and Password does not match.")
                     End If
                 End Using
                 con.Close()
@@ -44,8 +47,18 @@ Public Class LoginForm
         PasswordBox.Clear()
     End Sub
 
-    Private Sub changepassBtn_Click(sender As Object, e As EventArgs) Handles changepassBtn.Click
+    Private Sub changepassBtn_Click(sender As Object, e As EventArgs)
         Me.Hide()
         ChangePasswordForm.Show()
+    End Sub
+
+    Private Sub FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs)
+        Application.Exit()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Me.Hide()
+        ChangePasswordForm.Show()
+        clearText()
     End Sub
 End Class

@@ -1,14 +1,12 @@
 ﻿Public Class MainForm
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BooksBorrowedButton.Click
         BooksBorrowedForm.Show()
-        Me.Hide()
     End Sub
 
 
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         InventoryForm.Show()
-        Me.Hide()
     End Sub
 
     Private Sub SomeFormName_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -32,17 +30,11 @@
         GroupBox1.BackColor = Color.Transparent
     End Sub
 
-    Private Sub SummaryReportButton_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub ReservationsButton_Click(sender As Object, e As EventArgs) Handles ReportsButton.Click
-        Me.Hide()
         ReportsForm.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.Hide()
         StudentLogForm.Show()
     End Sub
 

@@ -43,4 +43,8 @@ Public Class ChangePasswordForm
         Label3.Parent = PictureBox1
         Label3.BackColor = Color.Transparent
     End Sub
+
+    Private Sub SomeFormName_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        LoginForm.Show()
+    End Sub
 End Class

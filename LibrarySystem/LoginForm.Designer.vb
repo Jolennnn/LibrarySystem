@@ -31,7 +31,7 @@ Partial Class LoginForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.changepassBtn = New System.Windows.Forms.Button()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -102,7 +102,7 @@ Partial Class LoginForm
         Me.Button1.Location = New System.Drawing.Point(253, 278)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 30)
-        Me.Button1.TabIndex = 5
+        Me.Button1.TabIndex = 3
         Me.Button1.Text = "Log In"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -127,23 +127,24 @@ Partial Class LoginForm
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'changepassBtn
+        'LinkLabel1
         '
-        Me.changepassBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.changepassBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.changepassBtn.Location = New System.Drawing.Point(254, 314)
-        Me.changepassBtn.Name = "changepassBtn"
-        Me.changepassBtn.Size = New System.Drawing.Size(125, 30)
-        Me.changepassBtn.TabIndex = 6
-        Me.changepassBtn.Text = "Change Password"
-        Me.changepassBtn.UseVisualStyleBackColor = True
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel1.Location = New System.Drawing.Point(277, 311)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(99, 16)
+        Me.LinkLabel1.TabIndex = 4
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Change Password"
         '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(550, 415)
-        Me.Controls.Add(Me.changepassBtn)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.LMSLabel)
@@ -172,5 +173,5 @@ Partial Class LoginForm
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents LMSLabel As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents changepassBtn As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
