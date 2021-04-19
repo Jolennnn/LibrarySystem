@@ -5,6 +5,8 @@ Public Class StudentLogOutForm
     Private Sub StudentLogOutForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         studID = StudentLogForm.datacell
         logindate = StudentLogForm.datacell2
+        Label1.Parent = PictureBox1
+        Label1.BackColor = Color.Transparent
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

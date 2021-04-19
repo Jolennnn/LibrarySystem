@@ -56,10 +56,8 @@ Public Class BorrowHistoryForm
     Private Sub changeBorrowHeaders()
         DataGridView1.Columns(0).HeaderText = "Book ID"
         DataGridView1.Columns(1).HeaderText = "Title"
-        DataGridView1.Columns(2).HeaderText = "Student ID"
-        DataGridView1.Columns(3).HeaderText = "Student Name"
-        DataGridView1.Columns(4).HeaderText = "Date Borrowed"
-        DataGridView1.Columns(5).HeaderText = "Date Returned"
-        DataGridView1.Columns(6).HeaderText = "Remarks"
+        DataGridView1.Columns(2).HeaderText = "Date Borrowed"
+        DataGridView1.Columns(3).HeaderText = "Date Returned"
+        DataGridView1.Columns(4).HeaderText = "Remarks"
     End Sub
 End Class

@@ -64,7 +64,7 @@ Partial Class EditBorrowerForm
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(99, 118)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(115, 108)
         Me.PictureBox1.TabIndex = 2
@@ -73,7 +73,7 @@ Partial Class EditBorrowerForm
         'nametxt
         '
         Me.nametxt.Location = New System.Drawing.Point(92, 27)
-        Me.nametxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.nametxt.Margin = New System.Windows.Forms.Padding(2)
         Me.nametxt.Name = "nametxt"
         Me.nametxt.Size = New System.Drawing.Size(134, 20)
         Me.nametxt.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class EditBorrowerForm
         'idtxt
         '
         Me.idtxt.Location = New System.Drawing.Point(92, 50)
-        Me.idtxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.idtxt.Margin = New System.Windows.Forms.Padding(2)
         Me.idtxt.Name = "idtxt"
         Me.idtxt.Size = New System.Drawing.Size(134, 20)
         Me.idtxt.TabIndex = 4
@@ -91,7 +91,7 @@ Partial Class EditBorrowerForm
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(112, 237)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(92, 28)
         Me.Button1.TabIndex = 5
@@ -103,7 +103,7 @@ Partial Class EditBorrowerForm
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(177, 278)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(58, 29)
         Me.Button2.TabIndex = 6
@@ -115,7 +115,7 @@ Partial Class EditBorrowerForm
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(79, 278)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(62, 29)
         Me.Button3.TabIndex = 7
@@ -148,7 +148,7 @@ Partial Class EditBorrowerForm
         'finestxt
         '
         Me.finestxt.Location = New System.Drawing.Point(92, 72)
-        Me.finestxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.finestxt.Margin = New System.Windows.Forms.Padding(2)
         Me.finestxt.Name = "finestxt"
         Me.finestxt.Size = New System.Drawing.Size(134, 20)
         Me.finestxt.TabIndex = 4
@@ -169,7 +169,7 @@ Partial Class EditBorrowerForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "EditBorrowerForm"
         Me.Text = "EditBorrowerForm"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
