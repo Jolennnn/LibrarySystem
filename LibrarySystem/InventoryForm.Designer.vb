@@ -28,7 +28,7 @@ Partial Class InventoryForm
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.SearchBar = New System.Windows.Forms.TextBox()
         Me.AddBookBtn = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.DeleteBtn = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.invCategoryBox = New System.Windows.Forms.ComboBox()
         Me.addMaterialBtn = New System.Windows.Forms.Button()
@@ -78,6 +78,7 @@ Partial Class InventoryForm
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(680, 294)
         Me.DataGridView1.TabIndex = 2
         '
@@ -99,16 +100,16 @@ Partial Class InventoryForm
         Me.AddBookBtn.Text = "Add Book"
         Me.AddBookBtn.UseVisualStyleBackColor = True
         '
-        'Button3
+        'DeleteBtn
         '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(591, 21)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(101, 30)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = " Delete Book"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeleteBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteBtn.Location = New System.Drawing.Point(591, 21)
+        Me.DeleteBtn.Name = "DeleteBtn"
+        Me.DeleteBtn.Size = New System.Drawing.Size(101, 30)
+        Me.DeleteBtn.TabIndex = 4
+        Me.DeleteBtn.Text = " Delete Book"
+        Me.DeleteBtn.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -161,7 +162,7 @@ Partial Class InventoryForm
         Me.ClientSize = New System.Drawing.Size(714, 431)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.invCategoryBox)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.DeleteBtn)
         Me.Controls.Add(Me.addMaterialBtn)
         Me.Controls.Add(Me.AddBookBtn)
         Me.Controls.Add(Me.SearchBar)
@@ -184,7 +185,7 @@ Partial Class InventoryForm
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SearchBar As TextBox
     Friend WithEvents AddBookBtn As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents DeleteBtn As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents invCategoryBox As ComboBox
     Friend WithEvents addMaterialBtn As Button

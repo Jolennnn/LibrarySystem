@@ -85,4 +85,46 @@ Public Class InventoryForm
         DataGridView1.Columns(5).HeaderText = "Shelf Number"
         DataGridView1.Columns(6).HeaderText = "Category Name"
     End Sub
+
+    Private Sub DeleteBtn_Click(sender As Object, e As EventArgs) Handles DeleteBtn.Click
+        If DataGridView1.SelectedRows.Count > 0 Then
+            Dim id As String = DataGridView1.SelectedRows(0).Cells(0).Value.ToString()
+            If invCategoryBox.SelectedIndex = 0 Then
+                Dim confirm As String = MsgBox("Are you sure you want to delete selected row?", vbYesNo)
+                If confirm = vbYes Then
+                    Dim query As String = "DELETE FROM Book WHERE BookId = @BookId"
+                    Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+                        Using cmd As SqlCommand = New SqlCommand(query, con)
+                            cmd.Parameters.AddWithValue("@BookId", id)
+                            con.Open()
+                            cmd.ExecuteNonQuery()
+                            con.Close()
+                            LoadBookInv(DataGridView1)
+                            MsgBox("Successfully deleted.")
+                        End Using
+                    End Using
+                End If
+            ElseIf invCategoryBox.SelectedIndex = 1 Then
+                Dim confirm As String = MsgBox("Are you sure you want to delete selected row?", vbYesNo)
+                If confirm = vbYes Then
+                    Dim query As String = "DELETE FROM LibraryMaterial WHERE AccessionNum = @AccessionNum"
+                    Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+                        Using cmd As SqlCommand = New SqlCommand(query, con)
+                            cmd.Parameters.AddWithValue("@AccessionNum", id)
+                            con.Open()
+                            cmd.ExecuteNonQuery()
+                            con.Close()
+                            LoadMaterialInv(DataGridView1)
+                            MsgBox("Successfully deleted.")
+                        End Using
+                    End Using
+                End If
+            End If
+        Else
+            MsgBox("No rows selected.")
+        End If
+
+
+
+    End Sub
 End Class
