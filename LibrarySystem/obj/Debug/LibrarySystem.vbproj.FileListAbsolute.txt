@@ -142,4 +142,9 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowHistoryForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ChangePasswordForm.resources
 C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ChangePasswordForm.resources
-C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowMaterialFormvb.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.MaterialBorrowingForm.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.M_BorrowerScannerForm.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.MaterialScanner.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowMaterialMenu.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnMaterialForm.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ReturnMaterialScanner.resources

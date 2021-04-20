@@ -107,7 +107,7 @@ Public Class BooksBorrowedForm
             Dim query As String = "SELECT * FROM Student WHERE idStudent=@id OR Name LIKE '%" + searchBar.Text + "%'"
             Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As SqlCommand = New SqlCommand(query, con)
-                    Dim idnum
+                    Dim idnum As Integer
                     Integer.TryParse(searchBar.Text, idnum)
                     cmd.Parameters.AddWithValue("@id", idnum)
                     Using sda As New SqlDataAdapter()

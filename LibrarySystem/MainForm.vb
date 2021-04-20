@@ -53,5 +53,9 @@
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         ReturnForm.ShowDialog()
     End Sub
+
+    Private Sub matsborrowbtn_Click(sender As Object, e As EventArgs) Handles matsborrowbtn.Click
+        BorrowMaterialMenu.ShowDialog()
+    End Sub
 End Class
 

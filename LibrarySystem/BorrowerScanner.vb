@@ -63,4 +63,7 @@ Public Class BorrowerScanner
         Me.Dispose()
     End Sub
 
+    Private Sub scan1_TextChanged(sender As Object, e As EventArgs) Handles scan1.TextChanged
+
+    End Sub
 End Class

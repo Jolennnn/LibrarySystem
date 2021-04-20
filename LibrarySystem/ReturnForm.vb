@@ -11,7 +11,7 @@ Public Class ReturnForm
         If Integer.Parse(fineslbl.Text) > 0 Then
             FinesConfirmationForm.ShowDialog()
         Else
-            Dim query As String = "UPDATE [dbo].[BookBorrow] SET [date_returned] = @datetime, [Remarks] = @remark WHERE Book_BookId=@bookID"
+            Dim query As String = "UPDATE [dbo].[BookBorrow] SET [date_returned] = @datetime, [Remarks] = @remark WHERE Book_BookId=@bookID and date_returned IS NULL"
             Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As SqlCommand = New SqlCommand(query, con)
                     cmd.Parameters.AddWithValue("@datetime", DateTime.Now)

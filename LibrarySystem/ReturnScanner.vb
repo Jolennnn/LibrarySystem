@@ -87,4 +87,9 @@ Public Class ReturnScanner
             MessageBox.Show("Incorrect Borrower QR.")
         End Try
     End Sub
+
+    Private Sub btnclear_Click(sender As Object, e As EventArgs) Handles btnclear.Click
+        TextBox1.Clear()
+    End Sub
+
 End Class

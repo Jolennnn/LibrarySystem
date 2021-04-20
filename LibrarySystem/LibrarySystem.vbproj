@@ -145,10 +145,10 @@
     <Compile Include="AddBorrowerForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BorrowMaterialFormvb.Designer.vb">
-      <DependentUpon>BorrowMaterialFormvb.vb</DependentUpon>
+    <Compile Include="BorrowMaterialMenu.Designer.vb">
+      <DependentUpon>BorrowMaterialMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="BorrowMaterialFormvb.vb">
+    <Compile Include="BorrowMaterialMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChangePasswordForm.Designer.vb">
@@ -179,6 +179,36 @@
       <DependentUpon>LoginForm.vb</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialBorrowingForm.Designer.vb">
+      <DependentUpon>MaterialBorrowingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialBorrowingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialScanner.Designer.vb">
+      <DependentUpon>MaterialScanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialScanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M_BorrowerScannerForm.Designer.vb">
+      <DependentUpon>M_BorrowerScannerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="M_BorrowerScannerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnMaterialForm.Designer.vb">
+      <DependentUpon>ReturnMaterialForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnMaterialForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnMaterialScanner.Designer.vb">
+      <DependentUpon>ReturnMaterialScanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnMaterialScanner.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentLogForm.Designer.vb">
@@ -270,8 +300,8 @@
     <EmbeddedResource Include="BorrowingForm.resx">
       <DependentUpon>BorrowingForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BorrowMaterialFormvb.resx">
-      <DependentUpon>BorrowMaterialFormvb.vb</DependentUpon>
+    <EmbeddedResource Include="BorrowMaterialMenu.resx">
+      <DependentUpon>BorrowMaterialMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePasswordForm.resx">
       <DependentUpon>ChangePasswordForm.vb</DependentUpon>
@@ -287,6 +317,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialBorrowingForm.resx">
+      <DependentUpon>MaterialBorrowingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialScanner.resx">
+      <DependentUpon>MaterialScanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M_BorrowerScannerForm.resx">
+      <DependentUpon>M_BorrowerScannerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnMaterialForm.resx">
+      <DependentUpon>ReturnMaterialForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnMaterialScanner.resx">
+      <DependentUpon>ReturnMaterialScanner.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentLogForm.resx">
       <DependentUpon>StudentLogForm.vb</DependentUpon>
