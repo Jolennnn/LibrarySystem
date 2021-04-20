@@ -2,8 +2,7 @@
 
 Public Class InventoryForm
     Private Sub addMaterialBtn_Click(sender As Object, e As EventArgs) Handles addMaterialBtn.Click
-        AddMaterial.Show()
-        Me.Hide()
+        AddMaterial.ShowDialog()
     End Sub
 
     Private Sub InventoryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -84,5 +83,9 @@ Public Class InventoryForm
         DataGridView1.Columns(4).HeaderText = "Year Published"
         DataGridView1.Columns(5).HeaderText = "Shelf Number"
         DataGridView1.Columns(6).HeaderText = "Category Name"
+    End Sub
+
+    Private Sub InventoryForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Me.Dispose()
     End Sub
 End Class

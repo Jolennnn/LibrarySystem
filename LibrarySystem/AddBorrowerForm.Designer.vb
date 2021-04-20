@@ -29,7 +29,7 @@ Partial Class AddBorrowerForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.qrbox1 = New System.Windows.Forms.PictureBox()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.QRgenbtn = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.qrbox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,24 +109,24 @@ Partial Class AddBorrowerForm
         Me.qrbox1.TabIndex = 3
         Me.qrbox1.TabStop = False
         '
-        'Button4
+        'QRgenbtn
         '
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(173, 352)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(132, 37)
-        Me.Button4.TabIndex = 2
-        Me.Button4.Text = "Generate QR"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.QRgenbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.QRgenbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QRgenbtn.Location = New System.Drawing.Point(173, 352)
+        Me.QRgenbtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.QRgenbtn.Name = "QRgenbtn"
+        Me.QRgenbtn.Size = New System.Drawing.Size(132, 37)
+        Me.QRgenbtn.TabIndex = 2
+        Me.QRgenbtn.Text = "Generate QR"
+        Me.QRgenbtn.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(499, 474)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -138,7 +138,7 @@ Partial Class AddBorrowerForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 474)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.QRgenbtn)
         Me.Controls.Add(Me.qrbox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -165,6 +165,6 @@ Partial Class AddBorrowerForm
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents qrbox1 As PictureBox
-    Friend WithEvents Button4 As Button
+    Friend WithEvents QRgenbtn As Button
     Friend WithEvents PictureBox1 As PictureBox
 End Class

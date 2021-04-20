@@ -145,6 +145,12 @@
     <Compile Include="AddBorrowerForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BorrowMaterialFormvb.Designer.vb">
+      <DependentUpon>BorrowMaterialFormvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowMaterialFormvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ChangePasswordForm.Designer.vb">
       <DependentUpon>ChangePasswordForm.vb</DependentUpon>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowingForm.resx">
       <DependentUpon>BorrowingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowMaterialFormvb.resx">
+      <DependentUpon>BorrowMaterialFormvb.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePasswordForm.resx">
       <DependentUpon>ChangePasswordForm.vb</DependentUpon>

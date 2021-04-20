@@ -5,7 +5,7 @@ Public Class AddBorrowerForm
         Me.Close()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles QRgenbtn.Click
         Dim flag As Integer
         'checking fields
         If System.Text.RegularExpressions.Regex.IsMatch(name1.Text, "^[a-zA-Z0-9\s]+$") Then
@@ -28,33 +28,18 @@ Public Class AddBorrowerForm
                     If ds.Read() Then
                         MessageBox.Show("ID already exists.")
                     Else
-                        Dim idnum As Integer
-                        Int32.TryParse(id1.Text, idnum)
-                        'query add borrower
-                        Dim query2 As String = "INSERT INTO [dbo].[Student] ([idStudent], [Name], [Fines]) VALUES(@id, @name, 0)"
-                        Using con2 As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
-                            Using cmd2 As SqlCommand = New SqlCommand(query2, con2)
-                                cmd2.Parameters.AddWithValue("@id", idnum)
-                                cmd2.Parameters.AddWithValue("@name", name1.Text)
+                        'write barcode
+                        'initialize barcode writer
+                        Dim writer As New BarcodeWriter
+                        writer.Format = BarcodeFormat.QR_CODE
+                        Dim options As New ZXing.Common.EncodingOptions
 
-                                con2.Open()
-                                cmd2.ExecuteNonQuery()
-                                con2.Close()
+                        'setting QR dimensions
+                        options.Width = 200
+                        options.Height = 200
 
-                                'initialize barcode writer
-                                Dim writer As New BarcodeWriter
-                                writer.Format = BarcodeFormat.QR_CODE
-                                Dim options As New ZXing.Common.EncodingOptions
-
-                                'setting QR dimensions
-                                options.Width = 200
-                                options.Height = 200
-
-                                'write QR
-                                qrbox1.Image = writer.Write(name1.Text + "_" + id1.Text)
-                            End Using
-                        End Using
-
+                        'write QR
+                        qrbox1.Image = writer.Write(name1.Text + "_" + id1.Text)
                     End If
                     con.Close()
                 End Using
@@ -82,6 +67,22 @@ Public Class AddBorrowerForm
     End Sub
 
     Private Sub addBorrower()
+
+        Dim idnum As Integer
+        Int32.TryParse(id1.Text, idnum)
+        'query add borrower
+        Dim query2 As String = "INSERT INTO [dbo].[Student] ([idStudent], [Name], [Fines]) VALUES(@id, @name, 0)"
+        Using con2 As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd2 As SqlCommand = New SqlCommand(query2, con2)
+                cmd2.Parameters.AddWithValue("@id", idnum)
+                cmd2.Parameters.AddWithValue("@name", name1.Text)
+
+                con2.Open()
+                cmd2.ExecuteNonQuery()
+                con2.Close()
+            End Using
+        End Using
+
         MessageBox.Show("Successfully added. QR codes can be found in MyPictures folder.")
         Module1.LoadBookInv(InventoryForm.DataGridView1)
         'saving QR to file

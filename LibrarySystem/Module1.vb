@@ -170,4 +170,36 @@ Module Module1
         End Using
     End Sub
 
+    Sub LoadMaterialHistory(table As Object)
+        Dim query As String = "SELECT LibraryMaterial_AccessionNum, LibraryMaterial.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM MaterialBorrow INNER JOIN LibraryMaterial ON MaterialBorrow.LibraryMaterial_AccessionNum = LibraryMaterial.AccessionNum INNER JOIN Student ON MaterialBorrow.Student_idStudent = Student.idStudent ORDER BY DESC"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                Using sda As New SqlDataAdapter()
+                    cmd.Connection = con
+                    sda.SelectCommand = cmd
+                    Using dt As New DataTable()
+                        sda.Fill(dt)
+                        table.DataSource = dt
+                    End Using
+                End Using
+            End Using
+        End Using
+    End Sub
+
+    Sub LoadMaterialUnreturned(table As Object)
+        Dim query As String = "SELECT LibraryMaterial_AccessionNum, LibraryMaterial.Title, Student_idStudent, Student.Name, date_borrowed, date_returned, Remarks FROM MaterialBorrow INNER JOIN LibraryMaterial ON MaterialBorrow.LibraryMaterial_AccessionNum = LibraryMaterial.AccessionNum INNER JOIN Student ON MaterialBorrow.Student_idStudent = Student.idStudent WHERE date_returned IS NULL ORDER BY DESC"
+        Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd As SqlCommand = New SqlCommand(query, con)
+                Using sda As New SqlDataAdapter()
+                    cmd.Connection = con
+                    sda.SelectCommand = cmd
+                    Using dt As New DataTable()
+                        sda.Fill(dt)
+                        table.DataSource = dt
+                    End Using
+                End Using
+            End Using
+        End Using
+    End Sub
+
 End Module
