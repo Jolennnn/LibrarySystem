@@ -57,9 +57,10 @@ Public Class EditBorrowerForm
             MessageBox.Show("Changes unsaved.")
         ElseIf result = DialogResult.Yes Then
             'query update borrower
-            Dim query2 As String = "UPDATE [dbo].[Student] SET [Name]=@name, [Fines]=@fines WHERE idStudent=@id"
+            Dim query2 As String = "UPDATE [dbo].[Student] SET [Name]=@name,[idStudent]=@newid, [Fines]=@fines WHERE idStudent=@id"
             Using con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
                 Using cmd As SqlCommand = New SqlCommand(query2, con)
+                    cmd.Parameters.AddWithValue("@newid", Integer.Parse(idtxt.Text))
                     cmd.Parameters.AddWithValue("@id", Integer.Parse(oldID))
                     cmd.Parameters.AddWithValue("@name", nametxt.Text)
                     cmd.Parameters.AddWithValue("@fines", Integer.Parse(finestxt.Text))

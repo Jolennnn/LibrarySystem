@@ -52,7 +52,6 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddBookForm.resources
-C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.AddLogsForm.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LoginForm.resources
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.dll
 C:\Users\Kokong\Source\Repos\LibrarySystem\LibrarySystem\bin\Debug\zxing.presentation.dll
@@ -142,3 +141,4 @@ D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibraryS
 D:\School Projects\Library System\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ChangePasswordForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.BorrowHistoryForm.resources
 C:\Users\makiling\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ChangePasswordForm.resources
+C:\Users\Kokong\source\repos\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.ChangePasswordForm.resources

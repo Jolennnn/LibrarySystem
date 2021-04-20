@@ -8,7 +8,7 @@ Public Class AddBorrowerForm
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim flag As Integer
         'checking fields
-        If System.Text.RegularExpressions.Regex.IsMatch(name1.Text, "^[a-zA-Z0-9]+$") Then
+        If System.Text.RegularExpressions.Regex.IsMatch(name1.Text, "^[a-zA-Z0-9\s]+$") Then
             flag += 1
         End If
 
