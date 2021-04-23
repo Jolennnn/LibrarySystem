@@ -46,6 +46,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(68, 360)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(21, 16)
@@ -56,6 +57,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(50, 334)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(40, 16)
@@ -88,6 +90,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(379, 334)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(32, 16)
@@ -98,6 +101,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(322, 360)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(89, 16)
@@ -108,6 +112,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.bnamelbl.AutoSize = True
         Me.bnamelbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bnamelbl.ForeColor = System.Drawing.Color.White
         Me.bnamelbl.Location = New System.Drawing.Point(104, 334)
         Me.bnamelbl.Name = "bnamelbl"
         Me.bnamelbl.Size = New System.Drawing.Size(89, 16)
@@ -118,6 +123,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.bidlbl.AutoSize = True
         Me.bidlbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bidlbl.ForeColor = System.Drawing.Color.White
         Me.bidlbl.Location = New System.Drawing.Point(104, 360)
         Me.bidlbl.Name = "bidlbl"
         Me.bidlbl.Size = New System.Drawing.Size(70, 16)
@@ -128,6 +134,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.mtitlelbl.AutoSize = True
         Me.mtitlelbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mtitlelbl.ForeColor = System.Drawing.Color.White
         Me.mtitlelbl.Location = New System.Drawing.Point(428, 334)
         Me.mtitlelbl.Name = "mtitlelbl"
         Me.mtitlelbl.Size = New System.Drawing.Size(74, 16)
@@ -138,6 +145,7 @@ Partial Class MaterialBorrowingForm
         '
         Me.midlbl.AutoSize = True
         Me.midlbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.midlbl.ForeColor = System.Drawing.Color.White
         Me.midlbl.Location = New System.Drawing.Point(428, 360)
         Me.midlbl.Name = "midlbl"
         Me.midlbl.Size = New System.Drawing.Size(63, 16)
@@ -217,7 +225,7 @@ Partial Class MaterialBorrowingForm
         Me.Controls.Add(Me.MaterialQR)
         Me.Controls.Add(Me.BorrowerQR)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MaterialBorrowingForm"
         Me.Text = "MaterialBorrowingForm"
         CType(Me.MaterialQR, System.ComponentModel.ISupportInitialize).EndInit()

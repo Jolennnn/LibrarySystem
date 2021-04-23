@@ -28,4 +28,25 @@ Public Class ReturnMaterialForm
         Me.Dispose()
 
     End Sub
+
+    Private Sub ReturnMaterialForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Parent = PictureBox2
+        Label1.BackColor = Color.Transparent
+        Label3.Parent = PictureBox2
+        Label3.BackColor = Color.Transparent
+        Label6.Parent = PictureBox2
+        Label6.BackColor = Color.Transparent
+        Label2.Parent = PictureBox2
+        Label2.BackColor = Color.Transparent
+        Label5.Parent = PictureBox2
+        Label5.BackColor = Color.Transparent
+        idlbl.Parent = PictureBox2
+        idlbl.BackColor = Color.Transparent
+        namelbl.Parent = PictureBox2
+        namelbl.BackColor = Color.Transparent
+        midlbl.Parent = PictureBox2
+        midlbl.BackColor = Color.Transparent
+        mtitlelbl.Parent = PictureBox2
+        mtitlelbl.BackColor = Color.Transparent
+    End Sub
 End Class
