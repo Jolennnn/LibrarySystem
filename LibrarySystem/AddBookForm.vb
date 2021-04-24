@@ -78,6 +78,7 @@ Public Class AddBookForm
         End If
 
         QRbox1.Image.Save(savefile, System.Drawing.Imaging.ImageFormat.Png)
+        Button1.Enabled = True
     End Sub
 
     Private Sub AddBookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -93,7 +94,7 @@ Public Class AddBookForm
         Label4.BackColor = Color.Transparent
         Label5.BackColor = Color.Transparent
         Label6.BackColor = Color.Transparent
-
+        Button1.Enabled = False
 
         Dim con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
         Dim cmd As SqlCommand = New SqlCommand("SELECT * from Category", con)

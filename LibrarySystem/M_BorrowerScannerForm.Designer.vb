@@ -32,7 +32,7 @@ Partial Class M_BorrowerScannerForm
         'scan1
         '
         Me.scan1.Location = New System.Drawing.Point(61, 48)
-        Me.scan1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.scan1.Margin = New System.Windows.Forms.Padding(2)
         Me.scan1.Name = "scan1"
         Me.scan1.Size = New System.Drawing.Size(314, 20)
         Me.scan1.TabIndex = 3
@@ -42,7 +42,7 @@ Partial Class M_BorrowerScannerForm
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(61, 99)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(106, 39)
         Me.Button2.TabIndex = 5
@@ -54,7 +54,7 @@ Partial Class M_BorrowerScannerForm
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(269, 99)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 39)
         Me.Button1.TabIndex = 4
@@ -81,9 +81,9 @@ Partial Class M_BorrowerScannerForm
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "M_BorrowerScannerForm"
-        Me.Text = "Add Borrower"
+        Me.Text = "Scan Borrower"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

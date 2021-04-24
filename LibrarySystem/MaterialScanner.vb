@@ -55,4 +55,8 @@ Class MaterialScanner
     Private Sub BorrowerScanner_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         Me.Dispose()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        scan1.Clear()
+    End Sub
 End Class

@@ -3,6 +3,8 @@ Imports ZXing
 Public Class MaterialBorrowingForm
     Private Sub btnScanBorrower_Click(sender As Object, e As EventArgs) Handles btnScanBorrower.Click
         M_BorrowerScannerForm.ShowDialog()
+        bnamelbl.Visible = True
+        bidlbl.Visible = True
     End Sub
 
     Private Sub btnconfirm_Click(sender As Object, e As EventArgs) Handles btnconfirm.Click
@@ -59,6 +61,8 @@ Public Class MaterialBorrowingForm
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MaterialScanner.ShowDialog()
+        midlbl.Visible = True
+        mtitlelbl.Visible = True
     End Sub
 
     Private Sub MaterialBorrowingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load

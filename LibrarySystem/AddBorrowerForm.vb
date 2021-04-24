@@ -40,6 +40,7 @@ Public Class AddBorrowerForm
 
                         'write QR
                         qrbox1.Image = writer.Write(name1.Text + "_" + id1.Text)
+                        Button1.Enabled = True
                     End If
                     con.Close()
                 End Using
@@ -58,6 +59,7 @@ Public Class AddBorrowerForm
         Label1.BackColor = Color.Transparent
         Label2.Parent = PictureBox1
         Label2.BackColor = Color.Transparent
+        Button1.Enabled = False
     End Sub
 
     Private Sub AddBorrowerForm_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress

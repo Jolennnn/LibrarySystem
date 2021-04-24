@@ -3,6 +3,10 @@ Imports System.Data.SqlClient
 Public Class ReturnMaterialForm
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ReturnMaterialScanner.ShowDialog()
+        idlbl.Visible = True
+        namelbl.Visible = True
+        midlbl.Visible = True
+        mtitlelbl.Visible = True
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -48,5 +52,10 @@ Public Class ReturnMaterialForm
         midlbl.BackColor = Color.Transparent
         mtitlelbl.Parent = PictureBox2
         mtitlelbl.BackColor = Color.Transparent
+
+        idlbl.Visible = False
+        namelbl.Visible = False
+        midlbl.Visible = False
+        mtitlelbl.Visible = False
     End Sub
 End Class

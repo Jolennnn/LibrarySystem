@@ -4,6 +4,11 @@ Imports System.Data.SqlClient
 Public Class ReturnForm
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ReturnScanner.ShowDialog()
+        idlbl.Visible = True
+        namelbl.Visible = True
+        bookidlbl.Visible = True
+        booklbl.Visible = True
+        fineslbl.Visible = True
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -62,5 +67,10 @@ Public Class ReturnForm
         fineslbl.BackColor = Color.Transparent
         Label5.Parent = PictureBox2
         Label5.BackColor = Color.Transparent
+        idlbl.Visible = False
+        namelbl.Visible = False
+        bookidlbl.Visible = False
+        booklbl.Visible = False
+        fineslbl.Visible = False
     End Sub
 End Class

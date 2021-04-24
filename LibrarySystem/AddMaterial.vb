@@ -7,6 +7,7 @@ Public Class AddMaterial
         Label2.Parent = PictureBox1
         Label1.BackColor = Color.Transparent
         Label2.BackColor = Color.Transparent
+        Button2.Enabled = False
     End Sub
 
     Private Sub mAddBtn_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -80,6 +81,7 @@ Public Class AddMaterial
 
                         'write QR
                         PictureBox2.Image = writer.Write(mtitleBox.Text + "_" + accnumBox.Text)
+                        Button2.Enabled = True
                     End If
                     con.Close()
                 End Using

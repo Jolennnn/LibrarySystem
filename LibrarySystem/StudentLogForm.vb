@@ -25,10 +25,14 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim i = DataGridView1.CurrentRow.Index
-        datacell = DataGridView1.Item(0, i).Value
-        datacell2 = DataGridView1.Item(2, i).Value
-        StudentLogOutForm.ShowDialog()
+        If DataGridView1.SelectedRows.Count = 0 Then
+            MsgBox("Please select a person to log out.")
+        Else
+            Dim i = DataGridView1.CurrentRow.Index
+            datacell = DataGridView1.Item(0, i).Value
+            datacell2 = DataGridView1.Item(2, i).Value
+            StudentLogOutForm.ShowDialog()
+        End If
     End Sub
 
     Private Sub changeCompleteHeaders()

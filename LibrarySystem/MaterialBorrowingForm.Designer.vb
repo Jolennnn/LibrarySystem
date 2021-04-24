@@ -118,6 +118,7 @@ Partial Class MaterialBorrowingForm
         Me.bnamelbl.Size = New System.Drawing.Size(89, 16)
         Me.bnamelbl.TabIndex = 6
         Me.bnamelbl.Text = "Borrower Name"
+        Me.bnamelbl.Visible = False
         '
         'bidlbl
         '
@@ -129,6 +130,7 @@ Partial Class MaterialBorrowingForm
         Me.bidlbl.Size = New System.Drawing.Size(70, 16)
         Me.bidlbl.TabIndex = 7
         Me.bidlbl.Text = "Borrower ID"
+        Me.bidlbl.Visible = False
         '
         'mtitlelbl
         '
@@ -140,6 +142,7 @@ Partial Class MaterialBorrowingForm
         Me.mtitlelbl.Size = New System.Drawing.Size(74, 16)
         Me.mtitlelbl.TabIndex = 6
         Me.mtitlelbl.Text = "Material Title"
+        Me.mtitlelbl.Visible = False
         '
         'midlbl
         '
@@ -151,6 +154,7 @@ Partial Class MaterialBorrowingForm
         Me.midlbl.Size = New System.Drawing.Size(63, 16)
         Me.midlbl.TabIndex = 7
         Me.midlbl.Text = "Material ID"
+        Me.midlbl.Visible = False
         '
         'btnconfirm
         '

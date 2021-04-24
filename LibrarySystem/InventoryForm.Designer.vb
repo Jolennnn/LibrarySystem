@@ -41,10 +41,9 @@ Partial Class InventoryForm
         '
         Me.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BackBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BackBtn.Location = New System.Drawing.Point(16, 26)
-        Me.BackBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BackBtn.Location = New System.Drawing.Point(12, 21)
         Me.BackBtn.Name = "BackBtn"
-        Me.BackBtn.Size = New System.Drawing.Size(60, 37)
+        Me.BackBtn.Size = New System.Drawing.Size(45, 30)
         Me.BackBtn.TabIndex = 0
         Me.BackBtn.Text = "Back"
         Me.BackBtn.UseVisualStyleBackColor = True
@@ -54,10 +53,9 @@ Partial Class InventoryForm
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(84, 15)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(63, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(147, 48)
+        Me.Label1.Size = New System.Drawing.Size(116, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Inventory"
         '
@@ -75,32 +73,29 @@ Partial Class InventoryForm
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 145)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 118)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(907, 362)
+        Me.DataGridView1.Size = New System.Drawing.Size(680, 294)
         Me.DataGridView1.TabIndex = 2
         '
         'SearchBar
         '
-        Me.SearchBar.Location = New System.Drawing.Point(84, 98)
-        Me.SearchBar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SearchBar.Location = New System.Drawing.Point(63, 80)
         Me.SearchBar.Name = "SearchBar"
-        Me.SearchBar.Size = New System.Drawing.Size(837, 22)
+        Me.SearchBar.Size = New System.Drawing.Size(629, 20)
         Me.SearchBar.TabIndex = 3
         '
         'AddBookBtn
         '
         Me.AddBookBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AddBookBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddBookBtn.Location = New System.Drawing.Point(548, 26)
-        Me.AddBookBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AddBookBtn.Location = New System.Drawing.Point(456, 21)
         Me.AddBookBtn.Name = "AddBookBtn"
-        Me.AddBookBtn.Size = New System.Drawing.Size(100, 37)
+        Me.AddBookBtn.Size = New System.Drawing.Size(75, 30)
         Me.AddBookBtn.TabIndex = 4
         Me.AddBookBtn.Text = "Add Book"
         Me.AddBookBtn.UseVisualStyleBackColor = True
@@ -109,12 +104,11 @@ Partial Class InventoryForm
         '
         Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DeleteBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DeleteBtn.Location = New System.Drawing.Point(788, 26)
-        Me.DeleteBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DeleteBtn.Location = New System.Drawing.Point(636, 21)
         Me.DeleteBtn.Name = "DeleteBtn"
-        Me.DeleteBtn.Size = New System.Drawing.Size(135, 37)
+        Me.DeleteBtn.Size = New System.Drawing.Size(56, 30)
         Me.DeleteBtn.TabIndex = 4
-        Me.DeleteBtn.Text = " Delete Book"
+        Me.DeleteBtn.Text = " Delete"
         Me.DeleteBtn.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -122,9 +116,8 @@ Partial Class InventoryForm
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(952, 530)
+        Me.PictureBox1.Size = New System.Drawing.Size(714, 431)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
@@ -135,20 +128,18 @@ Partial Class InventoryForm
         Me.invCategoryBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.invCategoryBox.FormattingEnabled = True
         Me.invCategoryBox.Items.AddRange(New Object() {"Books", "Materials"})
-        Me.invCategoryBox.Location = New System.Drawing.Point(247, 33)
-        Me.invCategoryBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.invCategoryBox.Location = New System.Drawing.Point(185, 27)
         Me.invCategoryBox.Name = "invCategoryBox"
-        Me.invCategoryBox.Size = New System.Drawing.Size(160, 24)
+        Me.invCategoryBox.Size = New System.Drawing.Size(121, 21)
         Me.invCategoryBox.TabIndex = 6
         '
         'addMaterialBtn
         '
         Me.addMaterialBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.addMaterialBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addMaterialBtn.Location = New System.Drawing.Point(656, 26)
-        Me.addMaterialBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.addMaterialBtn.Location = New System.Drawing.Point(537, 21)
         Me.addMaterialBtn.Name = "addMaterialBtn"
-        Me.addMaterialBtn.Size = New System.Drawing.Size(124, 37)
+        Me.addMaterialBtn.Size = New System.Drawing.Size(93, 30)
         Me.addMaterialBtn.TabIndex = 4
         Me.addMaterialBtn.Text = "Add Material"
         Me.addMaterialBtn.UseVisualStyleBackColor = True
@@ -158,18 +149,17 @@ Partial Class InventoryForm
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(17, 102)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(13, 83)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 21)
+        Me.Label2.Size = New System.Drawing.Size(47, 16)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "Search:"
         '
         'InventoryForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(952, 530)
+        Me.ClientSize = New System.Drawing.Size(714, 431)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.invCategoryBox)
         Me.Controls.Add(Me.DeleteBtn)
@@ -180,7 +170,6 @@ Partial Class InventoryForm
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BackBtn)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "InventoryForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inventory"

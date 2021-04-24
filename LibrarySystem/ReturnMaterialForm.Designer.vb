@@ -70,7 +70,7 @@ Partial Class ReturnMaterialForm
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 45)
         Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Return Book"
+        Me.Button2.Text = "Return Material"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label5
