@@ -45,28 +45,6 @@ Public Class ReturnForm
     End Sub
 
     Private Sub ReturnForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Parent = PictureBox2
-        Label1.BackColor = Color.Transparent
-        Label3.Parent = PictureBox2
-        Label3.BackColor = Color.Transparent
-        Label6.Parent = PictureBox2
-        Label6.BackColor = Color.Transparent
-        Label2.Parent = PictureBox2
-        Label2.BackColor = Color.Transparent
-        Label4.Parent = PictureBox2
-        Label4.BackColor = Color.Transparent
-        idlbl.Parent = PictureBox2
-        idlbl.BackColor = Color.Transparent
-        namelbl.Parent = PictureBox2
-        namelbl.BackColor = Color.Transparent
-        bookidlbl.Parent = PictureBox2
-        bookidlbl.BackColor = Color.Transparent
-        booklbl.Parent = PictureBox2
-        booklbl.BackColor = Color.Transparent
-        fineslbl.Parent = PictureBox2
-        fineslbl.BackColor = Color.Transparent
-        Label5.Parent = PictureBox2
-        Label5.BackColor = Color.Transparent
         idlbl.Visible = False
         namelbl.Visible = False
         bookidlbl.Visible = False

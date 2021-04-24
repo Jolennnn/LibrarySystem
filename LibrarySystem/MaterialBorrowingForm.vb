@@ -66,21 +66,11 @@ Public Class MaterialBorrowingForm
     End Sub
 
     Private Sub MaterialBorrowingForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Parent = PictureBox1
-        Label1.BackColor = Color.Transparent
-        Label2.Parent = PictureBox1
-        Label2.BackColor = Color.Transparent
-        Label3.Parent = PictureBox1
-        Label3.BackColor = Color.Transparent
-        Label4.Parent = PictureBox1
-        Label4.BackColor = Color.Transparent
-        bnamelbl.Parent = PictureBox1
-        bnamelbl.BackColor = Color.Transparent
-        bidlbl.Parent = PictureBox1
-        bidlbl.BackColor = Color.Transparent
-        mtitlelbl.Parent = PictureBox1
-        mtitlelbl.BackColor = Color.Transparent
-        midlbl.Parent = PictureBox1
-        midlbl.BackColor = Color.Transparent
+        bnamelbl.Visible = False
+        bidlbl.Visible = False
+        mtitlelbl.Visible = False
+        midlbl.Visible = False
     End Sub
+
+
 End Class

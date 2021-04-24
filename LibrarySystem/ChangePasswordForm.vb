@@ -47,4 +47,5 @@ Public Class ChangePasswordForm
     Private Sub SomeFormName_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         LoginForm.Show()
     End Sub
+
 End Class

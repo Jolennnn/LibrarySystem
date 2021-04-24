@@ -39,7 +39,7 @@ Partial Class AddBorrowerForm
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(108, 410)
+        Me.Button1.Location = New System.Drawing.Point(106, 410)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 47)
@@ -51,7 +51,7 @@ Partial Class AddBorrowerForm
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(260, 410)
+        Me.Button2.Location = New System.Drawing.Point(252, 410)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(121, 47)
@@ -91,7 +91,7 @@ Partial Class AddBorrowerForm
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(33, 82)
+        Me.Label2.Location = New System.Drawing.Point(36, 78)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 18)
         Me.Label2.TabIndex = 2
@@ -101,7 +101,7 @@ Partial Class AddBorrowerForm
         '
         Me.qrbox1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.qrbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.qrbox1.Location = New System.Drawing.Point(144, 135)
+        Me.qrbox1.Location = New System.Drawing.Point(139, 135)
         Me.qrbox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.qrbox1.Name = "qrbox1"
         Me.qrbox1.Size = New System.Drawing.Size(200, 199)
@@ -113,7 +113,7 @@ Partial Class AddBorrowerForm
         '
         Me.QRgenbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.QRgenbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.QRgenbtn.Location = New System.Drawing.Point(173, 352)
+        Me.QRgenbtn.Location = New System.Drawing.Point(172, 338)
         Me.QRgenbtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.QRgenbtn.Name = "QRgenbtn"
         Me.QRgenbtn.Size = New System.Drawing.Size(132, 37)
@@ -128,7 +128,7 @@ Partial Class AddBorrowerForm
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(499, 474)
+        Me.PictureBox1.Size = New System.Drawing.Size(464, 498)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
@@ -137,7 +137,7 @@ Partial Class AddBorrowerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 474)
+        Me.ClientSize = New System.Drawing.Size(464, 498)
         Me.Controls.Add(Me.QRgenbtn)
         Me.Controls.Add(Me.qrbox1)
         Me.Controls.Add(Me.Label2)

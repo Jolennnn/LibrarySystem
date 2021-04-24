@@ -80,7 +80,7 @@ Partial Class BorrowingForm
         '
         Me.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirm.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirm.Location = New System.Drawing.Point(408, 602)
+        Me.btnConfirm.Location = New System.Drawing.Point(366, 603)
         Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4)
         Me.btnConfirm.Name = "btnConfirm"
         Me.btnConfirm.Size = New System.Drawing.Size(124, 46)
@@ -92,7 +92,7 @@ Partial Class BorrowingForm
         '
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(540, 602)
+        Me.btnCancel.Location = New System.Drawing.Point(530, 603)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(124, 46)
@@ -104,7 +104,7 @@ Partial Class BorrowingForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(59, 466)
+        Me.Label1.Location = New System.Drawing.Point(94, 352)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(52, 21)
@@ -115,7 +115,7 @@ Partial Class BorrowingForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(83, 498)
+        Me.Label4.Location = New System.Drawing.Point(118, 384)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(26, 21)
@@ -126,7 +126,7 @@ Partial Class BorrowingForm
         '
         Me.btnScanBorrower.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScanBorrower.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScanBorrower.Location = New System.Drawing.Point(175, 383)
+        Me.btnScanBorrower.Location = New System.Drawing.Point(141, 283)
         Me.btnScanBorrower.Margin = New System.Windows.Forms.Padding(4)
         Me.btnScanBorrower.Name = "btnScanBorrower"
         Me.btnScanBorrower.Size = New System.Drawing.Size(163, 46)
@@ -138,7 +138,7 @@ Partial Class BorrowingForm
         '
         Me.BtnScanBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnScanBook.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnScanBook.Location = New System.Drawing.Point(732, 383)
+        Me.BtnScanBook.Location = New System.Drawing.Point(142, 283)
         Me.BtnScanBook.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnScanBook.Name = "BtnScanBook"
         Me.BtnScanBook.Size = New System.Drawing.Size(155, 46)
@@ -150,7 +150,7 @@ Partial Class BorrowingForm
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(173, 384)
+        Me.Label9.Location = New System.Drawing.Point(108, 379)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(41, 21)
@@ -161,7 +161,7 @@ Partial Class BorrowingForm
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(159, 410)
+        Me.Label10.Location = New System.Drawing.Point(94, 405)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(56, 21)
@@ -172,7 +172,7 @@ Partial Class BorrowingForm
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(171, 437)
+        Me.Label11.Location = New System.Drawing.Point(106, 432)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(45, 21)
@@ -183,7 +183,7 @@ Partial Class BorrowingForm
         '
         Me.bookID.AutoSize = True
         Me.bookID.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bookID.Location = New System.Drawing.Point(221, 357)
+        Me.bookID.Location = New System.Drawing.Point(173, 352)
         Me.bookID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.bookID.Name = "bookID"
         Me.bookID.Size = New System.Drawing.Size(14, 21)
@@ -194,7 +194,7 @@ Partial Class BorrowingForm
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(105, 464)
+        Me.Label13.Location = New System.Drawing.Point(40, 459)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(109, 21)
@@ -205,7 +205,7 @@ Partial Class BorrowingForm
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(169, 486)
+        Me.Label14.Location = New System.Drawing.Point(104, 481)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(46, 21)
@@ -216,7 +216,7 @@ Partial Class BorrowingForm
         '
         Me.borrowerName.AutoSize = True
         Me.borrowerName.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.borrowerName.Location = New System.Drawing.Point(125, 466)
+        Me.borrowerName.Location = New System.Drawing.Point(153, 352)
         Me.borrowerName.Name = "borrowerName"
         Me.borrowerName.Size = New System.Drawing.Size(14, 21)
         Me.borrowerName.TabIndex = 5
@@ -226,7 +226,7 @@ Partial Class BorrowingForm
         '
         Me.borrowerID.AutoSize = True
         Me.borrowerID.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.borrowerID.Location = New System.Drawing.Point(125, 498)
+        Me.borrowerID.Location = New System.Drawing.Point(153, 384)
         Me.borrowerID.Name = "borrowerID"
         Me.borrowerID.Size = New System.Drawing.Size(14, 21)
         Me.borrowerID.TabIndex = 5
@@ -236,7 +236,7 @@ Partial Class BorrowingForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(155, 357)
+        Me.Label6.Location = New System.Drawing.Point(90, 352)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(59, 21)
@@ -247,7 +247,7 @@ Partial Class BorrowingForm
         '
         Me.title.AutoSize = True
         Me.title.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.title.Location = New System.Drawing.Point(221, 384)
+        Me.title.Location = New System.Drawing.Point(173, 379)
         Me.title.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.title.Name = "title"
         Me.title.Size = New System.Drawing.Size(14, 21)
@@ -258,7 +258,7 @@ Partial Class BorrowingForm
         '
         Me.author.AutoSize = True
         Me.author.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.author.Location = New System.Drawing.Point(221, 410)
+        Me.author.Location = New System.Drawing.Point(173, 405)
         Me.author.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.author.Name = "author"
         Me.author.Size = New System.Drawing.Size(14, 21)
@@ -269,7 +269,7 @@ Partial Class BorrowingForm
         '
         Me.isbn.AutoSize = True
         Me.isbn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.isbn.Location = New System.Drawing.Point(221, 437)
+        Me.isbn.Location = New System.Drawing.Point(173, 432)
         Me.isbn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.isbn.Name = "isbn"
         Me.isbn.Size = New System.Drawing.Size(14, 21)
@@ -280,7 +280,7 @@ Partial Class BorrowingForm
         '
         Me.yrpub.AutoSize = True
         Me.yrpub.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.yrpub.Location = New System.Drawing.Point(224, 464)
+        Me.yrpub.Location = New System.Drawing.Point(173, 459)
         Me.yrpub.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.yrpub.Name = "yrpub"
         Me.yrpub.Size = New System.Drawing.Size(14, 21)
@@ -291,7 +291,7 @@ Partial Class BorrowingForm
         '
         Me.shelf.AutoSize = True
         Me.shelf.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.shelf.Location = New System.Drawing.Point(224, 486)
+        Me.shelf.Location = New System.Drawing.Point(173, 481)
         Me.shelf.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.shelf.Name = "shelf"
         Me.shelf.Size = New System.Drawing.Size(14, 21)
@@ -305,7 +305,7 @@ Partial Class BorrowingForm
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1027, 662)
+        Me.PictureBox1.Size = New System.Drawing.Size(990, 665)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
@@ -314,8 +314,13 @@ Partial Class BorrowingForm
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.BorrowerQRimg)
+        Me.GroupBox1.Controls.Add(Me.borrowerID)
+        Me.GroupBox1.Controls.Add(Me.btnScanBorrower)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.borrowerName)
+        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(35, 76)
+        Me.GroupBox1.Location = New System.Drawing.Point(39, 30)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
@@ -332,6 +337,7 @@ Partial Class BorrowingForm
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label13)
+        Me.GroupBox2.Controls.Add(Me.BtnScanBook)
         Me.GroupBox2.Controls.Add(Me.bookID)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.title)
@@ -340,7 +346,7 @@ Partial Class BorrowingForm
         Me.GroupBox2.Controls.Add(Me.shelf)
         Me.GroupBox2.Controls.Add(Me.yrpub)
         Me.GroupBox2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(584, 76)
+        Me.GroupBox2.Location = New System.Drawing.Point(530, 30)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
@@ -354,15 +360,9 @@ Partial Class BorrowingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1027, 662)
+        Me.ClientSize = New System.Drawing.Size(990, 665)
         Me.Controls.Add(Me.btnConfirm)
-        Me.Controls.Add(Me.borrowerID)
         Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.borrowerName)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnScanBorrower)
-        Me.Controls.Add(Me.BtnScanBook)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -374,10 +374,10 @@ Partial Class BorrowingForm
         CType(Me.BorrowerQRimg, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

@@ -40,7 +40,7 @@ Partial Class AddMaterial
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(168, 58)
+        Me.Label1.Location = New System.Drawing.Point(123, 80)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(35, 18)
@@ -52,7 +52,7 @@ Partial Class AddMaterial
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(76, 97)
+        Me.Label2.Location = New System.Drawing.Point(37, 115)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(121, 18)
@@ -61,18 +61,18 @@ Partial Class AddMaterial
         '
         'mtitleBox
         '
-        Me.mtitleBox.Location = New System.Drawing.Point(216, 54)
+        Me.mtitleBox.Location = New System.Drawing.Point(184, 79)
         Me.mtitleBox.Margin = New System.Windows.Forms.Padding(4)
         Me.mtitleBox.Name = "mtitleBox"
-        Me.mtitleBox.Size = New System.Drawing.Size(132, 22)
+        Me.mtitleBox.Size = New System.Drawing.Size(211, 22)
         Me.mtitleBox.TabIndex = 2
         '
         'accnumBox
         '
-        Me.accnumBox.Location = New System.Drawing.Point(216, 94)
+        Me.accnumBox.Location = New System.Drawing.Point(184, 114)
         Me.accnumBox.Margin = New System.Windows.Forms.Padding(4)
         Me.accnumBox.Name = "accnumBox"
-        Me.accnumBox.Size = New System.Drawing.Size(132, 22)
+        Me.accnumBox.Size = New System.Drawing.Size(211, 22)
         Me.accnumBox.TabIndex = 2
         '
         'Button1
@@ -91,7 +91,7 @@ Partial Class AddMaterial
         '
         Me.mQRbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.mQRbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mQRbtn.Location = New System.Drawing.Point(147, 274)
+        Me.mQRbtn.Location = New System.Drawing.Point(168, 335)
         Me.mQRbtn.Margin = New System.Windows.Forms.Padding(4)
         Me.mQRbtn.Name = "mQRbtn"
         Me.mQRbtn.Size = New System.Drawing.Size(117, 41)
@@ -106,16 +106,16 @@ Partial Class AddMaterial
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(448, 390)
+        Me.PictureBox1.Size = New System.Drawing.Size(441, 484)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(124, 140)
+        Me.PictureBox2.Location = New System.Drawing.Point(140, 165)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(158, 127)
+        Me.PictureBox2.Size = New System.Drawing.Size(172, 163)
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
         '
@@ -123,7 +123,7 @@ Partial Class AddMaterial
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(147, 336)
+        Me.Button2.Location = New System.Drawing.Point(165, 408)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(117, 41)
@@ -135,7 +135,7 @@ Partial Class AddMaterial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(448, 390)
+        Me.ClientSize = New System.Drawing.Size(441, 484)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.mQRbtn)
@@ -147,6 +147,7 @@ Partial Class AddMaterial
         Me.Controls.Add(Me.PictureBox1)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "AddMaterial"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AddMaterial"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

@@ -9,6 +9,7 @@ Public Class EditBorrowerForm
         Label1.BackColor = Color.Transparent
         Label2.BackColor = Color.Transparent
         Label3.BackColor = Color.Transparent
+        Button3.Enabled = False
         'fill textboxes with data
         oldID = BooksBorrowedForm.datacell
         'query datacell
@@ -48,6 +49,7 @@ Public Class EditBorrowerForm
 
         'write QR
         PictureBox1.Image = writer.Write(nametxt.Text + "_" + idtxt.Text)
+        Button3.Enabled = True
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -82,6 +84,7 @@ Public Class EditBorrowerForm
             End If
 
             PictureBox1.Image.Save(savefile, System.Drawing.Imaging.ImageFormat.Png)
+
 
             Me.Close()
         End If

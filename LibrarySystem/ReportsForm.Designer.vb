@@ -40,18 +40,20 @@ Partial Class ReportsForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(72, 119)
+        Me.TextBox1.Location = New System.Drawing.Point(96, 146)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(632, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(841, 22)
         Me.TextBox1.TabIndex = 0
         '
         'Button1
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(22, 29)
+        Me.Button1.Location = New System.Drawing.Point(29, 36)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 38)
+        Me.Button1.Size = New System.Drawing.Size(107, 47)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
@@ -62,13 +64,14 @@ Partial Class ReportsForm
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 158)
+        Me.DataGridView1.Location = New System.Drawing.Point(29, 194)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(682, 302)
+        Me.DataGridView1.Size = New System.Drawing.Size(909, 372)
         Me.DataGridView1.TabIndex = 2
         '
         'PictureBox1
@@ -76,8 +79,9 @@ Partial Class ReportsForm
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(730, 485)
+        Me.PictureBox1.Size = New System.Drawing.Size(973, 597)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
@@ -86,9 +90,10 @@ Partial Class ReportsForm
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Total Books Borrowed", "Total Materials Borrowed", "Student Logs"})
-        Me.ComboBox1.Location = New System.Drawing.Point(22, 79)
+        Me.ComboBox1.Location = New System.Drawing.Point(29, 97)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(148, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(196, 24)
         Me.ComboBox1.TabIndex = 5
         '
         'Label1
@@ -96,9 +101,10 @@ Partial Class ReportsForm
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(108, 29)
+        Me.Label1.Location = New System.Drawing.Point(144, 36)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(243, 39)
+        Me.Label1.Size = New System.Drawing.Size(302, 48)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Summary Reports"
         '
@@ -106,20 +112,20 @@ Partial Class ReportsForm
         '
         Me.dtFrom.CustomFormat = "MM/dd/yyyy    hh:mm:ss"
         Me.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtFrom.Location = New System.Drawing.Point(513, 50)
-        Me.dtFrom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtFrom.Location = New System.Drawing.Point(684, 62)
+        Me.dtFrom.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtFrom.Name = "dtFrom"
-        Me.dtFrom.Size = New System.Drawing.Size(135, 20)
+        Me.dtFrom.Size = New System.Drawing.Size(179, 22)
         Me.dtFrom.TabIndex = 7
         '
         'dtTo
         '
         Me.dtTo.CustomFormat = "MM/dd/yyyy    hh:mm:ss"
         Me.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtTo.Location = New System.Drawing.Point(513, 76)
-        Me.dtTo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtTo.Location = New System.Drawing.Point(684, 94)
+        Me.dtTo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtTo.Name = "dtTo"
-        Me.dtTo.Size = New System.Drawing.Size(135, 20)
+        Me.dtTo.Size = New System.Drawing.Size(179, 22)
         Me.dtTo.TabIndex = 7
         '
         'Label2
@@ -127,10 +133,9 @@ Partial Class ReportsForm
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(472, 51)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(629, 63)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 16)
+        Me.Label2.Size = New System.Drawing.Size(48, 21)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "From:"
         '
@@ -139,10 +144,9 @@ Partial Class ReportsForm
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(489, 77)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(652, 95)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(21, 16)
+        Me.Label3.Size = New System.Drawing.Size(27, 21)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "To:"
         '
@@ -150,10 +154,10 @@ Partial Class ReportsForm
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(652, 50)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Location = New System.Drawing.Point(869, 62)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(52, 46)
+        Me.Button2.Size = New System.Drawing.Size(69, 57)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Go"
         Me.Button2.UseVisualStyleBackColor = True
@@ -163,17 +167,18 @@ Partial Class ReportsForm
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(19, 119)
+        Me.Label4.Location = New System.Drawing.Point(25, 146)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 16)
+        Me.Label4.Size = New System.Drawing.Size(59, 21)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Search:"
         '
         'ReportsForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(730, 485)
+        Me.ClientSize = New System.Drawing.Size(973, 597)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
@@ -186,6 +191,7 @@ Partial Class ReportsForm
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "ReportsForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Reports"

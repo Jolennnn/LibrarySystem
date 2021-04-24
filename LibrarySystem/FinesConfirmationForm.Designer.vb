@@ -34,10 +34,10 @@ Partial Class FinesConfirmationForm
         '
         Me.Paybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Paybtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Paybtn.Location = New System.Drawing.Point(29, 88)
-        Me.Paybtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Paybtn.Location = New System.Drawing.Point(43, 90)
+        Me.Paybtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Paybtn.Name = "Paybtn"
-        Me.Paybtn.Size = New System.Drawing.Size(58, 26)
+        Me.Paybtn.Size = New System.Drawing.Size(77, 32)
         Me.Paybtn.TabIndex = 0
         Me.Paybtn.Text = "Pay"
         Me.Paybtn.UseVisualStyleBackColor = True
@@ -46,10 +46,10 @@ Partial Class FinesConfirmationForm
         '
         Me.Recordbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Recordbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Recordbtn.Location = New System.Drawing.Point(110, 88)
-        Me.Recordbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Recordbtn.Location = New System.Drawing.Point(147, 90)
+        Me.Recordbtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Recordbtn.Name = "Recordbtn"
-        Me.Recordbtn.Size = New System.Drawing.Size(58, 26)
+        Me.Recordbtn.Size = New System.Drawing.Size(77, 32)
         Me.Recordbtn.TabIndex = 1
         Me.Recordbtn.Text = "Record"
         Me.Recordbtn.UseVisualStyleBackColor = True
@@ -58,10 +58,10 @@ Partial Class FinesConfirmationForm
         '
         Me.Cancelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Cancelbtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cancelbtn.Location = New System.Drawing.Point(193, 88)
-        Me.Cancelbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Cancelbtn.Location = New System.Drawing.Point(250, 90)
+        Me.Cancelbtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Cancelbtn.Name = "Cancelbtn"
-        Me.Cancelbtn.Size = New System.Drawing.Size(65, 26)
+        Me.Cancelbtn.Size = New System.Drawing.Size(87, 32)
         Me.Cancelbtn.TabIndex = 2
         Me.Cancelbtn.Text = "Cancel"
         Me.Cancelbtn.UseVisualStyleBackColor = True
@@ -71,10 +71,9 @@ Partial Class FinesConfirmationForm
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(29, 39)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(39, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(170, 16)
+        Me.Label1.Size = New System.Drawing.Size(219, 21)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Select option for fines payment:"
         '
@@ -83,24 +82,26 @@ Partial Class FinesConfirmationForm
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(273, 130)
+        Me.PictureBox1.Size = New System.Drawing.Size(376, 169)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
         'FinesConfirmationForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(273, 130)
+        Me.ClientSize = New System.Drawing.Size(376, 169)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Cancelbtn)
         Me.Controls.Add(Me.Recordbtn)
         Me.Controls.Add(Me.Paybtn)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FinesConfirmationForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fines Payment"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
