@@ -3,9 +3,9 @@ Imports ZXing
 Public Class EditBorrowerForm
     Dim oldID As Integer
     Private Sub EditBorrowerForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Parent = PictureBox1
-        Label2.Parent = PictureBox1
-        Label3.Parent = PictureBox1
+        Label1.Parent = PictureBox2
+        Label2.Parent = PictureBox2
+        Label3.Parent = PictureBox2
         Label1.BackColor = Color.Transparent
         Label2.BackColor = Color.Transparent
         Label3.BackColor = Color.Transparent

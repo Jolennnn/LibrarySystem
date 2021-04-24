@@ -36,21 +36,22 @@ Partial Class BorrowHistoryForm
         'namelbl
         '
         Me.namelbl.AutoSize = True
-        Me.namelbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.namelbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.namelbl.ForeColor = System.Drawing.Color.White
-        Me.namelbl.Location = New System.Drawing.Point(38, 20)
+        Me.namelbl.Location = New System.Drawing.Point(34, 22)
         Me.namelbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.namelbl.Name = "namelbl"
-        Me.namelbl.Size = New System.Drawing.Size(89, 16)
+        Me.namelbl.Size = New System.Drawing.Size(108, 19)
         Me.namelbl.TabIndex = 0
         Me.namelbl.Text = "Borrower Name"
         '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(28, 90)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
@@ -62,48 +63,48 @@ Partial Class BorrowHistoryForm
         'fineslbl
         '
         Me.fineslbl.AutoSize = True
-        Me.fineslbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fineslbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fineslbl.ForeColor = System.Drawing.Color.White
-        Me.fineslbl.Location = New System.Drawing.Point(76, 53)
+        Me.fineslbl.Location = New System.Drawing.Point(83, 55)
         Me.fineslbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.fineslbl.Name = "fineslbl"
-        Me.fineslbl.Size = New System.Drawing.Size(33, 16)
+        Me.fineslbl.Size = New System.Drawing.Size(40, 19)
         Me.fineslbl.TabIndex = 0
         Me.fineslbl.Text = "fines"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(38, 53)
+        Me.Label1.Location = New System.Drawing.Point(34, 55)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 16)
+        Me.Label1.Size = New System.Drawing.Size(45, 19)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Fines:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(425, 53)
+        Me.Label2.Location = New System.Drawing.Point(407, 55)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 16)
+        Me.Label2.Size = New System.Drawing.Size(113, 19)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Books borrowed:"
         '
         'booklbl
         '
         Me.booklbl.AutoSize = True
-        Me.booklbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.booklbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.booklbl.ForeColor = System.Drawing.Color.White
-        Me.booklbl.Location = New System.Drawing.Point(515, 53)
+        Me.booklbl.Location = New System.Drawing.Point(519, 55)
         Me.booklbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.booklbl.Name = "booklbl"
-        Me.booklbl.Size = New System.Drawing.Size(53, 16)
+        Me.booklbl.Size = New System.Drawing.Size(63, 19)
         Me.booklbl.TabIndex = 0
         Me.booklbl.Text = "booksies"
         '
@@ -130,7 +131,7 @@ Partial Class BorrowHistoryForm
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.namelbl)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "BorrowHistoryForm"
         Me.Text = "BorrowHistoryForm"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
