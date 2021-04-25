@@ -12,6 +12,8 @@
             Button2.Visible = False
         ElseIf ComboBox1.SelectedIndex = 1 Then
             studloghide()
+            LoadMaterialHistory(DataGridView1)
+            changeMaterialHeaders()
             Button2.Visible = False
             'show materials borrowed
         ElseIf ComboBox1.SelectedIndex = 2 Then
@@ -74,5 +76,15 @@
         DataGridView1.Columns(2).HeaderText = "Time Logged In"
         DataGridView1.Columns(3).HeaderText = "Time Logged Out"
         DataGridView1.Columns(4).HeaderText = "Remarks"
+    End Sub
+
+    Private Sub changeMaterialHeaders()
+        DataGridView1.Columns(0).HeaderText = "Accession Number"
+        DataGridView1.Columns(1).HeaderText = "Title"
+        DataGridView1.Columns(2).HeaderText = "Student ID"
+        DataGridView1.Columns(3).HeaderText = "Student Name"
+        DataGridView1.Columns(4).HeaderText = "Date Borrowed"
+        DataGridView1.Columns(5).HeaderText = "Date Returned"
+        DataGridView1.Columns(6).HeaderText = "Remarks"
     End Sub
 End Class

@@ -45,21 +45,22 @@ Partial Class ReturnMaterialForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(175, 377)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(99, 306)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(117, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(101, 24)
         Me.TextBox1.TabIndex = 6
         '
         'Button3
         '
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(199, 478)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button3.Location = New System.Drawing.Point(149, 388)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(128, 55)
+        Me.Button3.Size = New System.Drawing.Size(96, 45)
         Me.Button3.TabIndex = 17
         Me.Button3.Text = "Cancel"
         Me.Button3.UseVisualStyleBackColor = True
@@ -68,10 +69,10 @@ Partial Class ReturnMaterialForm
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(64, 478)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button2.Location = New System.Drawing.Point(48, 388)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(128, 55)
+        Me.Button2.Size = New System.Drawing.Size(96, 45)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Return Material"
         Me.Button2.UseVisualStyleBackColor = True
@@ -82,9 +83,10 @@ Partial Class ReturnMaterialForm
         Me.Label5.BackColor = System.Drawing.SystemColors.Control
         Me.Label5.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label5.Location = New System.Drawing.Point(93, 377)
+        Me.Label5.Location = New System.Drawing.Point(43, 309)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 18)
+        Me.Label5.Size = New System.Drawing.Size(52, 14)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Remarks:"
         '
@@ -94,9 +96,10 @@ Partial Class ReturnMaterialForm
         Me.Label6.BackColor = System.Drawing.SystemColors.Control
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label6.Location = New System.Drawing.Point(57, 312)
+        Me.Label6.Location = New System.Drawing.Point(43, 254)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(102, 18)
+        Me.Label6.Size = New System.Drawing.Size(82, 14)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Accession Num:"
         '
@@ -106,9 +109,10 @@ Partial Class ReturnMaterialForm
         Me.Label2.BackColor = System.Drawing.SystemColors.Control
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.Location = New System.Drawing.Point(124, 331)
+        Me.Label2.Location = New System.Drawing.Point(93, 269)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 18)
+        Me.Label2.Size = New System.Drawing.Size(30, 14)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Title:"
         '
@@ -118,9 +122,10 @@ Partial Class ReturnMaterialForm
         Me.midlbl.BackColor = System.Drawing.SystemColors.Control
         Me.midlbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.midlbl.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.midlbl.Location = New System.Drawing.Point(172, 312)
+        Me.midlbl.Location = New System.Drawing.Point(129, 254)
+        Me.midlbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.midlbl.Name = "midlbl"
-        Me.midlbl.Size = New System.Drawing.Size(44, 18)
+        Me.midlbl.Size = New System.Drawing.Size(37, 14)
         Me.midlbl.TabIndex = 11
         Me.midlbl.Text = "midlbl"
         '
@@ -130,9 +135,10 @@ Partial Class ReturnMaterialForm
         Me.mtitlelbl.BackColor = System.Drawing.SystemColors.Control
         Me.mtitlelbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mtitlelbl.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.mtitlelbl.Location = New System.Drawing.Point(172, 330)
+        Me.mtitlelbl.Location = New System.Drawing.Point(129, 268)
+        Me.mtitlelbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.mtitlelbl.Name = "mtitlelbl"
-        Me.mtitlelbl.Size = New System.Drawing.Size(56, 18)
+        Me.mtitlelbl.Size = New System.Drawing.Size(48, 14)
         Me.mtitlelbl.TabIndex = 12
         Me.mtitlelbl.Text = "mtitlelbl"
         '
@@ -142,9 +148,10 @@ Partial Class ReturnMaterialForm
         Me.namelbl.BackColor = System.Drawing.SystemColors.Control
         Me.namelbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.namelbl.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.namelbl.Location = New System.Drawing.Point(172, 285)
+        Me.namelbl.Location = New System.Drawing.Point(129, 232)
+        Me.namelbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.namelbl.Name = "namelbl"
-        Me.namelbl.Size = New System.Drawing.Size(62, 18)
+        Me.namelbl.Size = New System.Drawing.Size(52, 14)
         Me.namelbl.TabIndex = 13
         Me.namelbl.Text = "bnamelbl"
         '
@@ -154,9 +161,10 @@ Partial Class ReturnMaterialForm
         Me.idlbl.BackColor = System.Drawing.SystemColors.Control
         Me.idlbl.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.idlbl.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.idlbl.Location = New System.Drawing.Point(172, 266)
+        Me.idlbl.Location = New System.Drawing.Point(129, 216)
+        Me.idlbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.idlbl.Name = "idlbl"
-        Me.idlbl.Size = New System.Drawing.Size(40, 18)
+        Me.idlbl.Size = New System.Drawing.Size(34, 14)
         Me.idlbl.TabIndex = 14
         Me.idlbl.Text = "bidlbl"
         '
@@ -166,9 +174,10 @@ Partial Class ReturnMaterialForm
         Me.Label3.BackColor = System.Drawing.SystemColors.Control
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.Location = New System.Drawing.Point(80, 266)
+        Me.Label3.Location = New System.Drawing.Point(60, 216)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 18)
+        Me.Label3.Size = New System.Drawing.Size(66, 14)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Borrower ID:"
         '
@@ -178,9 +187,10 @@ Partial Class ReturnMaterialForm
         Me.Label1.BackColor = System.Drawing.SystemColors.Control
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(97, 285)
+        Me.Label1.Location = New System.Drawing.Point(73, 232)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 18)
+        Me.Label1.Size = New System.Drawing.Size(52, 14)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Borrower:"
         '
@@ -188,20 +198,20 @@ Partial Class ReturnMaterialForm
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(96, 207)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Location = New System.Drawing.Point(72, 168)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(133, 41)
+        Me.Button1.Size = New System.Drawing.Size(100, 33)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Scan Borrower QR"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(83, 59)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(62, 48)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(155, 144)
+        Me.PictureBox1.Size = New System.Drawing.Size(116, 117)
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
@@ -210,9 +220,8 @@ Partial Class ReturnMaterialForm
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox2.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(392, 555)
+        Me.PictureBox2.Size = New System.Drawing.Size(294, 451)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 18
         Me.PictureBox2.TabStop = False
@@ -232,23 +241,25 @@ Partial Class ReturnMaterialForm
         Me.GroupBox1.Controls.Add(Me.mtitlelbl)
         Me.GroupBox1.Controls.Add(Me.midlbl)
         Me.GroupBox1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(35, 27)
+        Me.GroupBox1.Location = New System.Drawing.Point(26, 22)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(318, 432)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(238, 351)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Return Material"
         '
         'ReturnMaterialForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(392, 555)
+        Me.ClientSize = New System.Drawing.Size(294, 451)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "ReturnMaterialForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ReturnMaterialForm"
