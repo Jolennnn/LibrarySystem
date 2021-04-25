@@ -69,6 +69,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D84E6FF8DBF644249A976BB357993FA6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D9A96CF79AB34A5290A557FB749A8F1D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -82,13 +88,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3EFDE26BC184BE3CD7368E0A2CBB961A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D9A96CF79AB34A5290A557FB749A8F1D"
+        "OwnerKey" = "8:_121DC5CAAFD74700885A57E2602E8CA2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,7 +100,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_121DC5CAAFD74700885A57E2602E8CA2"
+        "OwnerKey" = "8:_D9A96CF79AB34A5290A557FB749A8F1D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3EFDE26BC184BE3CD7368E0A2CBB961A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -121,6 +127,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -369,6 +383,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D84E6FF8DBF644249A976BB357993FA6"
+            {
+            "SourcePath" = "8:..\\LibrarySystem\\Resources\\libraryicon.ico"
+            "TargetName" = "8:libraryicon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_F8DF1252C4704EC183CD6C16C32447F5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D9A96CF79AB34A5290A557FB749A8F1D"
             {
             "AssemblyRegister" = "3:1"
@@ -461,7 +495,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_F8DF1252C4704EC183CD6C16C32447F5"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[DesktopFolder]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -488,7 +522,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Library System"
         "ProductCode" = "8:{C1C19570-303F-4B7D-B3CE-0A3F01A192ED}"
-        "PackageCode" = "8:{54A32C9E-5021-4B3F-A02D-CBA4DBFED15C}"
+        "PackageCode" = "8:{BB63A849-F8C0-4ED1-8553-4B8A56EA5DEA}"
         "UpgradeCode" = "8:{112DA4F0-C879-462E-9550-0E5972AD06B4}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -499,7 +533,7 @@
         "Manufacturer" = "8:XavierUniversity-Fr.LeoniTeam"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Setup"
+        "Title" = "8:LibrarySystemSetup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:XavierUniversity-Fr.LeoniTeam"
         "Keywords" = "8:"
@@ -608,6 +642,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4AD947FC734A4D2FB6C37A766E86698E"
+            {
+            "Name" = "8:LibrarySystem.exe"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_121DC5CAAFD74700885A57E2602E8CA2"
+            "Folder" = "8:_E06642CF09D34D3C8B8FF5F0AA733939"
+            "WorkingFolder" = "8:_F8DF1252C4704EC183CD6C16C32447F5"
+            "Icon" = "8:_D84E6FF8DBF644249A976BB357993FA6"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
