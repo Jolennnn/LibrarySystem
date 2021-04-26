@@ -9,6 +9,7 @@ Public Class ReturnForm
         bookidlbl.Visible = True
         booklbl.Visible = True
         fineslbl.Visible = True
+        Button2.Enabled = True
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
