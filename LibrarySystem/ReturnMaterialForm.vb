@@ -7,6 +7,7 @@ Public Class ReturnMaterialForm
         namelbl.Visible = True
         midlbl.Visible = True
         mtitlelbl.Visible = True
+        Button2.Enabled = True
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

@@ -19,4 +19,8 @@ Public Class StudentLogInForm
             End Using
         End Using
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox1.Clear()
+    End Sub
 End Class
