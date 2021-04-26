@@ -19,6 +19,51 @@ Public Class AddBookForm
                 Module1.LoadBookInv(InventoryForm.DataGridView1)
             End Using
         End Using
+
+        'generate QR
+        'query for last entry's id
+        Dim QRID As Integer = -1
+        Dim query2 As String = "SELECT BookId from [dbo].[Book] ORDER BY BookId DESC"
+        Using con2 As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
+            Using cmd2 As SqlCommand = New SqlCommand(query2, con2)
+                con2.Open()
+
+                Dim ds2 As SqlDataReader = cmd2.ExecuteReader()
+                If ds2.Read() Then
+                    QRID = ds2.GetInt32(0)
+                Else
+                    QRID = 0
+                End If
+
+                con2.Close()
+
+            End Using
+        End Using
+
+        'generate QR
+        'initialize barcode writer
+        Dim writer As New BarcodeWriter
+        writer.Format = BarcodeFormat.QR_CODE
+        Dim options As New ZXing.Common.EncodingOptions
+
+        'setting QR dimensions
+        options.Width = 200
+        options.Height = 200
+
+        'write QR
+        Dim filename = (QRID).ToString
+        QRbox1.Image = writer.Write(filename)
+        'save QR
+
+        Dim savepath As String = My.Computer.FileSystem.SpecialDirectories.MyPictures & "\BookQR\"
+        Dim savefile As String = System.IO.Path.Combine(savepath, filename + ".png")
+
+        If (Not System.IO.Directory.Exists(savepath)) Then
+            System.IO.Directory.CreateDirectory(savepath)
+        End If
+
+        QRbox1.Image.Save(savefile, System.Drawing.Imaging.ImageFormat.Png)
+
         If InventoryForm.invCategoryBox.SelectedIndex = 0 Then
             LoadBookInv(InventoryForm.DataGridView1)
         ElseIf InventoryForm.invCategoryBox.SelectedIndex = 1 Then
@@ -35,7 +80,7 @@ Public Class AddBookForm
         InventoryForm.Show()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         'query for last entry's id
         Dim QRID As Integer = -1
         Dim query As String = "SELECT BookId from [dbo].[Book] ORDER BY BookId DESC"
@@ -94,7 +139,7 @@ Public Class AddBookForm
         Label4.BackColor = Color.Transparent
         Label5.BackColor = Color.Transparent
         Label6.BackColor = Color.Transparent
-        Button1.Enabled = False
+        Button1.Enabled = True
 
         Dim con As SqlConnection = New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True")
         Dim cmd As SqlCommand = New SqlCommand("SELECT * from Category", con)

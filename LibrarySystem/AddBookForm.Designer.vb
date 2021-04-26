@@ -39,9 +39,8 @@ Partial Class AddBookForm
         Me.BackBtn = New System.Windows.Forms.Button()
         Me.BookDataSet1 = New LibrarySystem.BookDataSet()
         Me.BookTableAdapter1 = New LibrarySystem.BookDataSetTableAdapters.BookTableAdapter()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.QRbox1 = New System.Windows.Forms.PictureBox()
         Me.categoryBox = New System.Windows.Forms.ComboBox()
+        Me.QRbox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QRbox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,8 +50,8 @@ Partial Class AddBookForm
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(264, 336)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(447, 300)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(172, 60)
         Me.Button1.TabIndex = 0
@@ -62,7 +61,7 @@ Partial Class AddBookForm
         'titleBox
         '
         Me.titleBox.Location = New System.Drawing.Point(241, 93)
-        Me.titleBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.titleBox.Margin = New System.Windows.Forms.Padding(4)
         Me.titleBox.Name = "titleBox"
         Me.titleBox.Size = New System.Drawing.Size(132, 22)
         Me.titleBox.TabIndex = 1
@@ -70,7 +69,7 @@ Partial Class AddBookForm
         'authorBox
         '
         Me.authorBox.Location = New System.Drawing.Point(241, 123)
-        Me.authorBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.authorBox.Margin = New System.Windows.Forms.Padding(4)
         Me.authorBox.Name = "authorBox"
         Me.authorBox.Size = New System.Drawing.Size(132, 22)
         Me.authorBox.TabIndex = 1
@@ -78,7 +77,7 @@ Partial Class AddBookForm
         'isbnBox
         '
         Me.isbnBox.Location = New System.Drawing.Point(241, 155)
-        Me.isbnBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.isbnBox.Margin = New System.Windows.Forms.Padding(4)
         Me.isbnBox.Name = "isbnBox"
         Me.isbnBox.Size = New System.Drawing.Size(132, 22)
         Me.isbnBox.TabIndex = 1
@@ -122,7 +121,7 @@ Partial Class AddBookForm
         'yrBox
         '
         Me.yrBox.Location = New System.Drawing.Point(241, 187)
-        Me.yrBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.yrBox.Margin = New System.Windows.Forms.Padding(4)
         Me.yrBox.Name = "yrBox"
         Me.yrBox.Size = New System.Drawing.Size(132, 22)
         Me.yrBox.TabIndex = 1
@@ -142,7 +141,7 @@ Partial Class AddBookForm
         'shelfBox
         '
         Me.shelfBox.Location = New System.Drawing.Point(241, 219)
-        Me.shelfBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.shelfBox.Margin = New System.Windows.Forms.Padding(4)
         Me.shelfBox.Name = "shelfBox"
         Me.shelfBox.Size = New System.Drawing.Size(132, 22)
         Me.shelfBox.TabIndex = 1
@@ -176,7 +175,7 @@ Partial Class AddBookForm
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.IMG_3489
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(733, 421)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -192,7 +191,7 @@ Partial Class AddBookForm
         Me.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BackBtn.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BackBtn.Location = New System.Drawing.Point(24, 15)
-        Me.BackBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BackBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.BackBtn.Name = "BackBtn"
         Me.BackBtn.Size = New System.Drawing.Size(109, 36)
         Me.BackBtn.TabIndex = 6
@@ -208,37 +207,25 @@ Partial Class AddBookForm
         '
         Me.BookTableAdapter1.ClearBeforeFill = True
         '
-        'Button3
-        '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(476, 283)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 39)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Generate QR"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'QRbox1
-        '
-        Me.QRbox1.Location = New System.Drawing.Point(435, 92)
-        Me.QRbox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.QRbox1.Name = "QRbox1"
-        Me.QRbox1.Size = New System.Drawing.Size(200, 183)
-        Me.QRbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.QRbox1.TabIndex = 5
-        Me.QRbox1.TabStop = False
-        '
         'categoryBox
         '
         Me.categoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.categoryBox.FormattingEnabled = True
         Me.categoryBox.Location = New System.Drawing.Point(241, 251)
-        Me.categoryBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.categoryBox.Margin = New System.Windows.Forms.Padding(4)
         Me.categoryBox.Name = "categoryBox"
         Me.categoryBox.Size = New System.Drawing.Size(132, 24)
         Me.categoryBox.TabIndex = 7
+        '
+        'QRbox1
+        '
+        Me.QRbox1.Location = New System.Drawing.Point(435, 92)
+        Me.QRbox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.QRbox1.Name = "QRbox1"
+        Me.QRbox1.Size = New System.Drawing.Size(200, 183)
+        Me.QRbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.QRbox1.TabIndex = 5
+        Me.QRbox1.TabStop = False
         '
         'AddBookForm
         '
@@ -248,7 +235,6 @@ Partial Class AddBookForm
         Me.Controls.Add(Me.categoryBox)
         Me.Controls.Add(Me.BackBtn)
         Me.Controls.Add(Me.QRbox1)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -262,7 +248,7 @@ Partial Class AddBookForm
         Me.Controls.Add(Me.titleBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "AddBookForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AddBookForm"
@@ -291,7 +277,6 @@ Partial Class AddBookForm
     Friend WithEvents BackBtn As Button
     Friend WithEvents BookDataSet1 As BookDataSet
     Friend WithEvents BookTableAdapter1 As BookDataSetTableAdapters.BookTableAdapter
-    Friend WithEvents Button3 As Button
-    Friend WithEvents QRbox1 As PictureBox
     Friend WithEvents categoryBox As ComboBox
+    Friend WithEvents QRbox1 As PictureBox
 End Class
